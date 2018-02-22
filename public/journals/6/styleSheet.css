@@ -1,0 +1,105 @@
+@font-face{
+    font-family: GOTHIC;
+    src: url("/public/journals/1/GOTHIC.TTF");
+}
+
+#headerNavigationContainer:after {
+    height: 0;
+}
+
+#pkp_content_main:before, #pkp_content_main:after {
+    width: 1px;
+}
+
+#headerNavigationContainer {
+    background-image: url(band.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#navigationPrimary > li > a, #navigationPrimary > li > a:hover, #navigationPrimary > li > a:focus, #navigationUser > li > a, #navigationPrimary > .pkp_search .search_controls > a, #pkp_content_nav>.pkp_navigation_primary_wrapper>.pkp_search>.search_controls>.search_prompt {
+    color: #fff;
+}
+
+#pkp_content_nav>.pkp_navigation_primary_wrapper>.pkp_search>.search_controls>.search_prompt {
+    border-color: #fff;
+}
+
+#pkp_content_nav>.pkp_navigation_primary_wrapper>.is_open>.search_controls>.search_prompt {
+    color: rgba(0,0,0,0.54);
+}
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper>.pkp_site_name>.is_text {
+        text-transform: uppercase;
+        color: #fff;
+        width: 55%;
+        font-family: GOTHIC;
+}
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper>.pkp_site_name>a:active {
+        text-decoration: none;
+}
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper>.pkp_site_name>.is_text:before {
+    content: "";
+    background-image: url(/public/journals/1/bsu.png);
+    display: block;
+    width: 34px;
+    height: 54px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#pkp_content_nav>.pkp_navigation_primary_wrapper {
+    background-color: #60B244;
+    padding-left: 25px;
+}
+
+#navigationUser>.profile>ul {
+    width: 13em;
+}
+
+#pkp_content_main>.page_index_journal>.additional_content>.img_style {
+    float: left;
+    margin: 20px 20px 0 0;
+    width: 38%;
+}
+
+#headerNavigationContainer+.pkp_structure_content {
+    padding-top: 0;
+}
+
+#navigationPrimary > li > a:hover {
+    border-color: #fff;
+}
+
+#pkp_content_footer > .pkp_structure_footer > .pkp_brand_footer {
+    display: none;
+}
+
+#pkp_content_main>.page_index_journal>.homepage_image>img {
+    display: inline-block;
+     width: auto; 
+    height: auto;
+}
+
+#pkp_content_main>.page_index_journal>.additional_content {
+    border: 0;
+}
+
+#pkp_content_footer {
+    background-color: #7ab9c1;
+    
+}
+
+#pkp_content_footer>.pkp_structure_footer>.pkp_footer_content {
+    text-align: center;
+    color: #fff;
+}
+
+#pkp_content_main>.page_index_journal>.additional_content {
+    overflow: hidden;
+}

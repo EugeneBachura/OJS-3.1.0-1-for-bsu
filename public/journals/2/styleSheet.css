@@ -1,0 +1,39 @@
+#headerNavigationContainer {
+    background-image: url(header_history.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#headerNavigationContainer:after {
+    height: 0;
+}
+
+#pkp_content_main:before, #pkp_content_main:after {
+    width: 1px;
+}
+
+#pkp_content_main>.page_index_journal>.additional_content>.img_style {
+    float: left;
+    margin: 20px 20px 0 0;
+    width: 38%;
+}
+
+#pkp_content_nav>.pkp_navigation_primary_wrapper {
+    background-color: #b72a55;
+    padding-left: 25px;
+}
+
+#pkp_content_footer {
+    background-color: #b72a55;
+    
+}
+
+#pkp_content_footer>.pkp_structure_footer>.pkp_footer_content {
+    text-align: center;
+    color: #fff;
+}
+
+#pkp_content_main>.page_index_journal>.additional_content {
+    overflow: hidden;
+}

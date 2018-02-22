@@ -1,0 +1,84 @@
+@font-face{
+    font-family: GOTHIC;
+    src: url("/public/journals/1/GOTHIC.TTF");
+}
+
+#headerNavigationContainer:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 22px;
+    position: absolute;
+    background-image: url(header_bottom.png);
+    background-repeat: repeat-x;
+    background-size: 50%;
+}
+
+/*#pkp_content_footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}*/
+
+/*#headerNavigationContainer>.pkp_head_wrapper {
+    padding: 20px 10% 0;
+}
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper {
+    float: left;
+}
+
+#navigationUserWrapper {
+    position: static;
+    padding: 0 0 0 10px;
+}*/
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper>.pkp_site_name>.is_text {
+        text-transform: uppercase;
+        color: #fff;
+        width: 55%;
+        font-family: GOTHIC;
+}
+
+#headerNavigationContainer>.pkp_head_wrapper>.pkp_site_name_wrapper>.pkp_site_name>.is_text:before {
+    background-image: url(bsu.png);
+    display: block;
+    width: 34px;
+    height: 54px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    content: "";
+}
+
+#pkp_content_main:before, #pkp_content_main:after {
+    width: 0;
+}
+
+.pkp_page_index>.pkp_structure_page>.pkp_structure_content {
+    padding-top: 0;
+}
+
+#pkp_content_footer > .pkp_structure_footer > .pkp_brand_footer {
+    display: none;
+}
+
+#pkp_content_footer {
+    background-color: #7ab9c1;
+    
+}
+
+#pkp_content_footer>.pkp_structure_footer>.pkp_footer_content {
+    text-align: center;
+    color: #fff;
+}
+
+#navigationUser>.profile>ul {
+    width: 13em;
+}
+
+#pkp_content_main>.page_index_site>.journals > ul > li {
+    border: 0;
+}
