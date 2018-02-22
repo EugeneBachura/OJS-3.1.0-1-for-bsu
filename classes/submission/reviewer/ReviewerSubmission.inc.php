@@ -27,12 +27,6 @@ class ReviewerSubmission extends Article {
 	/** @var array the editor decisions of this submission */
 	var $editorDecisions;
 
-	/**
-	 * Constructor.
-	 */
-	function __construct() {
-		parent::__construct();
-	}
 
 	/**
 	 * Get/Set Methods.
@@ -87,11 +81,19 @@ class ReviewerSubmission extends Article {
 	}
 
 	/**
-	 * Get localized full name of reviewer.
+	 * Get full name of reviewer.
 	 * @return string
 	 */
-	 function getReviewerFullName() {
-		return $this->getLocalizedData('firstName'). ' '.$this->getLocalizedData('lastName');
+	function getReviewerFullName() {
+		return $this->getData('reviewerFullName');
+	}
+
+	/**
+	 * Set full name of reviewer.
+	 * @param $reviewerFullName string
+	 */
+	function setReviewerFullName($reviewerFullName) {
+		return $this->setData('reviewerFullName', $reviewerFullName);
 	}
 
 	/**
@@ -253,38 +255,6 @@ class ReviewerSubmission extends Article {
 	 */
 	function setDeclined($declined) {
 		return $this->setData('declined', $declined);
-	}
-
-	/**
-	 * Get the replaced value.
-	 * @return boolean
-	 */
-	function getReplaced() {
-		return $this->getData('replaced');
-	}
-
-	/**
-	 * Set the reviewer's replaced value.
-	 * @param $replaced boolean
-	 */
-	function setReplaced($replaced) {
-		return $this->setData('replaced', $replaced);
-	}
-
-	/**
-	 * Get the cancelled value.
-	 * @return boolean
-	 */
-	function getCancelled() {
-		return $this->getData('cancelled');
-	}
-
-	/**
-	 * Set the reviewer's cancelled value.
-	 * @param $replaced boolean
-	 */
-	function setCancelled($cancelled) {
-		return $this->setData('cancelled', $cancelled);
 	}
 
 	/**

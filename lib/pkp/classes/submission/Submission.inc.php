@@ -149,9 +149,8 @@ abstract class Submission extends DataObject {
 
 		// Fallback: Get the first available piece of data.
 		$data =& $this->getData($key, null);
-		if (!empty($data)) {
-			$keys = array_keys($data);
-			return $data[array_shift($keys)];
+		foreach ((array) $data as $dataValue) {
+			if (!empty($dataValue)) return $dataValue;
 		}
 
 		// No data available; return null.
@@ -257,14 +256,14 @@ abstract class Submission extends DataObject {
 		$authors = $this->getAuthors();
 		if (is_array($authors) && !empty($authors)) {
 			$author = $authors[0];
-			return $lastOnly ? $author->getLocalizedLastName() : $author->getFullName();
+			return $lastOnly ? $author->getLastName() : $author->getFullName();
 		} else {
 			return null;
 		}
 	}
 
 	/**
-	 * Return localized string of author names, separated by the specified token
+	 * Return string of author names, separated by the specified token
 	 * @param $lastOnly boolean return list of lastnames only (default false)
 	 * @param $nameSeparator string Separator for names (default comma+space)
 	 * @param $userGroupSeparator string Separator for user groups (default semicolon+space)
@@ -287,7 +286,7 @@ abstract class Submission extends DataObject {
 					$str .= $nameSeparator;
 				}
 			}
-			$str .= $lastOnly ? $author->getLocalizedLastName() : $author->getFullName();
+			$str .= $lastOnly ? $author->getLastName() : $author->getFullName();
 			$lastUserGroupId = $author->getUserGroupId();
 		}
 
@@ -301,7 +300,7 @@ abstract class Submission extends DataObject {
 	}
 
 	/**
-	 * Return localized short author names string.
+	 * Return short author names string.
 	 * @return string
 	 */
 	function getShortAuthorString() {
@@ -314,7 +313,7 @@ abstract class Submission extends DataObject {
 		}
 		if (!$primaryAuthor) return '';
 
-		$authorString = $primaryAuthor->getLocalizedLastName();
+		$authorString = $primaryAuthor->getLastName();
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION);
 		if (count($authors) > 1) $authorString = __('submission.shortAuthor', array('author' => $authorString));
 		return $authorString;
@@ -382,7 +381,9 @@ abstract class Submission extends DataObject {
 	function getLocalizedTitle($preferredLocale = null, $includePrefix = true) {
 		$title = $this->getLocalizedData('title', $preferredLocale);
 		if ($includePrefix) {
-			$title = $this->getLocalizedPrefix() . ' ' . $title;
+			$prefix = $this->getLocalizedPrefix();
+			if (!empty($prefix)) $prefix .= ' ';
+			$title = $prefix . $title;
 		}
 		return $title;
 	}
@@ -398,10 +399,14 @@ abstract class Submission extends DataObject {
 		if ($includePrefix) {
 			if (is_array($title)) {
 				foreach($title as $locale => $currentTitle) {
-					$title[$locale] = $this->getPrefix($locale) . ' ' . $currentTitle;
+					$prefix = $this->getPrefix($locale);
+					if (!empty($prefix)) $prefix .= ' ';
+					$title[$locale] = $prefix . $currentTitle;
 				}
 			} else {
-				$title = $this->getPrefix($locale) . ' ' . $title;
+				$prefix = $this->getPrefix($locale);
+				if (!empty($prefix)) $prefix .= ' ';
+				$title = $prefix . $title;
 			}
 		}
 		return $title;
@@ -478,7 +483,15 @@ abstract class Submission extends DataObject {
 	function getFullTitle($locale) {
 		$fullTitle = $this->getTitle($locale);
 
-		if ($subtitle = $this->getSubtitle($locale)) {
+		if (is_array($fullTitle)) {
+			foreach ($fullTitle as $locale => $title) {
+				if ($this->getSubtitle($locale)) {
+					$fullTitle[$locale] = PKPString::concatTitleFields(array($title, $this->getSubtitle($locale)));
+				} else {
+					$fullTitle[$locale] = $title;
+				}
+			}
+		} elseif ($this->getSubtitle($locale)) {
 			$fullTitle = PKPString::concatTitleFields(array($fullTitle, $subtitle));
 		}
 
@@ -739,29 +752,18 @@ abstract class Submission extends DataObject {
 
 	/**
 	 * Get citations.
-	 * @param $locale string
 	 * @return string
 	 */
-	function getCitations($locale) {
-		return $this->getData('citations', $locale);
+	function getCitations() {
+		return $this->getData('citations');
 	}
-
-	/**
-	 * Get citations.
-	 * @return string
-	 */
-	 function getLocalizedCitations() {
-		return $this->getLocalizedData('citations');
-	}
-
 
 	/**
 	 * Set citations.
 	 * @param $citations string
-	 * @param $locale string
 	 */
-	function setCitations($citations, $locale) {
-		$this->setData('citations', $citations, $locale);
+	function setCitations($citations) {
+		$this->setData('citations', $citations);
 	}
 
 	/**
@@ -851,9 +853,8 @@ abstract class Submission extends DataObject {
 		if (!isset($statusMap)) {
 			$statusMap = array(
 				STATUS_QUEUED => 'submissions.queued',
-				STATUS_PUBLISHED => 'submissions.published',
-				STATUS_DECLINED => 'submissions.declined',
-				STATUS_INCOMPLETE => 'submissions.incomplete'
+				STATUS_PUBLISHED => 'submission.status.published',
+				STATUS_DECLINED => 'submission.status.declined',
 			);
 		}
 		return $statusMap;
@@ -898,9 +899,11 @@ abstract class Submission extends DataObject {
 	 */
 	function getStartingPage() {
 		$ranges = $this->getPageArray();
-		$firstRange = array_pop(array_reverse($ranges));
-		$firstPage = is_array($firstRange) ? array_pop(array_reverse($firstRange)) : "";
-		return isset($firstPage) ? $firstPage : "";
+		$firstRange = array_shift($ranges);
+		if (is_array($firstRange)) {
+			return array_shift($firstRange);
+		}
+		return '';
 	}
 
 	/**

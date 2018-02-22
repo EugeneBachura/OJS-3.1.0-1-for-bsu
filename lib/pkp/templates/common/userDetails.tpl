@@ -28,9 +28,9 @@
 
 {fbvFormArea id="userDetails"}
 	{fbvFormSection title="user.name"}
-		{fbvElement type="text" label="user.firstName" required="true" id="firstName" value=$firstName maxlength="40" inline=true size=$fbvStyles.size.SMALL multilingual="true"}
-		{fbvElement type="text" label="user.middleName" id="middleName" value=$middleName maxlength="40" inline=true size=$fbvStyles.size.SMALL multilingual="true"}
-		{fbvElement type="text" label="user.lastName" required="true" id="lastName" value=$lastName maxlength="40" inline=true size=$fbvStyles.size.SMALL multilingual="true"}
+		{fbvElement type="text" label="user.firstName" required="true" id="firstName" value=$firstName maxlength="40" inline=true size=$fbvStyles.size.SMALL}
+		{fbvElement type="text" label="user.middleName" id="middleName" value=$middleName maxlength="40" inline=true size=$fbvStyles.size.SMALL}
+		{fbvElement type="text" label="user.lastName" required="true" id="lastName" value=$lastName maxlength="40" inline=true size=$fbvStyles.size.SMALL}
 	{/fbvFormSection}
 
 	{if !$disableUserNameSection}
@@ -129,7 +129,7 @@
 			{if !$disablePhoneSection}
 				{fbvElement type="text" label="user.phone" name="phone" id="phone" value=$phone maxlength="24" inline=true size=$fbvStyles.size.SMALL}
 			{/if}
-			{fbvElement type="text" label="user.orcid" name="orcid" id="orcid" value=$orcid maxlength="36" inline=true size=$fbvStyles.size.SMALL}
+			{fbvElement type="text" label="user.orcid" name="orcid" id="orcid" value=$orcid maxlength="37" inline=true size=$fbvStyles.size.SMALL}
 		{/fbvFormSection}
 
 		{if !$disableLocaleSection && count($availableLocales) > 1}

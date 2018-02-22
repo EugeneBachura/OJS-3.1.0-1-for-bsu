@@ -46,9 +46,9 @@ class PKPSubmissionMetadataFormImplementation {
 		import('lib.pkp.classes.form.validation.FormValidatorCustom');
 
 		// Validation checks.
-		$this->_parentForm->addCheck(new FormValidatorLocale($this->_parentForm, 'title', 'required', 'submission.submit.form.titleRequired'));
+		$this->_parentForm->addCheck(new FormValidatorLocale($this->_parentForm, 'title', 'required', 'submission.submit.form.titleRequired', $submission->getLocale()));
 		if ($this->_getAbstractsRequired($submission)) {
-			$this->_parentForm->addCheck(new FormValidatorLocale($this->_parentForm, 'abstract', 'required', 'submission.submit.form.abstractRequired'));
+			$this->_parentForm->addCheck(new FormValidatorLocale($this->_parentForm, 'abstract', 'required', 'submission.submit.form.abstractRequired', $submission->getLocale()));
 		}
 
 		// Validates that at least one author has been added (note that authors are in grid, so Form does not
@@ -59,6 +59,18 @@ class PKPSubmissionMetadataFormImplementation {
 			create_function('$ignore, $submission', 'return count($submission->getAuthors()) > 0;'),
 			array($submission)
 		));
+
+		$contextDao = Application::getContextDao();
+		$context = $contextDao->getById($submission->getContextId());
+		import('lib.pkp.controllers.grid.settings.metadata.MetadataGridHandler');
+		foreach (MetadataGridHandler::getNames() as $key => $name) {
+			if ($context->getSetting($key . 'Required')) switch(1) {
+				case in_array($key, $this->getLocaleFieldNames()):
+					$this->_parentForm->addCheck(new FormValidatorLocale($this->_parentForm, $key, 'required', 'common.required', $submission->getLocale()));
+				default:
+					$this->_parentForm->addCheck(new FormValidator($this->_parentForm, $key, 'required', 'common.required'));
+			}
+		}
 	}
 
 	/**

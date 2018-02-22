@@ -73,7 +73,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 
 		$returner = null;
 		if ($result->RecordCount() != 0) {
-			$returner = $this->_returnReviewerSubmissionFromRowWithData($result->GetRowAssoc(false));
+			$returner = $this->_fromRow($result->GetRowAssoc(false));
 		}
 
 		$result->Close();
@@ -108,6 +108,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		// Review Assignment
 		$reviewerSubmission->setReviewId($row['review_id']);
 		$reviewerSubmission->setReviewerId($row['reviewer_id']);
+		$reviewerSubmission->setReviewerFullName($row['first_name'].' '.$row['last_name']);
 		$reviewerSubmission->setCompetingInterests($row['competing_interests']);
 		$reviewerSubmission->setRecommendation($row['recommendation']);
 		$reviewerSubmission->setDateAssigned($this->datetimeFromDB($row['date_assigned']));
@@ -118,8 +119,6 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		$reviewerSubmission->setDateDue($this->datetimeFromDB($row['date_due']));
 		$reviewerSubmission->setDateResponseDue($this->datetimeFromDB($row['date_response_due']));
 		$reviewerSubmission->setDeclined($row['declined']);
-		$reviewerSubmission->setReplaced($row['replaced']);
-		$reviewerSubmission->setCancelled((int) $row['cancelled']);
 		$reviewerSubmission->setQuality($row['quality']);
 		$reviewerSubmission->setRound($row['round']);
 		$reviewerSubmission->setStep($row['step']);
@@ -127,18 +126,6 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		$reviewerSubmission->setReviewMethod($row['review_method']);
 
 		HookRegistry::call('ReviewerSubmissionDAO::_fromRow', array(&$reviewerSubmission, &$row));
-		return $reviewerSubmission;
-	}
-
-	/**
-	 * Internal functoin to  return a ReviewerSubmission object from a given row.
-	 * @param $row array
-	 * @return ReviewerSubmission
-	 */
-	 function _returnReviewerSubmissionFromRowWithData($row) {
-		$reviewerSubmission = $this->_fromRow($row);
-		$this->getDataObjectSettings('user_settings', 'user_id', $row['review_id'], $reviewerSubmission);
-
 		return $reviewerSubmission;
 	}
 
@@ -158,8 +145,6 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 					competing_interests = ?,
 					recommendation = ?,
 					declined = ?,
-					replaced = ?,
-					cancelled = ?,
 					date_assigned = %s,
 					date_notified = %s,
 					date_confirmed = %s,
@@ -186,8 +171,6 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 				$reviewerSubmission->getCompetingInterests(),
 				(int) $reviewerSubmission->getRecommendation(),
 				(int) $reviewerSubmission->getDeclined(),
-				(int) $reviewerSubmission->getReplaced(),
-				(int) $reviewerSubmission->getCancelled(),
 				(int) $reviewerSubmission->getQuality(),
 				(int) $reviewerSubmission->getReviewId()
 			)
@@ -225,9 +208,9 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 				'AND r.date_notified IS NOT NULL';
 
 		if ($active) {
-			$sql .=  ' AND r.date_completed IS NULL AND r.declined <> 1 AND (r.cancelled = 0 OR r.cancelled IS NULL)';
+			$sql .=  ' AND r.date_completed IS NULL AND r.declined <> 1';
 		} else {
-			$sql .= ' AND (r.date_completed IS NOT NULL OR r.cancelled = 1 OR r.declined = 1)';
+			$sql .= ' AND (r.date_completed IS NOT NULL OR r.declined = 1)';
 		}
 
 		if ($skipDeclined) {
@@ -249,7 +232,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		if ($journalId) $params[] = (int) $journalId;
 
 		$result = $this->retrieveRange($sql, $params, $rangeInfo);
-		return new DAOResultFactory($result, $this, '_returnReviewerSubmissionFromRowWithData');
+		return new DAOResultFactory($result, $this, '_fromRow');
 	}
 
 	/**
@@ -264,7 +247,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		$submissionsCount[1] = 0;
 
 		$result = $this->retrieve(
-			'SELECT	r.date_completed, r.declined, r.cancelled
+			'SELECT	r.date_completed, r.declined
 			FROM	submissions a
 				LEFT JOIN review_assignments r ON (a.submission_id = r.submission_id)
 				LEFT JOIN section s ON (s.section_id = a.section_id)
@@ -277,7 +260,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		);
 
 		while (!$result->EOF) {
-			if ($result->fields['date_completed'] == null && $result->fields['declined'] != 1 && $result->fields['cancelled'] != 1) {
+			if ($result->fields['date_completed'] == null && $result->fields['declined'] != 1) {
 				$submissionsCount[0] += 1; // Active
 			} else {
 				$submissionsCount[1] += 1; // Complete

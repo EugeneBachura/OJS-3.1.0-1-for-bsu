@@ -26,8 +26,8 @@ class IdentityForm extends BaseProfileForm {
 		parent::__construct('user/identityForm.tpl', $user);
 
 		// Validation checks for this form
-		$this->addCheck(new FormValidatorLocale($this, 'firstName', 'required', 'user.profile.form.firstNameRequired'));
-		$this->addCheck(new FormValidatorLocale($this, 'lastName', 'required', 'user.profile.form.lastNameRequired'));
+		$this->addCheck(new FormValidator($this, 'firstName', 'required', 'user.profile.form.firstNameRequired'));
+		$this->addCheck(new FormValidator($this, 'lastName', 'required', 'user.profile.form.lastNameRequired'));
 	}
 
 	/**
@@ -56,10 +56,10 @@ class IdentityForm extends BaseProfileForm {
 
 		$this->_data = array(
 			'salutation' => $user->getSalutation(),
-			'firstName' => $user->getLocalizedFirstName(),
-			'middleName' => $user->getLocalizedMiddleName(),
+			'firstName' => $user->getFirstName(),
+			'middleName' => $user->getMiddleName(),
 			'initials' => $user->getInitials(),
-			'lastName' => $user->getLocalizedLastName(),
+			'lastName' => $user->getLastName(),
 			'suffix' => $user->getSuffix(),
 			'gender' => $user->getGender(),
 		);
@@ -83,10 +83,10 @@ class IdentityForm extends BaseProfileForm {
 		$user = $request->getUser();
 
 		$user->setSalutation($this->getData('salutation'));
-		$user->setFirstName($this->getData('firstName'), null); // Localized
-		$user->setMiddleName($this->getData('middleName'), null); // Localized
+		$user->setFirstName($this->getData('firstName'));
+		$user->setMiddleName($this->getData('middleName'));
 		$user->setInitials($this->getData('initials'));
-		$user->setLastName($this->getData('lastName'), null); // Localized
+		$user->setLastName($this->getData('lastName'));
 		$user->setSuffix($this->getData('suffix'));
 		$user->setGender($this->getData('gender'));
 

@@ -32,21 +32,12 @@ class ReviewAssignmentDAO extends DAO {
 	/**
 	 * Retrieve review assignments for the passed review round id.
 	 * @param $reviewRoundId int
-	 * @param $excludeCancelled boolean
 	 * @return array
 	 */
-	function getByReviewRoundId($reviewRoundId, $excludeCancelled = false) {
+	function getByReviewRoundId($reviewRoundId) {
 		$params = array((int)$reviewRoundId);
-
 		$query = $this->_getSelectQuery() .
-			' WHERE r.review_round_id = ?';
-
-		if ($excludeCancelled) {
-			$query .= ' AND (r.cancelled = 0 OR r.cancelled IS NULL)';
-		}
-
-		$query .= ' ORDER BY review_id';
-
+			' WHERE r.review_round_id = ? ORDER BY review_id';
 		return $this->_getReviewAssignmentsArray($query, $params);
 	}
 
@@ -63,7 +54,7 @@ class ReviewAssignmentDAO extends DAO {
 		$result = $this->retrieve($query, $queryParams);
 
 		while (!$result->EOF) {
-			$reviewAssignments[$result->fields['review_id']] = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+			$reviewAssignments[$result->fields['review_id']] = $this->_fromRow($result->GetRowAssoc(false));
 			$result->MoveNext();
 		}
 
@@ -94,8 +85,7 @@ class ReviewAssignmentDAO extends DAO {
 		$result = $this->retrieve(
 			$this->_getSelectQuery() .
 			' WHERE	r.review_round_id = ? AND
-				r.reviewer_id = ? AND
-				r.cancelled <> 1',
+				r.reviewer_id = ?',
 			array(
 				(int) $reviewRoundId,
 				(int) $reviewerId
@@ -104,7 +94,7 @@ class ReviewAssignmentDAO extends DAO {
 
 		$returner = null;
 		if ($result->RecordCount() != 0) {
-			$returner = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+			$returner = $this->_fromRow($result->GetRowAssoc(false));
 		}
 
 		$result->Close();
@@ -131,7 +121,7 @@ class ReviewAssignmentDAO extends DAO {
 
 			$returner = null;
 			if ($result->RecordCount() != 0) {
-				$returner = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+				$returner = $this->_fromRow($result->GetRowAssoc(false));
 			}
 
 			$result->Close();
@@ -160,7 +150,7 @@ class ReviewAssignmentDAO extends DAO {
 			);
 
 			while (!$result->EOF) {
-				$reviewAssignments[] = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+				$reviewAssignments[] = $this->_fromRow($result->GetRowAssoc(false));
 				$result->MoveNext();
 			}
 
@@ -178,8 +168,7 @@ class ReviewAssignmentDAO extends DAO {
 	 * @return string
 	 */
 	function getIncompleteReviewAssignmentsWhereString() {
-		return ' (r.cancelled IS NULL OR r.cancelled = 0) AND
-		r.date_notified IS NOT NULL AND
+		return ' r.date_notified IS NOT NULL AND
 		r.date_completed IS NULL AND
 		r.declined <> 1';
 	}
@@ -239,7 +228,7 @@ class ReviewAssignmentDAO extends DAO {
 			);
 
 			while (!$result->EOF) {
-				$reviewAssignments[] = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+				$reviewAssignments[] = $this->_fromRow($result->GetRowAssoc(false));
 				$result->MoveNext();
 			}
 
@@ -262,8 +251,7 @@ class ReviewAssignmentDAO extends DAO {
 				'SELECT COUNT(*)
 				FROM	review_assignments
 				WHERE	review_round_id = ? AND
-				reviewer_id = ? AND
-				cancelled = 0',
+				reviewer_id = ?',
 				array((int) $reviewRoundId, (int) $reviewerId)
 		);
 		$returner = isset($result->fields[0]) && $result->fields[0] == 1 ? true : false;
@@ -293,41 +281,7 @@ class ReviewAssignmentDAO extends DAO {
 			);
 
 			while (!$result->EOF) {
-				$reviewAssignments[] = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
-				$result->MoveNext();
-			}
-
-			$result->Close();
-		} else {
-			assert(false);
-		}
-
-		return $reviewAssignments;
-	}
-
-	/**
-	 * Get all cancelled/declined review assignments for a submission.
-	 * @param $submissionId int
-	 * @return array ReviewAssignments
-	 */
-	function getCancelsAndRegrets($submissionId) {
-		$reviewAssignments = array();
-		$reviewRoundJoinString = $this->getReviewRoundJoin();
-
-		if ($reviewRoundJoinString) {
-			$result = $this->retrieve(
-				'SELECT	r.*, r2.review_revision, u.first_name, u.last_name
-				FROM	review_assignments r
-					LEFT JOIN users u ON (r.reviewer_id = u.user_id)
-					LEFT JOIN review_rounds r2 ON (' . $reviewRoundJoinString . ')
-				WHERE	r.submission_id = ? AND
-					(r.cancelled = 1 OR r.declined = 1)
-				ORDER BY round, review_id',
-				(int) $submissionId
-			);
-
-			while (!$result->EOF) {
-				$reviewAssignments[] = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+				$reviewAssignments[] = $this->_fromRow($result->GetRowAssoc(false));
 				$result->MoveNext();
 			}
 
@@ -350,8 +304,7 @@ class ReviewAssignmentDAO extends DAO {
 			'SELECT	review_id
 			FROM	review_assignments
 			WHERE	submission_id = ? AND
-				review_round_id = ? AND
-				(cancelled = 0 OR cancelled IS NULL)
+				review_round_id = ?
 			ORDER BY review_id',
 			array((int) $submissionId, (int) $reviewRoundId)
 		);
@@ -373,7 +326,7 @@ class ReviewAssignmentDAO extends DAO {
 	 * @param $reviewAssignment ReviewAssignment
 	 */
 	function insertObject($reviewAssignment) {
-		$this->update(
+		$result = $this->update(
 			sprintf('INSERT INTO review_assignments (
 				submission_id,
 				reviewer_id,
@@ -382,7 +335,7 @@ class ReviewAssignmentDAO extends DAO {
 				round,
 				competing_interests,
 				recommendation,
-				declined, replaced, cancelled,
+				declined,
 				date_assigned, date_notified, date_confirmed,
 				date_completed, date_acknowledged, date_due, date_response_due,
 				quality, date_rated,
@@ -392,7 +345,7 @@ class ReviewAssignmentDAO extends DAO {
 				review_round_id,
 				unconsidered
 				) VALUES (
-				?, ?, ?, ?, ?, ?, ?, ?, ?, ?, %s, %s, %s, %s, %s, %s, %s, ?, %s, %s, %s, ?, ?, ?, ?
+				?, ?, ?, ?, ?, ?, ?, ?, %s, %s, %s, %s, %s, %s, %s, ?, %s, %s, %s, ?, ?, ?, ?
 				)',
 				$this->datetimeToDB($reviewAssignment->getDateAssigned()),
 				$this->datetimeToDB($reviewAssignment->getDateNotified()),
@@ -413,8 +366,6 @@ class ReviewAssignmentDAO extends DAO {
 				$reviewAssignment->getCompetingInterests(),
 				$reviewAssignment->getRecommendation(),
 				(int) $reviewAssignment->getDeclined(),
-				(int) $reviewAssignment->getReplaced(),
-				(int) $reviewAssignment->getCancelled(),
 				$reviewAssignment->getQuality(),
 				(int) $reviewAssignment->getReminderWasAutomatic(),
 				$reviewAssignment->getReviewFormId(),
@@ -424,7 +375,9 @@ class ReviewAssignmentDAO extends DAO {
 		);
 
 		$reviewAssignment->setId($this->getInsertId());
-		return $reviewAssignment->getId();
+
+		// Update review stage status whenever a review assignment is changed
+		$this->updateReviewRoundStatus($reviewAssignment);
 	}
 
 	/**
@@ -432,7 +385,7 @@ class ReviewAssignmentDAO extends DAO {
 	 * @param $reviewAssignment object
 	 */
 	function updateObject($reviewAssignment) {
-		return $this->update(
+		$result = $this->update(
 			sprintf('UPDATE review_assignments
 				SET	submission_id = ?,
 					reviewer_id = ?,
@@ -442,8 +395,6 @@ class ReviewAssignmentDAO extends DAO {
 					competing_interests = ?,
 					recommendation = ?,
 					declined = ?,
-					replaced = ?,
-					cancelled = ?,
 					date_assigned = %s,
 					date_notified = %s,
 					date_confirmed = %s,
@@ -470,8 +421,6 @@ class ReviewAssignmentDAO extends DAO {
 				$reviewAssignment->getCompetingInterests(),
 				$reviewAssignment->getRecommendation(),
 				(int) $reviewAssignment->getDeclined(),
-				(int) $reviewAssignment->getReplaced(),
-				(int) $reviewAssignment->getCancelled(),
 				$reviewAssignment->getQuality(),
 				$reviewAssignment->getReminderWasAutomatic(),
 				$reviewAssignment->getReviewFormId(),
@@ -480,6 +429,32 @@ class ReviewAssignmentDAO extends DAO {
 				(int) $reviewAssignment->getId()
 			)
 		);
+
+		// Update review stage status whenever a review assignment is changed
+		$this->updateReviewRoundStatus($reviewAssignment);
+	}
+
+	/**
+	 * Update the status of the review round an assignment is attached to. This
+	 * should be fired whenever a reviewer assignment is modified.
+	 *
+	 * @param $reviewAssignment ReviewAssignment
+	 */
+	public function updateReviewRoundStatus($reviewAssignment) {
+		import('lib.pkp.classes.submission.reviewRound/ReviewRoundDAO');
+		$reviewRoundDao = DAORegistry::getDAO('ReviewRoundDAO');
+		$reviewRound = $reviewRoundDao->getReviewRound(
+			$reviewAssignment->getSubmissionId(),
+			$reviewAssignment->getStageId(),
+			$reviewAssignment->getRound()
+		);
+
+		// Review round may not exist if submission is being deleted
+		if ($reviewRound) {
+			return $reviewRoundDao->updateStatus($reviewRound);
+		}
+
+		return false;
 	}
 
 	/**
@@ -493,6 +468,7 @@ class ReviewAssignmentDAO extends DAO {
 		$reviewAssignment->setId($row['review_id']);
 		$reviewAssignment->setSubmissionId($row['submission_id']);
 		$reviewAssignment->setReviewerId($row['reviewer_id']);
+		$reviewAssignment->setReviewerFullName($row['first_name'].' '.$row['last_name']);
 		$reviewAssignment->setCompetingInterests($row['competing_interests']);
 		$reviewAssignment->setRecommendation($row['recommendation']);
 		$reviewAssignment->setDateAssigned($this->datetimeFromDB($row['date_assigned']));
@@ -504,8 +480,6 @@ class ReviewAssignmentDAO extends DAO {
 		$reviewAssignment->setDateResponseDue($this->datetimeFromDB($row['date_response_due']));
 		$reviewAssignment->setLastModified($this->datetimeFromDB($row['last_modified']));
 		$reviewAssignment->setDeclined($row['declined']);
-		$reviewAssignment->setReplaced($row['replaced']);
-		$reviewAssignment->setCancelled($row['cancelled']);
 		$reviewAssignment->setQuality($row['quality']);
 		$reviewAssignment->setDateRated($this->datetimeFromDB($row['date_rated']));
 		$reviewAssignment->setDateReminded($this->datetimeFromDB($row['date_reminded']));
@@ -516,18 +490,6 @@ class ReviewAssignmentDAO extends DAO {
 		$reviewAssignment->setReviewMethod($row['review_method']);
 		$reviewAssignment->setStageId($row['stage_id']);
 		$reviewAssignment->setUnconsidered($row['unconsidered']);
-
-		return $reviewAssignment;
-	}
-
-	/**
-	 * Internal functoin to  return a ReviewAssignment object from a given row.
-	 * @param $row array
-	 * @return ReviewAssignment
-	 */
-	 function _returnReviewAssignmentFromRowWithData($row) {
-		$reviewAssignment = $this->_fromRow($row);
-		$this->getDataObjectSettings('user_settings', 'user_id', $row['reviewer_id'], $reviewAssignment);
 
 		return $reviewAssignment;
 	}
@@ -554,10 +516,19 @@ class ReviewAssignmentDAO extends DAO {
 		$notificationDao = DAORegistry::getDAO('NotificationDAO');
 		$notificationDao->deleteByAssoc(ASSOC_TYPE_REVIEW_ASSIGNMENT, $reviewId);
 
-		return $this->update(
+		// Retrieve the review assignment before it's deleted, so it can be
+		// be used to fire an update on the review round status.
+		import('lib.pkp.classes.submission.reviewRound/ReviewRoundDAO');
+		$reviewAssignment = $this->getById($reviewId);
+
+		$result = $this->update(
 			'DELETE FROM review_assignments WHERE review_id = ?',
 			(int) $reviewId
 		);
+
+		$this->updateReviewRoundStatus($reviewAssignment);
+
+		return $result;
 	}
 
 	/**
@@ -605,15 +576,14 @@ class ReviewAssignmentDAO extends DAO {
 		$result = $this->retrieve(
 				$this->_getSelectQuery() .
 				' WHERE	r.submission_id = ? AND
-				r.reviewer_id = ? AND
-				r.cancelled <> 1
+				r.reviewer_id = ?
 				ORDER BY r2.stage_id DESC, r2.round DESC LIMIT 1',
 				$params
 		);
 
 		$returner = null;
 		if ($result->RecordCount() != 0) {
-			$returner = $this->_returnReviewAssignmentFromRowWithData($result->GetRowAssoc(false));
+			$returner = $this->_fromRow($result->GetRowAssoc(false));
 		}
 
 		$result->Close();

@@ -114,8 +114,7 @@ class RegistrationForm extends Form {
 
 		// If a context exists, opt the user into reader and author roles in
 		// that context by default.
-		if ($request->getContext()) {
-			$context = $request->getContext();
+		if (($context = $request->getContext()) && !$context->getSetting('disableUserReg')) {
 			$userGroupDao = DAORegistry::getDAO('UserGroupDAO');
 
 			$readerUserGroups = $userGroupDao->getByRoleId($context->getId(), ROLE_ID_READER);
@@ -260,9 +259,10 @@ class RegistrationForm extends Form {
 			$mail = new MailTemplate('USER_VALIDATE');
 			$this->_setMailFrom($request, $mail);
 			$context = $request->getContext();
+			$contextPath = $context ? $context->getPath() : null;
 			$mail->assignParams(array(
 				'userFullName' => $user->getFullName(),
-				'activateUrl' => $request->url($context->getPath(), 'user', 'activateUser', array($this->getData('username'), $accessKey))
+				'activateUrl' => $request->url($contextPath, 'user', 'activateUser', array($this->getData('username'), $accessKey))
 			));
 			$mail->addRecipient($user->getEmail(), $user->getFullName());
 			$mail->send();
@@ -274,7 +274,7 @@ class RegistrationForm extends Form {
 	/**
 	 * Set mail from address
 	 * @param $request PKPRequest
-	 * @param MailTemplate $mail
+	 * @param $mail MailTemplate
 	 */
 	function _setMailFrom($request, $mail) {
 		$site = $request->getSite();
