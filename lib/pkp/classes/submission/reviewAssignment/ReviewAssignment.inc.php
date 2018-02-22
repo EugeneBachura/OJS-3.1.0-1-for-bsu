@@ -85,20 +85,12 @@ class ReviewAssignment extends DataObject {
 	}
 
 	/**
-	 * Get full name of reviewer.
+	 * Get localized full name of reviewer.
 	 * @return string
 	 */
 	function getReviewerFullName() {
-		return $this->getData('reviewerFullName');
-	}
-
-	/**
-	 * Set full name of reviewer.
-	 * @param $reviewerFullName string
-	 */
-	function setReviewerFullName($reviewerFullName) {
-		$this->setData('reviewerFullName', $reviewerFullName);
-	}
+		return $this->getLocalizedData('firstName'). ' '.$this->getLocalizedData('lastName');
+ 	}
 
 	/**
 	 * Get reviewer comments.

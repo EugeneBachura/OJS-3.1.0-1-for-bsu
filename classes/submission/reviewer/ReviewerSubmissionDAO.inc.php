@@ -73,7 +73,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 
 		$returner = null;
 		if ($result->RecordCount() != 0) {
-			$returner = $this->_fromRow($result->GetRowAssoc(false));
+			$returner = $this->_returnReviewerSubmissionFromRowWithData($result->GetRowAssoc(false));
 		}
 
 		$result->Close();
@@ -108,7 +108,6 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		// Review Assignment
 		$reviewerSubmission->setReviewId($row['review_id']);
 		$reviewerSubmission->setReviewerId($row['reviewer_id']);
-		$reviewerSubmission->setReviewerFullName($row['first_name'].' '.$row['last_name']);
 		$reviewerSubmission->setCompetingInterests($row['competing_interests']);
 		$reviewerSubmission->setRecommendation($row['recommendation']);
 		$reviewerSubmission->setDateAssigned($this->datetimeFromDB($row['date_assigned']));
@@ -129,6 +128,18 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		return $reviewerSubmission;
 	}
 
+	/**
+	 * Internal functoin to  return a ReviewerSubmission object from a given row.
+	 * @param $row array
+	 * @return ReviewerSubmission
+	 */
+	 function _returnReviewerSubmissionFromRowWithData($row) {
+		$reviewerSubmission = $this->_fromRow($row);
+		$this->getDataObjectSettings('user_settings', 'user_id', $row['review_id'], $reviewerSubmission);
+
+		return $reviewerSubmission;
+	}
+	
 	/**
 	 * Update an existing review submission.
 	 * @param $reviewSubmission ReviewSubmission
@@ -232,7 +243,7 @@ class ReviewerSubmissionDAO extends ArticleDAO {
 		if ($journalId) $params[] = (int) $journalId;
 
 		$result = $this->retrieveRange($sql, $params, $rangeInfo);
-		return new DAOResultFactory($result, $this, '_fromRow');
+		return new DAOResultFactory($result, $this, '_returnReviewerSubmissionFromRowWithData');
 	}
 
 	/**

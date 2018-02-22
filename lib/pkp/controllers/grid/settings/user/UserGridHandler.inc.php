@@ -16,6 +16,7 @@
 import('lib.pkp.classes.controllers.grid.GridHandler');
 import('lib.pkp.classes.controllers.grid.DataObjectGridCellProvider');
 
+import('lib.pkp.controllers.grid.settings.user.UserGridCellProvider');
 import('lib.pkp.controllers.grid.settings.user.UserGridRow');
 import('lib.pkp.controllers.grid.settings.user.form.UserDetailsForm');
 
@@ -86,7 +87,7 @@ class UserGridHandler extends GridHandler {
 		//
 		// Grid columns.
 		//
-		$cellProvider = new DataObjectGridCellProvider();
+		$userGridCellProvider = new UserGridCellProvider();
 
 		// First Name.
 		$this->addColumn(
@@ -95,7 +96,7 @@ class UserGridHandler extends GridHandler {
 				'user.firstName',
 				null,
 				null,
-				$cellProvider
+				$userGridCellProvider
 			)
 		);
 
@@ -106,7 +107,7 @@ class UserGridHandler extends GridHandler {
 				'user.lastName',
 				null,
 				null,
-				$cellProvider
+				$userGridCellProvider
 			)
 		);
 
