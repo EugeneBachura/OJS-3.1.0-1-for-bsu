@@ -29,7 +29,7 @@
 installed = On
 
 ; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "http://journals.bsu.by"
+base_url = "http://probajournal.bsu.by/"
 
 ; Session cookie name
 session_cookie_name = OJSSID
@@ -185,17 +185,17 @@ client_charset = utf-8
 ; Must be set to "Off" if not supported by the database server
 ; If enabled, must be the same character set as "client_charset"
 ; (although the actual name may differ slightly depending on the server)
-connection_charset = Off
+connection_charset = utf8
 
 ; Database storage character set
 ; Must be set to "Off" if not supported by the database server
-database_charset = Off
+database_charset = utf8
 
 ; Enable character normalization to utf-8 (recommended)
 ; If disabled, strings will be passed through in their native encoding
 ; Note that client_charset and database collation must be set
 ; to "utf-8" for this to work, as characters are stored in utf-8
-charset_normalization = Off
+charset_normalization = utf-8
 
 ;;;;;;;;;;;;;;;;;
 ; File Settings ;
