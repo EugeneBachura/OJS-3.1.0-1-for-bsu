@@ -58,15 +58,17 @@
 		</div>
 	{/if}
 
+	{* Additional Homepage Content *}
+	{if $additionalHomeContent}
+		<div class="additional_content">
+			{$additionalHomeContent}
+		</div>
+	{/if}
+	
 	{* Latest issue *}
 	{if $issue}
+		<div class="clear" ></div>
 		<div class="current_issue">
-			<h2>
-				{translate key="journal.currentIssue"}
-			</h2>
-			<div class="current_issue_title">
-				{$issue->getIssueIdentification()|strip_unsafe_html}
-			</div>
 			{include file="frontend/objects/issue_toc.tpl"}
 			<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="read_more">
 				{translate key="journal.viewAllIssues"}
@@ -74,12 +76,6 @@
 		</div>
 	{/if}
 
-	{* Additional Homepage Content *}
-	{if $additionalHomeContent}
-		<div class="additional_content">
-			{$additionalHomeContent}
-		</div>
-	{/if}
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
