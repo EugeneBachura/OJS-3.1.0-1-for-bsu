@@ -65,16 +65,6 @@
 		</div>
 	{/if}
 	
-	{* Latest issue *}
-	{if $issue}
-		<div class="clear" ></div>
-		<div class="current_issue">
-			{include file="frontend/objects/issue_toc.tpl"}
-			<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="read_more">
-				{translate key="journal.viewAllIssues"}
-			</a>
-		</div>
-	{/if}
 
 </div><!-- .page -->
 

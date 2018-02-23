@@ -63,6 +63,17 @@
 			{/if}
 		{/foreach}
 
+		{* Published date *}
+		{if $issue->getDatePublished()}
+			<div class="published">
+				<span class="label">
+					{translate key="submissions.published"}:
+				</span>
+				<span class="value">
+					{$issue->getDatePublished()|date_format:$dateFormatShort}
+				</span>
+			</div>
+		{/if}
 	</div>
 
 	{* Full-issue galleys *}
