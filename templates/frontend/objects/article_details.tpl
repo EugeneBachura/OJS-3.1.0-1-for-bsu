@@ -255,6 +255,7 @@
 				</div>
 			{/if}
 
+			{* Keywords *}
 			{if $keywords|@count}
 				<div class="item published">
 					<div class="label">
@@ -266,6 +267,24 @@
 						 		{$keyword}
 							{else}
 								{$keyword},
+							{/if}
+						{/foreach}
+					</div>
+				</div>
+			{/if}
+			
+			{* Supporting agencies *}
+			{if $agencies|@count}
+				<div class="item published">
+					<div class="label">
+						{translate key="submission.supportingAgencies"}
+					</div>
+					<div class="value">
+						{foreach from=$agencies key=counter item=agency}
+						 	{if $counter == $agencies|@count - 1}
+						 		{$agency}
+							{else}
+								{$agency},
 							{/if}
 						{/foreach}
 					</div>
