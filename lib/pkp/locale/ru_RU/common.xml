@@ -562,4 +562,7 @@
 	<message key="notification.addedNavigationMenu">Меню навигации было успешно добавлено</message>
 	<message key="notification.editedNavigationMenu">Меню навигации было успешно обновлено</message>
 	<message key="notification.removedNavigationMenu">Меню навигации было успешно удалено</message>
+	
+	<message key="common.onlineIssn">ISSN онлайн-версии</message>
+	<message key="common.printIssn">ISSN печатной версии</message>
 </locale>

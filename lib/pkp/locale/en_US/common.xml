@@ -561,4 +561,7 @@
 	<message key="notification.addedNavigationMenu">Navigation menu was succesfully added</message>
 	<message key="notification.editedNavigationMenu">Navigation menu was succesfully updated</message>
 	<message key="notification.removedNavigationMenu">Navigation menu was succesfully removed</message>
+	
+	<message key="common.onlineIssn">Online ISSN</message>
+	<message key="common.printIssn">Print ISSN</message>
 </locale>
