@@ -255,6 +255,23 @@
 				</div>
 			{/if}
 
+			{if $keywords|@count}
+				<div class="item published">
+					<div class="label">
+						{translate key="article.subject"}
+					</div>
+					<div class="value">
+						{foreach from=$keywords key=counter item=keyword}
+						 	{if $counter == $keywords|@count - 1}
+						 		{$keyword}
+							{else}
+								{$keyword},
+							{/if}
+						{/foreach}
+					</div>
+				</div>
+			{/if}
+			
 			{* How to cite *}
 			{if $citation}
 				<div class="item citation">
