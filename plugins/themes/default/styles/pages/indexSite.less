@@ -53,39 +53,40 @@
 			}
 		}
 
-		@media(min-width: @screen-phone) {
+		@media (min-width: @screen-phone) {
 			.thumb {
 				padding-bottom: 10px;
 			}
-		
-		@media(min-width: @screen-tablet) {
 
-			> ul > li {
-				.pkp_helpers_clear;
-				margin: 0 -@double;
-				padding: @double;
-				border-top: @bg-border;
-			}
+			@media (min-width: @screen-tablet) {
 
-			.thumb {
-				float: left;
-				width: 200px;
-				box-sizing: content-box;
+				> ul > li {
+					.pkp_helpers_clear;
+					margin: 0 -@double;
+					padding: @double;
+					border-top: @bg-border;
+				}
 
-				+ .body {
-					float: right;
-					width: 75%;
+				.thumb {
+					float: left;
+					width: 200px;
+					box-sizing: content-box;
+
+					+ .body {
+						float: right;
+						width: 75%;
+					}
 				}
 			}
-		}
 
-		@media(min-width: @screen-desktop) {
+			@media (min-width: @screen-desktop) {
 
-			> ul > li {
-				margin: 0 -@triple;
-				padding: @triple;
+				> ul > li {
+					margin: 0 -@triple;
+					padding: @triple;
+				}
+
 			}
-
 		}
 	}
 }
