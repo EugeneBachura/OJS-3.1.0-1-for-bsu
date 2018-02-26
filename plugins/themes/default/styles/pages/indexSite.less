@@ -53,9 +53,10 @@
 			}
 		}
 
-		.thumb:nth-child(6n) {
-			clear: left;
-		}
+		@media(min-width: @screen-phone) {
+			.thumb {
+				padding-bottom: 10px;
+			}
 		
 		@media(min-width: @screen-tablet) {
 
@@ -68,9 +69,8 @@
 
 			.thumb {
 				float: left;
-				width: 25%;
-				padding-right: @double;
-				margin-top: @double;
+				width: 200px;
+				box-sizing: content-box;
 
 				 .body {
 					float: right;
@@ -86,9 +86,6 @@
 				padding: @triple;
 			}
 
-			.thumb {
-				padding-right: @triple;
-			}
 		}
 	}
 }

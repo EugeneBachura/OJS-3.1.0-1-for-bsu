@@ -66,7 +66,7 @@ class GoogleScholarPlugin extends GenericPlugin {
 		}
 
 		foreach ($article->getAuthors() as $i => $author) {
-			$templateMgr->addHeader('googleScholarAuthor' . $i, '<meta name="citation_author" content="' . htmlspecialchars($author->getLocalizedFirstName()) . (($middleName = htmlspecialchars($author->getLocalizedMiddleName()))?" $middleName":'') . ' ' . htmlspecialchars($author->getLocalizedLastName()) . '"/>');
+			$templateMgr->addHeader('googleScholarAuthor' . $i, '<meta name="citation_author" content="' . htmlspecialchars($author->$author->getFirstName($article->getLocale())) . (($middleName = htmlspecialchars($author->getMiddleName($article->getLocale())))?" $middleName":'') . ' ' . htmlspecialchars($author->getLastName($article->getLocale())) . '"/>');
 			if ($affiliation = htmlspecialchars($author->getAffiliation($article->getLocale()))) {
 				$templateMgr->addHeader('googleScholarAuthor' . $i . 'Affiliation', '<meta name="citation_author_institution" content="' . $affiliation . '"/>');
 			}
