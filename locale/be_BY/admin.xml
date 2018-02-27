@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/admin.xml
+  *
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="admin.hostedJournals">Часопісы на сайце</message>
+	<message key="admin.settings.journalRedirect">Перанакіраванне часопіса</message>
+	<message key="admin.settings.options">Параметры</message>
+	<message key="admin.settings.usePaging">Для сайтаў з вялікай колькасцю часопісаў разбіваць спіс часопісаў на некалькі старонак.</message>
+	<message key="admin.settings.journalRedirectInstructions">Асноўнай старонкай сайта стане галоўная старонка гэтага часопіса. Гэта зручна, напрыклад, калі на сайце размешчаны толькі адзін часопіс.</message>
+	<message key="admin.settings.noJournalRedirect">Не перанакіроўваць</message>
+	<message key="admin.settings.journalsList">Элементы часопіса</message>
+	<message key="admin.settings.journalsList.description">Калі ласка, выберыце элементы часопіса, якія будуць паказаны для кожнага часопіса на старонцы сайта.</message>
+	<message key="admin.settings.journalsList.showThumbnail">Мініяцюра часопіса</message>
+	<message key="admin.settings.journalsList.showTitle">Назва часопіса</message>
+	<message key="admin.settings.journalsList.showDescription">Апісанне часопіса</message>
+	<message key="admin.settings.defaultMetricDescription">
+		Ваша інсталяцыя OJS наладжана на запіс некалькіх метрык выкарыстання. Статыстыка выкарыстання будзе падавацца ў некалькіх кантэкстах.
+		Ёсць выпадкі, калі павінна прымяняцца толькі адна статыстыка выкарыстання, напрыклад, каб паказаць упарадкаваны спіс найбольш запатрабаваных артыкулаў або ранжыраваць
+		вынікі пошуку. Калі ласка, выберыце адну з наладжаных метрык у якасці метрыкі па змоўчанні.
+	</message>
+	<message key="admin.languages.confirmDisable">Вы ўпэўнены, што хочаце адключыць гэту мову? Гэта можа паўплываць на ўсе размешчаныя часопісы, якія цяпер выкарыстоўваюць яе.</message>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Скачивание языковых пакетов с веб-сервера Public Knowledge Project сейчас недоступно, поскольку:</p>
+	<ul>
+		<li>На вашем сервере утилита GNU «tar» не установлена или не разрешено выполнение ее сервером.</li>
+		<li>OJS нет может изменить файл списка языков, обычно расположенный в «registry/locales.xml».</li>
+	</ul>
+<p>Языковые пакеты могут быть вручную скачаны с <a href="http://pkp.sfu.ca">веб-сайта PKP</a>.</p>]]></message>
+
+	<message key="admin.languages.primaryLocaleInstructions">Гэта будзе мова па змоўчанні для сайта і для ўсіх размешчаных на ім часопісаў.</message>
+	<message key="admin.languages.supportedLocalesInstructions">Выберыце ўсе мовы для падтрымкі на сайце. Выбраныя мовы будуць даступны для ўсіх часопісаў, размешчаных на гэтым сайце, а таксама з'явяцца ў меню выбару моў на кожнай старонцы сайта (гэта наладка можа быць зменена на старонках канкрэтнага часопіса). Калі выбрана толькі адна мова, меню пераключэння моў не будзе паказвацца, дадатковыя наладкі моў для часопісаў таксама не будуць даступны.</message>
+	<message key="admin.locale.maybeIncomplete">Падтрымка адзначаных моў можа быць няпоўнай.</message>
+	<message key="admin.languages.confirmUninstall">Вы ўпэўнены, што хочаце выдаліць гэту мову? Гэта можа паўплываць на ўсе размешчаныя часопісы, якія цяпер выкарыстоўваюць яе.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Выберыце дадатковыя мовы для ўстаноўкі іх падтрымкі ў гэтай сістэме. Мовы павінны быць устаноўлены да таго, як іх можна будзе выкарыстоўваць у размешчаных часопісах. Глядзіце ў дакументацыі OJS інфармацыю пра тое, як дабавіць падтрымку новых моў.</message>
+	<message key="admin.languages.downloadFailed">Загрузка мовы завяршылася памылкай. Паведамленні ніжэй апісваюць гэту памылку.</message>
+	<message key="admin.languages.localeInstalled">Мова «{$locale}» была ўстаноўлена.</message>
+	<message key="admin.languages.download">Скачаць мову</message>
+	<message key="admin.languages.download.cannotOpen">Немагчыма адкрыць дэскрыптар мовы з вэб-сайта PKP.</message>
+	<message key="admin.languages.download.cannotModifyRegistry">Немагчыма дабавіць новую мову ў файл спіса моў, звычайна размешчаны ў «registry/locales.xml».</message>
+	<message key="admin.auth.ojs">База карыстальнікаў OJS</message>
+	<message key="admin.auth.enableSyncProfiles">Уключыць сінхранізацыю профіляў карыстальнікаў (калі падтрымліваецца гэтым модулем аўтэнтыфікацыі). Інфармацыя профілю карыстальніка будзе аўтаматычна абнаўляцца са знешняй крыніцы пры ўваходзе карыстальніка ў сістэму, а змены ў профілі (у тым ліку змена пароля), зробленыя ўнутры OJS, будуць аўтаматычна ўнесены ў знешнюю крыніцу. Калі гэта наладка выключана, інфармацыя профілю карыстальніка OJS будзе захоўвацца незалежна ад знешняй крыніцы інфармацыі пра профіль карыстальніка.</message>
+	<message key="admin.auth.enableSyncPasswords">Уключыць змяненне пароля карыстальніка (калі падтрымліваецца гэтым модулем аўтэнтыфікацыі). Калі гэта наладка ўключана, карыстальнікі могуць змяняць свой пароль у OJS і выкарыстоўваць магчымасць узнаўлення пароля ў OJS, каб скінуць забыты пароль. Дадзеныя функцыі не будуць даступны для карыстальнікаў з гэтай крыніцай аўтэнтыфікацыі, калі гэта наладка выключана.</message>
+	<message key="admin.auth.enableCreateUsers">Уключыць стварэнне новых карыстальнікаў (калі падтрымліваецца гэтым модулем аўтэнтыфікацыі). Карыстальнікі, створаныя сродкамі OJS з гэтай крыніцай аўтэнтыфікацыі, будуць аўтаматычна дабаўлены ў знешнюю крыніцу аўтэнтыфікацыі, калі яны там адсутнічаюць. Акрамя таго, калі гэта крыніца з'яўляецца крыніцай аўтэнтыфікацыі па змоўчанні, уліковыя запісы OJS, створаныя шляхам рэгістрацыі карыстальнікаў, таксама будуць дабаўлены ў знешнюю крыніцу аўтэнтыфікацыі.</message>
+	<message key="admin.systemVersion">Версія OJS</message>
+	<message key="admin.systemConfiguration">Канфігурацыя OJS</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Параметры конфигурации OJS из <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.journals.createInstructions">Вы будзеце аўтаматычна запісаны кіраўніком гэтага часопіса. Пасля стварэння новага часопіса вы будзеце перанакіраваны на майстар наладкі часопіса для завяршэння першапачатковай наладкі часопіса.</message>
+	<message key="admin.journals.journalSettings">Наладкі часопіса</message>
+	<message key="admin.journals.noneCreated">Ні адзін часопіс не быў створаны.</message>
+	<message key="admin.contexts.confirmDelete">Вы ўпэўнены, што хочаце назаўсёды выдаліць гэты часопіс і ўсё яго змесціва?</message>
+	<message key="admin.contexts.create">Стварыць часопіс</message>
+	<message key="admin.journals.urlWillBe">Гэта павінна быць адно кароткае слова або абрэвіятура, якая ідэнтыфікуе часопіс. URL-адрас часопіса будзе {$sampleUrl}</message>
+	<message key="admin.contexts.form.titleRequired">Назва ўказваецца абавязкова.</message>
+	<message key="admin.contexts.form.pathRequired">Шлях ўказваецца абавязкова.</message>
+	<message key="admin.contexts.form.pathAlphaNumeric">Шлях можа ўтрымліваць толькі літары і лічбы англійскага алфавіта, падкрэсліванні і дэфісы; шлях павінен пачынацца і заканчвацца літарай або лічбай.</message>
+	<message key="admin.contexts.form.pathExists">Выбраны шлях уже выкарыстоўваецца іншым часопісам.</message>
+	<message key="admin.journals.enableJournalInstructions">Уключыць паказ гэтага часопіса для ўсіх на сайце</message>
+	<message key="admin.journals.journalDescription">Апісанне часопіса</message>
+	<message key="admin.journal.pathImportInstructions">Існуючы шлях часопіса або новы шлях для стварэння (напрыклад, «ojs»).</message>
+	<message key="admin.journals.importSubscriptions">Імпартаваць падпіскі</message>
+	<message key="admin.journals.transcode">Перакадзіраваць метаданыя артыкулаў з ISO8859-1</message>
+	<message key="admin.journals.redirect">Генераваць код для пераназначэння адрасоў OJS 1 у адрасы OJS 2</message>
+	<message key="admin.journals.form.importPathRequired">Шлях імпарту абавязковы.</message>
+	<message key="admin.journals.importErrors">Імпартаванне завяршылася няўдачай.</message>
+	<message key="admin.mergeUsers">Аб'яднанне карыстальнікаў</message>
+	<message key="admin.mergeUsers.mergeUser">Аб'яднаць</message>
+	<message key="admin.mergeUsers.into.description">Выберыце карыстальніка, якому будуць перададзены аўтарства папярэдняга карыстальніка, яго рэдакцыйныя заданні і г. д.</message>
+	<message key="admin.mergeUsers.from.description">Выберыце карыстальніка (або некалькіх) для аб'яднання з іншым уліковым запісам карыстальніка (напрыклад, калі хто-небудзь зрабіў сабе два ўліковыя запісы). Уліковы запіс (запісы), выбраны першым, будзе выдалены, а ўсе звязаныя з ім артыкулы, рэдакцыйныя заданні і г. д. будуць далучаны да другога ўліковага запісу.</message>
+	<message key="admin.mergeUsers.allUsers">Усе запісаныя карыстальнікі</message>
+	<message key="admin.mergeUsers.confirm">Вы ўпэўнены, што хочаце аб'яднаць выбраныя {$oldAccountCount} уліковых запісаў ва ўліковы запіс з імем карыстальніка «{$newUsername}»? Выбраныя {$oldAccountCount} уліковыя запісы пасля гэтага перастануць існаваць. Гэта дзеянне нельга адмяніць.</message>
+	<message key="admin.mergeUsers.noneEnrolled">Няма запісаных карыстальнікаў.</message>
+
+	<!-- Категории -->
+	<message key="admin.categories">Катэгорыі</message>
+	<message key="admin.categories.enable.description">Адміністратар сайта можа вызначыць тут набор катэгорый, каб спрасціць парадкаванне вялікай колькасці часопісаў. Менеджары часопісаў потым могуць выбраць некаторыя з гэтых катэгорый для кожнага часопіса, а чытачы змогуць праглядаць калекцыі часопісаў па катэгорыях.</message>
+	<message key="admin.categories.disableCategories">Не парадкаваць часопісы па катэгорыях.</message>
+	<message key="admin.categories.enableCategories">Дазволіць кіраўнікам часопісаў парадкаваць часопісы па катэгорыях.</message>
+	<message key="admin.categories.editTitle">Рэдагаваць катэгорыю</message>
+	<message key="admin.categories.createTitle">Стварыць катэгорыю</message>
+	<message key="admin.categories.create">Стварыць новую катэгорыю</message>
+	<message key="admin.categories.noneCreated">Ні адна катэгорыя не была створана.</message>
+	<message key="admin.categories.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэту катэгорыю?</message>
+	<message key="admin.categories.name">Назва</message>
+	<message key="admin.categories.nameRequired">Назва катэгорыі ўказваецца абавязкова.</message>
+	<message key="admin.presses.createInstructions">Вы будзеце аўтаматычна запісаны кіраўніком гэтага часопіса. Пасля стварэння новага часопіса вы будзеце перанакіраваны на майстар наладкі часопіса для завяршэння першапачатковай наладкі часопіса.</message>
+	<message key="admin.scheduledTask.subscriptionExpiryReminder">Напамін пра заканчэнне падпіскі</message>
+	<message key="admin.scheduledTask.openAccessNotification">Апавяшчэнне пра адкрыты доступ</message>
+	<message key="admin.scheduledTask.reviewReminder">Напамін рэцэнзенту</message>
+</locale>

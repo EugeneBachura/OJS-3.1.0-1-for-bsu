@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../dtd/locale.dtd">
+
+<!--
+  * plugins/metadata/nlm30/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<!-- модуль -->
+	<message key="plugins.metadata.nlm30.displayName">Модуль «Метаданыя NLM 3.0»</message>
+	<message key="plugins.metadata.nlm30.description">Реалізуе схемы і адаптары дадаткаў NLM 3.0.</message>
+
+	<!-- адаптер метаданных ссылок -->
+	<message key="plugins.metadata.nlm30.citationAdapter.displayName">Адаптар бібліяграфічных спасылак NLM 3.0</message>
+	<message key="plugins.metadata.nlm30.citationAdapter.description">Вымае метаданыя з бібліяграфічных спасылак/Збірае метаданыя ў бібліяграфічныя спасылкі.</message>
+
+	<!-- синтаксические анализаторы библиографических ссылок (службы извлечения библиографических ссылок) -->
+	<message key="plugins.metadata.nlm30.citationParsers.displayName">Службы вымання бібліяграфічных спасылак"</message>
+	<message key="plugins.metadata.nlm30.citationParsers.description">Пераўтварае бібліяграфічную спасылку ў выглядзе простага тэксту ў разметку элемента-спасылкі NLM 3.0.</message>
+
+	<!-- поиск библиографических ссылок (службы баз данных/уточнения/поиска библиографических ссылок) -->
+	<message key="plugins.metadata.nlm30.citationLookup.displayName">Службы баз даных бібліяграфічных спасылак на крыніцы</message>
+	<message key="plugins.metadata.nlm30.citationLookup.description">Удакладняе разметку элемента-спасылкі NLM 3.0, напрыклад праз пошук бібліяграфічных спасылак у знешніх базах даных.</message>
+
+	<!-- вывод библиографических ссылок -->
+	<message key="plugins.metadata.nlm30.citationOutput.displayName">Службы вываду бібліяграфічных спасылак</message>
+	<message key="plugins.metadata.nlm30.citationOutput.description">Пераўтварае разметку элемента-спасылкі NLM 3.0 у стандартны вывад бібліяграфічнай спасылкі ў выглядзе простага тэксту.</message>
+	<message key="plugins.metadata.nlm30Xml.citationOutput.displayName">Службы вываду бібліяграфічных спасылак (XML)</message>
+	<message key="plugins.metadata.nlm30Xml.citationOutput.description">Пераўтварае разметку элемента-спасылкі NLM 3.0 у стандартны вывад бібліяграфічнай спасылкі ў XML.</message>
+
+	<!-- вывод NLM 3.0 -->
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Вывад публікацыі часопіса NLM 3.0</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Пераўтварае матэрыял у NLM 3.0.</message>
+
+	<!-- вывод NLM 2.3 -->
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Вывад публікацыі часопіса NLM 2.3</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Пераўтварае матэрыял у NLM 2.3.</message>
+
+	<!-- Преобразование NLM 3.0 в 2.3  -->
+	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Пераўтварэнне публікацыі часопіса з NLM 3.0 у 2.3</message>
+	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.description">Пераўтварае NLM 3.0 у NLM 2.3.</message>
+
+	<!-- Вывод списка библиографических ссылок простым текстом -->
+	<message key="plugins.metadata.nlm30.refList.displayName">Генерацыя спіса бібліяграфічных спасылак у выглядзе простага тэксту</message>
+	<message key="plugins.metadata.nlm30.refList.description">Генерыруе адфарматаваны спіс бібліяграфічных спасылак у выглядзе простага тэксту з літаратуры матэрыялу OJS/OCS/OMP</message>
+</locale>

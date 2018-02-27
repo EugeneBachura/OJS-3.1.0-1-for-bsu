@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/paymethod/paypal/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2006-2009 Gunther Eysenbach, Juan Pablo Alperin, MJ Suhonos
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.paymethod.paypal.displayName">Модуль «Плацяжы праз PayPal»</message>
+
+	<!-- Форма настройки PayPal -->
+	<message key="plugins.paymethod.paypal.settings.paypalenable">Уключыць PayPal</message>
+	<message key="plugins.paymethod.paypal.settings.paypalurl">URL-адрас IPN</message>
+	<message key="plugins.paymethod.paypal.settings.paypalurl.description"><![CDATA[Это URL-адрес службы уведомлений о моментальных платежах PayPal (PayPal's Instant Payment Notification, IPN). Для тестирования используйте <code>https://www.sandbox.paypal.com/cgi-bin/webscr</code>; для реальной работы используйте <code>https://www.paypal.com/cgi-bin/webscr</code>.]]></message>
+	<message key="plugins.paymethod.paypal.settings.selleraccount">Уліковы запіс прадаўца (Seller Account)</message>
+	<message key="plugins.paymethod.paypal.settings.selleraccount.description">Гэта імя карыстальніка ўліковага запісу PayPal, які выкарыстоўвае прадавец, звычайна гэта адрас электроннай пошты. Пераканайцеся, што ў профілі вашага ўліковага запісу прадаўца актывізавана імгненнае апавяшчэнне пра плацяжы (Instant Payment Notification).</message>
+	<message key="plugins.paymethod.paypal.settings.curlNotInstalled">Папярэджанне: падтрымка CURL для PHP не ўстаноўлена. Падтрымка аплаты праз PayPal патрабуе бібліятэкі CURL і не будзе працаваць да таго часу, пакуль яна не будзе ўстаноўлена.</message>
+	<message key="plugins.paymethod.paypal.settings">Наладкі PayPal</message>
+
+	<!-- PayPal -->
+	<message key="plugins.paymethod.paypal">Плацеж праз PayPal</message>
+	<message key="plugins.paymethod.paypal.description"><![CDATA[PayPal позволяет пользователям (не важно, зарегистрированы они на PayPal или нет) использовать все основные кредитные карты. Управляющий должен будет настроить <a href="http://www.paypal.com" target="_new">PayPal Business Account</a>.]]></message>
+	<message key="plugins.paymethod.paypal.warning">Клікніце кнопку «Працягнуць» ніжэй, каб перайсці на сайт PayPal, дзе крэдытныя карты могуць быць выкарыстаны для аплаты (без рэгістрацыі на PayPal). Пасля таго як плацеж будзе зроблены, выкарыстайце кнопку «Вярнуцца да прадаўца», каб вярнуцца на гэты сайт.</message>
+	<message key="plugins.paymethod.paypal.purchase.title">Назва</message>
+	<message key="plugins.paymethod.paypal.purchase.fee">Сума</message>
+	<message key="plugins.paymethod.paypal.purchase.description">Апісанне</message>
+	<message key="plugins.paymethod.paypal.purchase.cancelled">Ваша пакупка была адменена.</message>
+	<message key="plugins.paymethod.paypal.purchase.cancelled.title">Пакупка адменена</message>
+</locale>

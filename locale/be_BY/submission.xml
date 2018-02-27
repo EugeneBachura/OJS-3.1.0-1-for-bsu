@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/submission.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<!-- Мастер отправки -->
+	<message key="submission.submit.title">Адправіць артыкул</message>
+	<message key="submission.submit.userGroup">Адправіць з выкарыстаннем маёй ролі ...</message>
+	<message key="submission.submit.userGroupDescription">Выберыце ролю, пад якой вы адпраўляеце артыкул.</message>
+	<message key="submission.upload.selectComponent">Выбраць кампанент артыкула</message>
+	<message key="submission.title">Загаловак артыкула</message>
+	<message key="submission.title.tip"><![CDATA[Тип материала обычно что-то из «изображение», «текст» или другие типы мультимедиа, включая «программное обеспечение» или «интерактив». Пожалуйста, выберите один наиболее подходящий тип для вашего материала. Примеры можно найти на <a target="_blank" href="http://dublincore.org/documents/2001/04/12/usageguide/generic.shtml#type">http://dublincore.org/documents/2001/04/12/usageguide/generic.shtml#type</a>]]></message>
+	<message key="submission.submit.newSubmissionMultiple">Пачаць адпраўку новага матэрыялу ў</message>
+	<message key="submission.submit.newSubmissionSingle">Новы матэрыял</message>
+	<message key="grid.action.workflow">Працэс адпраўкі</message>
+
+	<message key="submission.issueEntry">Метаданыя</message>
+	<message key="submission.submit.whatNext.description">Часопіс быў апавешчаны пра адпраўку Вамі матэрыялу, пацвярджэнне запісу было даслана на Вашу электронную пошту. Як толькі рэдактар паглядзіць Ваш матэрыял, мы звяжамся з Вамі.</message>
+	<message key="grid.action.galleyInIssueEntry">Гранка з'явілася ў выпуску</message>
+	<message key="grid.action.issueEntry">Паказаць метаданыя гэтага матэрыялу</message>
+
+	<!-- Модальное окно информации об отправленном материале -->
+	<message key="submission.issueEntry.modalTitle">Метаданыя адпраўленага матэрыялу і публікацыі</message>
+	<message key="submission.issueEntry.submissionMetadata">Адпраўлены матэрыял</message>
+	<message key="submission.issueEntry.publicationMetadata">Публікацыя</message>
+	<message key="submission.issueEntry.confirm">Стварыць запіс у выпуску для гэтага артыкула на аснове прыведзеных ніжэй метаданых.</message>
+
+	<!-- события -->
+	<message key="submission.event.articleGalleyMadeAvailable">Гранка артыкула «{$galleyFormatName}» зроблена даступнай.</message>
+	<message key="submission.event.articleGalleyMadeUnavailable">Гранка артыкула «{$galleyFormatName}» зроблена недаступнай.</message>
+	<message key="submission.event.publicIdentifiers">Адкрытыя ідэнтыфікатары адпраўленага матэрыялу абноўлены.</message>
+
+	<!-- стека гранок -->
+	<message key="grid.issueEntry.availableGalley.title">Адабрэнне фармату</message>
+	<message key="grid.issueEntry.availableGalley.removeMessage"><![CDATA[<p>Эту гранку <em>больше нельзя сделать доступной</em> читателям.</p>]]></message>
+	<message key="grid.issueEntry.availableGalley.message"><![CDATA[<p>Эта гранку <em>можно сделать доступной</em> читателям.</p>]]></message>
+	<message key="grid.action.availableArticleGalley">Зрабіць гэту гранку даступнай</message>
+
+	<!-- сетка файлов гранок -->
+	<message key="submission.galleyFiles">Файлы гранак</message>
+	<message key="submission.proofReadingDescription"><![CDATA[Верстальщик загружает сюда полностью готовые файлы, которые подготовлены для публикации. Используйте <em>Назначить аудитора</em>, чтобы определить авторов и других пользователей для корректуры гранок, с загрузкой откорректированных файлов и их одобрением перед публикацией.]]></message>
+	<message key="grid.action.approveProof">Адобрыць гэты чарнавік для ўключэння ў гранку.</message>
+	<message key="grid.action.pageProofApproved">Гэты чарнавік быў адобраны для ўключэння ў гранку.</message>
+	<message key="submission.submit.titleAndSummary">Назва і анатацыя</message>
+	<message key="submission.submit.upload.description">Загрузіць файлы, звязаныя з гэтым матэрыялам: артыкул, мультымедыя, наборы даных, выявы твораў мастацтва і г. д.</message>
+	<message key="submission.pageProofs">Карэктура</message>
+	<message key="submission.confirmSubmit">Вы ўпэўнены, што хочаце адправіць гэты артыкул у часопіс?</message>
+	<message key="workflow.review.externalReview">Рэцэнзаванне</message>
+	<message key="editor.submission.decision.sendExternalReview">Адправіць на рэцэнзію</message>
+	<message key="submission.event.issueMetadataUpdated">Метаданыя выпуску для матэрыялу былі абноўлены.</message>
+
+	<message key="submission.upload.fileContents">Кампанент артыкула</message>
+	<message key="submission.complete">Адобраны</message>
+	<message key="submission.incomplete">Чакае адабрэння</message>
+	<message key="submission.submit.form.localeRequired">Калі ласка, выберыце мову матэрыялу для адпраўкі.</message>
+	<message key="submission.submit.submissionChecklist">Кантрольны спіс падрыхтоўкі матэрыялу для адпраўкі</message>
+	<message key="submission.submit.submissionChecklistDescription">Вы павінны прачытаць і пацвердзіць, што вы выканалі ўсе пералічаныя ніжэй патрабаванні, перш чым працягнуць адпраўку матэрыялу.</message>
+	<message key="submission.submit.privacyStatement">Заява аб канфідэнцыяльнасці</message>
+	<message key="submission.submit.contributorRole">Роля адпраўніка</message>
+	<message key="submission.submit.form.authorRequired">Патрабуецца як мінімум адзін аўтар.</message>
+	<message key="submission.submit.form.authorRequiredFields">Для кожнага аўтара неабходна ўказаць імя, прозвішча і адрас электроннай пошты.</message>
+	<message key="submission.submit.form.titleRequired">Калі ласка, увядзіце назву Вашага артыкула.</message>
+	<message key="submission.submit.form.abstractRequired">Калі ласка, увядзіце анатацыю Вашага артыкула.</message>
+	<message key="submission.submit.form.contributorRoleRequired">Калі ласка, выберыце ролю адпраўніка.</message>
+
+	<message key="submission.citationFormat.notFound">Запытаны фармат афармлення бібліяграфічных спасылак не можа быць атрыманы.</message>
+
+	<message key="submission.metadataDescription">Гэтыя спецыфікацыі заснаваны на наборы метаданых Dublin Core — міжнародным стандарце, які выкарыстоўваецца для апісання кантэнту часопіса.</message>
+	<message key="section.any">Любы раздзел</message>
+</locale>

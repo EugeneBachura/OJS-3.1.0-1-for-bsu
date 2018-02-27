@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/pubIds/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+ 
+<locale name="be_BY" full_name="Беларускi">
+	<!-- плагин -->
+	<message key="plugins.importexport.pubIds.displayName">Модуль «XML для адкрытых ідэнтыфікатараў»</message>
+	<message key="plugins.importexport.pubIds.description">Імпартруе і экспартуе адкрытыя ідэнтыфікатары</message>
+
+	<message key="plugins.importexport.pubIds.cliUsage"><![CDATA[Вызов: {$scriptName} {$pluginName} [команда] ...
+Команды:
+	import [ИмяФайлаXML] [путь_журнала] [имя_пользователя]
+	export [ИмяФайлаXML] [путь_журнала] issues [IdВыпуска1] [IdВыпуска2] ...
+	export [ИмяФайлаXML] [путь_журнала] issue [IdВыпуска]
+]]></message>
+
+	<message key="plugins.importexport.pubIds.export">Экспартаваць адкрытыя ідэнтыфікатары</message>
+	<message key="plugins.importexport.pubIds.export.forIssues">Экспартаваць адкрытыя ідэнтыфікатары</message>
+	<message key="plugins.importexport.pubIds.export.selectIssue">Выбраць выпуск</message>
+	<message key="plugins.importexport.pubIds.export.selectIssue.description">Калі ласка, выберыце выпускі, для аб'ектаў якіх вы хочаце экспартаваць адкрытыя ідэнтыфікатары.</message>
+
+	<message key="plugins.importexport.pubIds.import">Імпартаваць адкрытыя ідэнтыфікатары</message>
+	<message key="plugins.importexport.pubIds.import.description">Гэты модуль падтрымлівае імпарт адкрытых ідэнтыфікатараў на аснове вызначэння тыпу дакумента (Document Type Definition) pubIds.dtd.</message>
+	<message key="plugins.importexport.pubIds.import.results">Вынікі імпарту</message>
+	<message key="plugins.importexport.pubIds.import.errors">Памылкі імпарту</message>
+	<message key="plugins.importexport.pubIds.import.errors.description">Пры імпарце адбылася адна або некалькі памылак. Калі ласка, праверце, каб пераканацца, што фармат імпартуемага файла дакладна адпавядае спецыфікацыі. Падрабязная інфармацыя пра памылкі імпарту пададзена ніжэй.</message>
+	<message key="plugins.importexport.pubIds.import.success">Імпарт прайшоў паспяхова</message>
+	<message key="plugins.importexport.pubIds.import.success.description">Паспяхова імпартаваныя адкрытыя ідэнтыфікатары пададзены ніжэй.</message>
+
+	<!-- ошибки -->
+	<message key="plugins.importexport.pubIds.cliError">ПАМЫЛКА:</message>
+	<message key="plugins.importexport.pubIds.cliError.unknownJournal">Указаны шлях часопіса, «{$journalPath}», не існуе.</message>
+	<message key="plugins.importexport.pubIds.cliError.unknownUser">Указаны карыстальнік, «{$userName}», не існуе.</message>
+	<message key="plugins.importexport.pubIds.cliError.issueNotFound">Няма выпуску з указаным ID выпуску «{$issueId}».</message>
+	<message key="plugins.importexport.pubIds.cliError.couldNotWrite">Не магу запісаць у файл «{$fileName}».</message>
+
+	<message key="plugins.importexport.pubIds.import.error.uploadFailed">Загрузка завяршылася няўдала; калі ласка, пераканайцеся, што загрузкі на ваш сервер дазволены і што файл не занадта вялікі для актуальнай канфігурацыі вашага вэб-сервера і PHP.</message>
+	<message key="plugins.importexport.pubIds.import.error.unsupportedRoot">Гэты модуль не падтрымлівае ўказаны карнявы вузел «{$rootName}». Калі ласка, пераканайцеся, што файл правільна сфарміраваны, і паспрабуйце ізноў.</message>
+	<message key="plugins.importexport.pubIds.import.error.unknownObjectType">Невядомы тып аб'екта «{$pubObjectType}» быў указаны ў атрыбуце «pubObjectType» элемента са значэннем «{$pubId}».</message>
+	<message key="plugins.importexport.pubIds.import.error.unknownObject">Аб'ект «{$pubObjectType}» з ID = {$pubObjectId}, указаным у элеменце са значэннем «{$pubId}», не існуе для гэтага часопіса.</message>
+	<message key="plugins.importexport.pubIds.import.error.pubIdExists">Адкрыты ідэнтыфікатар тыпу «{$pubIdType}» для аб'екта {$pubObjectType} з ID = {$pubObjectId} ужо/ўжо існуе.</message>
+	<message key="plugins.importexport.pubIds.import.error.duplicatePubId">Адкрыты ідэнтыфікатар «{$pubId}» ужо/ўжо выкарыстоўваецца іншым аб'ектам.</message>
+	<message key="plugins.importexport.pubIds.import.error.unknownPubId">Імпартуемы файл змяшчае тып адкрытага ідэнтыфікатара «{$pubIdType}», які не можа апрацаваць ні адзін модуль адкрытых ідэнтыфікатараў. Калі ласка, устанавіце і/або актывізуйце адпаведны модуль адкрытых ідэнтыфікатараў перад тым, як паспрабаваць імпартаваць гэты набор даных.</message>
+
+
+</locale>

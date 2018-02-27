@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/author.xml
+  *
+  * Copyright (c) 2013-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="author.submit">Новы матэрыял</message>
+	<message key="author.track">Актыўныя матэрыялы</message>
+	<message key="author.competingInterests"><![CDATA[Конфликт&nbsp;интересов <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">Правила о конфликте интересов</a>]]></message>
+	<message key="author.submit.submitArticle">Адправіць артыкул</message>
+	<message key="author.submit.stepsToSubmit">Пяць крокаў для адпраўкі</message>
+	<message key="author.submit.startHereTitle">Пачаць адпраўку новага матэрыялу</message>
+	<message key="author.submit.startHereLink"><![CDATA[<a href="{$submitUrl}" class="action">Нажмите здесь</a>, чтобы перейти к первому из пяти шагов процесса отправки.]]></message>
+	<message key="author.submit.step1">Крок 1. Пачатак адпраўкі</message>
+	<message key="author.submit.step2">Крок 2. Загрузка матэрыялу</message>
+	<message key="author.submit.step3">Крок 3. Увод метаданых матэрыялу</message>
+	<message key="author.submit.step4">Крок 4. Загрузка дадатковых файлаў</message>
+	<message key="author.submit.step4a">Крок 4a. Дабавіць дадатковы файл</message>
+	<message key="author.submit.step5">Крок 5. Пацвярджэнне адпраўкі матэрыялу</message>
+	<message key="author.submit.start">Пачатак</message>
+	<message key="author.submit.upload">Загрузка матэрыялу</message>
+	<message key="author.submit.metadata">Увод метаданых</message>
+	<message key="author.submit.supplementaryFiles">Загрузка дадатковых файлаў</message>
+	<message key="author.submit.confirmation">Пацвярджэнне</message>
+	<message key="author.submit.nextSteps">Наступныя крокі</message>
+	<message key="submission.submit.cancelSubmission">Вы можаце закончыць гэту адпраўку пазней, выбраўшы «Актыўныя матэрыялы» на хатняй старонцы аўтара.</message>
+	<message key="author.submit.notAccepting">Гэты часопіс цяпер не прымае матэрыялы.</message>
+	<message key="author.submit.requestWaiver">Запыт адмены платы</message>
+	<message key="author.submit.qualifyForWaiver">Калі ласка, разгледзьце магчымасць адмяніць плату за адпраўку дадзенага артыкула</message>
+	<message key="author.submit.addReasonsForWaiver">Калі ласка, выкарыстайце поле каментарыяў ніжэй для ўказання прычын, чаму плата павінна быць адменена.</message>
+	<message key="author.submit.mustEnterWaiverReason">Калі вы просіце адмяніць плату за адпраўку, то вы павінны ўказаць прычыну ў адпаведным полі.</message>
+	<message key="author.submissions.queuedReviewSubsequent">На рэцэнзіі: (раўнд {$round})</message>
+	<message key="author.submissions.queuedReviewRevisions">На рэцэнзіі: Патрабуюцца змены</message>
+	<message key="author.submissions.queuedEditingCopyedit">На рэдакцыі: Патрабуецца літаратурнае рэдагаванне</message>
+	<message key="author.submissions.queuedEditingProofread">На рэдакцыі: Патрабуецца карэктура</message>
+	<message key="author.submissions.uploadCopyeditedVersion">Загрузіць версію, якая прайшла літаратурнае рэдагаванне</message>
+	<message key="author.submissions.proofreadingCorrections">Выпраўленні пры карэктуры</message>
+	<message key="author.submissions.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэты матэрыял, адпраўка якога не была завершана?</message>
+	<message key="author.submissions.viewStatus">Паказаць статус</message>
+	<message key="author.submissions.noSubmissions">Няма адпраўленых матэрыялаў.</message>
+	<message key="author.submit.journalSection">Раздзел часопіса</message>
+	<message key="author.submit.journalSectionDescription"><![CDATA[Выберите подходящий раздел для этого материала (смотрите «Разделы и правила» на странице <a href="{$aboutUrl}" target="_new">«О журнале»</a>).]]></message>
+	<message key="author.submit.verifyChecklist">Каб працягнуць, вы павінны пераканацца, што выкананы ўсе пункты ў кантрольным спісе адпраўкі.</message>
+	<message key="author.submit.copyrightNoticeAgree">Аўтары згодны з Умовамі перадачы аўтарскіх правоў, якія будуць ужыты да гэтага матэрыялу ў выпадку, калі ён будзе апублікаваны гэтым часопісам (каментарыі для рэдактара могуць быць дабаўлены ніжэй).</message>
+	<message key="author.submit.copyrightNoticeAgreeRequired">Каб працягнуць, вы павінны прыняць Умовы перадачы аўтарскіх правоў.</message>
+	<message key="submission.submit.coverNote">Каментарыі для рэдактара</message>
+	<message key="author.submit.comments">Увядзіце текст (не абавязкова)</message>
+	<message key="author.submit.form.sectionRequired">Калі ласка, выберыце адпаведны раздзел часопіса для гэтага матэрыялу.</message>
+	<message key="author.submit.form.localeRequired">Калі ласка, выберыце мову матэрыялу, які адпраўляецца.</message>
+	<message key="submission.submit.privacyStatement">Заява часопіса аб канфідэнцыяльнасці</message>
+	<message key="author.submit.reorderInstructions">Пастаўце імёны аўтараў у тым парадку, у якім яны павінны быць указаны ў публікацыі.</message>
+	<message key="author.submit.reorder">Перастаўце імя аўтара</message>
+	<message key="author.submit.selectPrincipalContact">Асноўны аўтар для перапіскі з рэдакцыяй.</message>
+	<message key="author.submit.addAuthor">Дабавіць аўтара</message>
+	<message key="author.submit.deleteAuthor">Выдаліць аўтара</message>
+	<message key="author.submit.submissionIndexingDescription">Укажыце ключавыя словы для індэксавання гэтага матэрыялу; ключавыя словы раздзяляйце кропкай з коскай (слова1; слова2; слова3).</message>
+	<message key="author.submit.coverageInstructions">Апішыце геапрасторавы, храналагчны або гістарычны ахоп вашага даследавання і/або характарыстыкі даследаванага аб'екта.</message>
+	<message key="author.submit.languageInstructions"><![CDATA[English=en; French=fr; Spanish=es; Russian=ru. <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">Дополнительные коды</a>.]]></message>
+	<message key="author.submit.form.authorRequired">Мінімум адзін аўтар абавязковы.</message>
+	<message key="author.submit.form.authorRequiredFields">Для кожнага аўтара абавязкова патрэбна ўвесці імя, прозвішча і адрас электроннай пошты.</message>
+	<message key="author.submit.form.titleRequired">Калі ласка, увядзіце назву вашага артыкула.</message>
+	<message key="author.submit.form.abstractRequired">Калі ласка, увядзіце анатацыю вашага артыкула.</message>
+	<message key="author.submit.form.wordCountAlert">Вы перавысілі максімальную колькасць слоў для анатацыі ў гэтым раздзеле.</message>
+	<message key="author.submit.submissionFile">Файл для адпраўкі</message>
+	<message key="author.submit.uploadSubmissionFile">Загрузіць файл для адпраўкі</message>
+	<message key="author.submit.replaceSubmissionFile">Замяніць файл для адпраўкі</message>
+	<message key="author.submit.noSubmissionFile">Файл для адпраўкі не загружаны.</message>
+	<message key="author.submit.noSubmissionConfirm">Вы ўпэўнены, што хочаце працягнуць без загрузкі файла з матэрыялам для адпраўкі?</message>
+	<message key="author.submit.supplementaryFilesInstructions">Гэты крок не абавязковы, ён дазваляе дабавіць да вашага матэрыялу дадатковыя файлы. Гэтыя файлы могуць быць у любым фармаце і ўяўляць сабой (a) выкарыстаныя для правядзення даследавання праграмы, (b) наборы даных, арганізаваных у адпаведнасці з прынятымі правіламі этыкі даследаванняў, (c) крыніцы, якія ў іншым выпадку былі б недаступны чытачам, (d) малюнкі і табліцы, якія нельга ўставіць у сам тэкст, або іншыя матэрыялы, якія падвышаюць каштоўнасць самой працы.</message>
+	<message key="author.submit.supplementaryFiles.saveToUpload">Націсніце «Захаваць», каб загрузіць файл (пасля гэтага можна будзе загрузіць іншыя файлы).</message>
+	<message key="author.submit.forgottenSubmitSuppFile">Вы ўпэўнены, што хочаце працягваць без загрузкі дадатковага файла, які вы выбралі?</message>
+	<message key="author.submit.noSupplementaryFiles">Дадатковыя файлы не былі дабаўлены да гэтага матэрыялу.</message>
+	<message key="author.submit.backToSupplementaryFiles">Вярнуцца да дадатковых файлаў</message>
+	<message key="author.submit.confirmDeleteSuppFile">Вы ўпэўнены, што хочаце выдаліць гэты дадатковы файл?</message>
+	<message key="author.submit.uploadSuppFile">Загрузіць дадатковы файл</message>
+	<message key="author.submit.addSupplementaryFile">Дабавіць дадатковы файл</message>
+	<message key="author.submit.editSupplementaryFile">Рэдагаваць дадатковы файл</message>
+	<message key="author.submit.supplementaryFileData">Метаданыя дадатковага файла</message>
+	<message key="author.submit.supplementaryFileDataDescription">Для індэксацыі дадатковага матэрыялу ўкажыце наступныя метаданыя для загружанага дадатковага файла.</message>
+	<message key="author.submit.supplementaryFileUpload">Дадатковы файл</message>
+	<message key="author.submit.suppFile.createrOrOwner">Стваральнік (або ўладальнік) файла</message>
+	<message key="author.submit.suppFile.researchInstrument">Інструмент даследавання</message>
+	<message key="author.submit.suppFile.researchMaterials">Матэрыялы даследавання</message>
+	<message key="author.submit.suppFile.researchResults">Вынікі даследавання</message>
+	<message key="author.submit.suppFile.transcripts">Транскрыпты</message>
+	<message key="author.submit.suppFile.dataAnalysis">Аналіз даных</message>
+	<message key="author.submit.suppFile.dataSet">Набор даных</message>
+	<message key="author.submit.suppFile.sourceText">Зыходны тэкст</message>
+	<message key="author.submit.suppFile.briefDescription">Сціслае апісанне</message>
+	<message key="author.submit.suppFile.availableToPeers">Перадаць файл рэцэнзентам (без метаданых), паколькі ён не парушае патрабаванні сляпога рэцэнзавання.</message>
+	<message key="author.submit.suppFile.publisherDescription">Выкарыстоўваць толькі для афіцыйна апублікаваных матэрыялаў.</message>
+	<message key="author.submit.suppFile.dateDescription">Дата збору даных або стварэння інструмента.</message>
+	<message key="author.submit.suppFile.sourceDescription">Назва даследавання або іншых крыніц матэрыялу.</message>
+	<message key="author.submit.suppFile.specifyOtherType">Указаць іншы</message>
+	<message key="author.submit.suppFile.noFile">Няма загружаных файлаў.</message>
+	<message key="author.submit.suppFile.form.titleRequired">Калі ласка, увядзіце назву гэтага дадатковага файла.</message>
+	<message key="author.submit.suppFile.form.subjectRequired">Калі ласка, увядзіце тэму.</message>
+	<message key="author.submit.suppFile.form.descriptionRequired">Калі ласка, увядзіце апісанне.</message>
+	<message key="author.suppFile.suppFilePublicIdentificationExists">Адкрытая ідэнтыфікацыя дадатковага файла ўжо існуе.</message>
+	<message key="author.suppFile.publicSuppFileIdentifier">Адкрыты ідэнтыфікатар дадатковага файла</message>
+	<message key="author.submit.confirmationDescription">Націсніце «Завяршыць адпраўку», каб адправіць ваш матэрыял у часопіс «{$journalTitle}». Асноўны аўтар, указаны для перапіскі з рэдакцыяй, атрымае пацвярджэнне па электроннай пошце і будзе мець магчымасць сачыць за праходжаннем матэрыялу праз рэдакцыйны працэс, заходзячы на вэб-сайт часопіса. Дзякуй за інтарэс да публікацыі ў часопісе «{$journalTitle}».</message>
+	<message key="author.submit.noFiles">Ні адзін файл не быў далучаны да гэтага матэрыялу для адпраўкі.</message>
+	<message key="author.submit.filesSummary">Звесткі пра файлы</message>
+	<message key="author.submit.finishSubmission">Завяршыць адпраўку</message>
+	<message key="author.submit.submissionComplete">Матэрыял адпраўлены. Дзякуй за інтарэс да публікацыі ў часопісе «{$journalTitle}».</message>
+	<message key="author.article.uploadAuthorVersion">Загрузіць версію аўтара</message>
+	<message key="author.article.copyeditedFile">Файл пасля літаратурнага рэдагавання</message>
+	<message key="author.article.authorRevisedFile">Файл аўтара</message>
+	<message key="author.submit.authorSubmitLoginMessage">Для адпраўкі матэрыялу ў гэты часопіс патрабуецца ўліковы запіс. Гэта дазволіць нашым рэдактарам адсочваць адпраўленыя вамі матэрыялы і звязацца з вамі, калі статус матэрыялу зменіцца або ад вас будзе патрэбна дадатковая інфармацыя.</message>
+</locale>

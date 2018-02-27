@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/staticPages/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University Library
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+ 
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.generic.staticPages.displayName">Модуль «Статычныя старонкі»</message>
+	<message key="plugins.generic.staticPages.description">Дазваляе кіраваць статычным кантэнтам.</message>
+	<message key="plugins.generic.staticPages.staticPages">Статычныя старонкі</message>
+	<message key="plugins.generic.staticPages.pageTitle">Назва</message>
+	<message key="plugins.generic.staticPages.content">Кантэнт</message>
+
+	<message key="plugins.generic.staticPages.path">Шлях</message>
+	<message key="plugins.generic.staticPages.requirement.tinymce"><![CDATA[<p<strong>Модуль «TinyMCE» должен быть установлен и включен для добавления/редактирования контента.</strong></p>]]></message>
+
+	<message key="plugins.generic.staticPages.editAddContent">Рэдагавацаь/Дабавіць кантэнт</message>
+
+	<message key="plugins.generic.staticPages.addStaticPage">Дабавіць статычную старонку</message>
+	<message key="plugins.generic.staticPages.addNewPage">Дабавіць новую старонку</message>
+	<message key="plugins.generic.staticPages.editStaticPage">Рэдагаваць статычную старонку</message>	
+	<message key="plugins.generic.staticPages.noneCreated">Статычныя старонкі не былі створаны.</message>
+
+	<message key="plugins.generic.staticPages.settingInstructions">Форма ніжэй паказвае ўсе створаныя вамі статычныя старонкі. Вы можаце рэдагаваць або выдаляць старонкі, для чаго выкарыстоўвайце спасылкі справа.</message>
+	<message key="plugins.generic.staticPages.editInstructions">Выкарыстайце форму ніжэй для дабаўлення/рэдагавання кантэнту старонкі.</message>
+	<message key="plugins.generic.staticPages.pathRegEx">Поле шляху павінна змяшчаць толькі літары лацінскага алфавіта, лічбы, «.», «/», «-» і «_».</message>
+	<message key="plugins.generic.staticPages.viewInstructions"><![CDATA[<p>Эта страница будет доступна по адресу: <blockquote>{$pagesPath}</blockquote>..., где %PATH% — это путь, введенный выше. <strong>Обратите внимание:</strong> Каждая страница должна иметь свой собственный, уникальный путь. Использование путей, которые встроены в систему, может привести к потере доступа к важным функциям.</p>]]></message>
+	<message key="plugins.generic.staticPages.duplicatePath">Гэты шлях ужо выкарыстоўваецца для іншай статычнай старонкі.</message>
+	
+	<message key="plugins.generic.staticPages.pageSaved">Старонка паспяхова захавана.</message>
+	<message key="plugins.generic.staticPages.pageDeleted">Старонка паспяхова выдалена.</message>
+	
+	<message key="plugins.generic.staticPages.noneExist">Старонкі не былі створаны</message>
+</locale>

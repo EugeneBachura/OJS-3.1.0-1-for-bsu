@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/usageStats/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.generic.usageStats.settings.logging">Параметры журнала доступу</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Ствараць файлы журнала</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Актывацыя гэтага параметра прывядзе да стварэння модулем файлаў журнала доступу ў каталогу files. Гэтыя файлы павінны быць выкарыстаны для вымання даных па статыстыцы выкарыстання. Калі вы не хочаце ствараць дадатковыя файлы журнала доступу, вы можаце пакінуь гэты параметр адключаным і выкарыстаць файлы журнала доступу вашага сервера.</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">Рэгулярны выраз для разбору файлаў журнала</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">Рэгулярны выраз, які выкарыстоўваецца па змоўчанні, можа разбіраць файлы журнала доступу apache ў камбінаваным фармаце, а таксама файлы журнала, створаныя модулем. Калі вашы файлы журнала доступу фарміруюцца ў іншым фармаце, то вам неабходна ўставіць рэгулярны выраз, які можа разабраць яго і выдаць чаканыя значэнні. Для атрымання больш падрабязнай інфармацыі глядзіце UsageStatsLoader::_getDataFromLogEntry().</message>
+	<message key="plugins.generic.usageStats.settings.saved">Наладкі модуля «Статыстыка выкарыстання» захаваны</message>
+	
+	<message key="plugins.generic.usageStats.openFileFailed">Файл «{$file}» не можа быць адкрыты і быў адхілены.</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">Радок з нумарам {$lineNumber} з файла «{$file}» з'яўляецца некарэктным запісам журнала, і файл быў адхілены.</message>
+	<message key="plugins.generic.usageStats.displayName">Модуль «Статыстыка выкарыстання»</message>
+	<message key="plugins.generic.usageStats.description">Падае статыстыку выкарыстання аб'ектаў даных, можа выкарыстоўваць файлы журнала доступу сервера для вымання статыстыкі.</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">Справаздача аб статыстыцы выкарыстання OJS</message>
+	<message key="plugins.reports.usageStats.report.description">Справаздача аб статыстыцы выкарыстання OJS, якая фарміруецца па змоўчанні (гатовая для COUNTER)</message>
+	
+	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Статыстыка Open Journal Systems (гатовая для COUNTER)</message>
+</locale>

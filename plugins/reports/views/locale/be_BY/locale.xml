@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/reports/views/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.reports.views.displayName">Модуль «Справазда аб праглядах»</message>
+	<message key="plugins.reports.views.description">Рэалізуе справаздачу ў фармаце CSV, якая апісвае чытацкі інтарэс да кажнага артыкула.</message>
+
+  <message key="plugins.reports.views.articleId">ID артыкула</message>
+  <message key="plugins.reports.views.articleTitle">Назва артыкула</message>
+  <message key="plugins.reports.views.datePublished">Дата апублікавання</message>
+  <message key="plugins.reports.views.abstractViews">Прагляды анатацыі</message>
+  <message key="plugins.reports.views.galleyViews">Прагляды ўсіх гранак</message>
+</locale>

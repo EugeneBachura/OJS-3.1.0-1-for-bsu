@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.importexport.native.displayName">Модуль «Уласны XML»</message>
+	<message key="plugins.importexport.native.description">Імпартруе і экспартуе артыкулы і выпускі ва ўласным XML-фармаце OJS.</message>
+	<message key="plugins.importexport.native.import">Імпартаваць</message>
+	<message key="plugins.importexport.native.import.instructions">Загрузіце файл XML для імпарту</message>
+	<message key="plugins.importexport.native.exportSubmissions">Экспартаваць артыкулы</message>
+	<message key="plugins.importexport.native.exportIssues">Экспартаваць выпускі</message>
+	<message key="plugins.importexport.native.results">Вынікі</message>
+	<message key="plugins.inportexport.native.uploadFile">Калі ласка, загрузіце файл у раздзел «Імпартаваць», каб працягваць.</message>
+	<message key="plugins.importexport.native.importComplete">Імпарт завершаны паспяхова. Наступныя элементы былі імпартаваны:</message>
+	<message key="plugins.importexport.native.cliUsage"><![CDATA[Вызов: {$scriptName} {$pluginName} [команда] ...
+Команды:
+	import [ИмяФайлаXML] [путь_журнала] [имя_пользователя] ...
+	export [ИмяФайлаXML] [путь_журнала] articles [IdСтатьи1] [IdСтатьи2] ...
+	export [ИмяФайлаXML] [путь_журнала] article [IdСтатьи]
+	export [ИмяФайлаXML] [путь_журнала] issues [IdВыпуска1] [IdВыпуска1] ...
+	export [ИмяФайлаXML] [путь_журнала] issue [IdВыпуска]
+
+Для импорта данных требуются те или иные дополнительные параметры в зависимости 
+от корневого узла XML-документа.
+
+Если корневой узел <article> или <articles>, требуются дополнительные параметры.
+Разрешены следующие форматы:
+
+{$scriptName} {$pluginName} import [ИмяФайлаXML] [путь_журнала] [имя_пользователя]
+	issue_id [IdВыпуска] section_id [IdРаздела]
+
+{$scriptName} {$pluginName} import [ИмяФайлаXML] [путь_журнала] [имя_пользователя]
+	issue_id [IdВыпуска] section_name [НазваниеРаздела]
+
+{$scriptName} {$pluginName} import [[ИмяФайлаXML] [путь_журнала]
+	issue_id [IdВыпуска] section_abbrev [АббревиатураРаздела]
+]]></message>
+	<message key="plugins.importexport.native.error.unknownSection">Невядомы раздзел {$param}</message>
+	<message key="plugins.importexport.native.error.unknownUser">Указаны карыстальнік, «{$userName}», не існуе.</message>
+	<message key="plugins.importexport.native.import.error.sectionTitleMismatch">Назва раздзела «{$section1Title}» і назва раздзела «{$section2Title}» у/ў выпуску «{$issueTitle}» супалі з рознымі існуючымі раздзеламі часопіса.</message>
+	<message key="plugins.importexport.native.import.error.sectionTitleMatch">Назва раздзела «{$sectionTitle}» у/ў выпуску «{$issueTitle}» супала з існуючым раздзелам часопіса, але другая назва гэтага раздзела не супала з другой назвай існуючага раздзела часопіса.</message>
+	<message key="plugins.importexport.native.import.error.sectionAbbrevMismatch">Абрэвіятура раздзела «{$section1Abbrev}» і абрэвіятура раздзела «{$section2Abbrev}» у/ў выпуску «{$issueTitle}» супалі з рознымі існуючымі раздзеламі часопіса.</message>
+	<message key="plugins.importexport.native.import.error.sectionAbbrevMatch">Абрэвіятура раздзела «{$sectionAbbrev}» у/ў выпуску «{$issueTitle}» супала з існуючым раздзелам часопіса, але другая абрэвіятура гэтага раздзела не супала з другой абрэвіятурай існуючага раздзела часопіса.</message>
+	<message key="plugins.importexport.native.import.error.issueIdentificationMatch">Ні адзін выпуск не супаў, або больш за адзін выпуск супаў з указанай ідэнтыфікацыяй выпуску «{$issueIdentification}».</message>
+	<message key="plugins.importexport.native.import.error.issueIdentificationMissing">Элемент ідэнтыфікацыі выпуску адсутнічае для артыкула «{$articleTitle}».</message>
+</locale>

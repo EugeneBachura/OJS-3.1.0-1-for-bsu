@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/webFeed/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+ 
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.generic.webfeed.displayName">Модуль «Лента навін выпуску»</message>
+	<message key="plugins.generic.webfeed.description">Стварае ленту ў фарматах RSS/Atom, якая змяшчае актуальны выпуск часопіса.</message>
+
+	<message key="plugins.generic.webfeed.settings">Наладкі</message>
+	<message key="plugins.generic.webfeed.settings.issue">Паказваць спасылкі на ленту толькі на старонках выпуску.</message>
+	<message key="plugins.generic.webfeed.settings.homepage">Паказваць спасылкі на ленту толькі на галоўнай старонцы і на старонках выпуску.</message>
+	<message key="plugins.generic.webfeed.settings.all">Паказваць спасылкі на ленту на ўсіх старонках часопіса.</message>
+
+	<message key="plugins.generic.webfeed.settings.currentIssue">Паказваць матэрыялы ў актуальным апублікаваным выпуску.</message>
+	<message key="plugins.generic.webfeed.settings.recent">Паказваць фіксаваную колькасць апошніх апублікаваных матэрыялаў.</message>
+	<message key="plugins.generic.webfeed.settings.recentArticles">Колькасць апошніх апублікаваных матэрыялаў для паказу</message>
+	<message key="plugins.generic.webfeed.settings.recentItemsRequired">Калі ласка, увядзіце дадатны цэлы лік для колькасці апошніх апублікаваных матэрыялаў.</message>
+	<message key="plugins.generic.webfeed.atom.altText">Лагатып Atom</message>
+	<message key="plugins.generic.webfeed.rss1.altText">Лагатып RSS1</message>
+	<message key="plugins.generic.webfeed.rss2.altText">Лагатып RSS2</message>
+</locale>

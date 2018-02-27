@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/orcidPlugin/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2015-2016 University of Pittsburgh
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * ORCID Profile plugin localization strings
+  -->
+ 
+<locale name="be_BY" full_name="Беларускi">
+
+	<message key="plugins.generic.orcidProfile.displayName">Модуль «Профіль ORCID»</message>
+	<message key="plugins.generic.orcidProfile.description"><![CDATA[Позволяет импортировать информацию профиля пользователя из ORCID.]]></message>
+	<message key="plugins.generic.orcidProfile.instructions"><![CDATA[Вы можете предварительно заполнить эту форму информацией из профиля ORCID. Введите адрес электронной почты или ORCID iD, связанный с профилем ORCID, а затем нажмите «Отправить».]]></message>
+	<message key="plugins.generic.orcidProfile.noData">Не атрымліваецца знайсці даныя ў ORCID.</message>
+	<message key="plugins.generic.orcidProfile.emailOrOrcid">Адрас электроннай пошты або ORCID iD:</message>
+	<message key="plugins.generic.orcidProfile.submitAction">Адправіць</message>
+	<message key="plugins.generic.orcidProfile.manager.orcidProfileSettings">Наладкі профілю ORCID</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.description">Наладзьце ORCID API для атрымання інфармацыі профілю ORCID у профіль карыстальніка.</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidProfileAPIPath">ORCID API</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidProfileAPIPath.public">Public</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidProfileAPIPath.publicSandbox">Public Sandbox</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidProfileAPIPath.member">Member</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidProfileAPIPath.memberSandbox">Member Sandbox</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidClientId">Client ID</message>
+	<message key="plugins.generic.orcidProfile.manager.settings.orcidClientSecret">Client Secret</message>
+	<message key="plugins.generic.orcidProfile.author.submission">ORCID матэрыялу</message>
+	<message key="plugins.generic.orcidProfile.author.submission.success">Ваш матэрыял паспяхова звязаны з Вашым ORCID iD.</message>
+	<message key="plugins.generic.orcidProfile.author.submission.failure">Ваш матэрыял не атрымалася паспяхова звязаць з Вашым ORCID iD. Калі ласка, звяжыцеся з кіраўніком часопіса, паведаміце яму Ваша імя, ORCID iD і інфармацыю пра Ваш адпраўлены матэрыял.</message>
+	<message key="plugins.generic.orcidProfile.authFailure">OJS не атрымалася звязацца з сервісам ORCID. Калі ласка, звяжыцеся з кіраўніком часопіса, паведаміце яму Ваша імя, ORCID iD і інфармацыю пра Ваш адпраўлены матэрыял.</message>
+</locale>

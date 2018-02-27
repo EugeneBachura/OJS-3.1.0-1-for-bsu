@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.importexport.users.displayName">Модуль «Карыстальнікі ў XML»</message>
+	<message key="plugins.importexport.users.description">Імпартуе і экспартуе карыстальнікаў</message>
+
+	<message key="plugins.importexport.users.cliUsage"><![CDATA[Вызов: {$scriptName} {$pluginName} [команда] ...
+Команды:
+	import [ИмяФайлаXML] [путь_журнала]
+	export [ИмяФайлаXML] [путь_журнала]
+	export [ИмяФайлаXML] [путь_журнала] [IdПользователя1] [IdПользователя2] ...
+]]></message>
+	<message key="plugins.importexport.users.cliUsage.examples"><![CDATA[
+Примеры:
+	Импортировать пользователей в myJournal из файла myImportFile.xml:
+	{$scriptName} {$pluginName} import myImportFile.xml myJournal
+
+	Экспортировать всех пользователей из myJournal:
+	{$scriptName} {$pluginName} export myExportFile.xml myJournal
+
+	Экспортировать всех пользователей, указанных своими ID:
+	{$scriptName} {$pluginName} export myExportFile.xml myJournal 1 2
+]]></message>
+	<message key="plugins.importexport.users.import.importUsers">Імпартаваць карыстальнікаў</message>
+	<message key="plugins.importexport.users.import.instructions"><![CDATA[Выберите файл данных XML, содержащий информацию о пользователях, для импорта в этот журнал. Подробности о формате этого файла смотрите в помощи журнала.<br /><br />Обратите внимание, что если импортируемый файл содержит имена пользователей или адреса электронной почты, уже существующие в системе, то данные для этих пользователей не будут импортированы, а все новые роли, которые должны были быть созданы, будут назначены существующим пользователям.]]></message>
+	<message key="plugins.importexport.users.import.dataFile">Файл з данымі карыстальнікаў</message>
+	<message key="plugins.importexport.users.import.sendNotify">Адправіць кожнаму імпартаванаму карыстальніку апавяшчэнне па электроннай пошце з указаннем яго імя карыстальніка і пароля.</message>
+	<message key="plugins.importexport.users.import.continueOnError">Працягваць імпарт астатніх карыстальнікаў пры ўзнікненні памылкі.</message>
+	<message key="plugins.importexport.users.import.usersWereImported">Наступныя карыстальнікі былі паспяхова імпартаваны ў сістэму</message>
+	<message key="plugins.importexport.users.import.errorsOccurred">Пры імпарце адбыліся памылкі</message>
+	<message key="plugins.importexport.users.import.confirmUsers">Пацвердзіце, што гэта тыя самыя карыстальнікі, якіх вы хочаце імпартаваць у сістэму</message>
+	<message key="plugins.importexport.users.import.warning">Папярэджанне</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Нельга выкарыстоўваць паролі, хэшаваныя алгарытмам {$importHash}; OJS цяпер наладжаны на выкарыстанне {$ojsHash}. Калі вы будзеце працягваць, то вам будзе неабходна скінуць паролі імпартаваных карыстальнікаў.</message>
+	<message key="plugins.importexport.users.unknownPress">Быў указаны невядомы шлях часопіса «{$journalPath}».</message>
+
+	<message key="plugins.importexport.users.export.exportUsers">Экспартаваць карыстальнікаў</message>
+	<message key="plugins.importexport.users.export.exportByRole">Экспартаваць па ролях</message>
+	<message key="plugins.importexport.users.export.exportAllUsers">Экспартаваць усіх</message>
+	<message key="plugins.importexport.users.export.errorsOccurred">Пры экспарце адбыліся памылкі</message>
+	<message key="plugins.importexport.users.export.couldNotWriteFile">Не магу запісаць у файл «{$fileName}».</message>
+	<message key="plugins.importexport.users.importComplete">Імпарт выкананы паспяхова. Карыстальнікі з іх імёнамі карыстальнікаў і адрасамі электроннай пошты, якія яшчэ не ўжываліся, былі імпартаваны разам з адпаведнымі групамі карыстальнікаў.</message>
+	<message key="plugins.importexport.users.results">Вынікі</message>
+	<message key="plugins.importexport.users.uploadFile">Калі ласка, загрузіце файл у раздзел «Імпартаваць карыстальнікаў», каб працягваць.</message>
+</locale>

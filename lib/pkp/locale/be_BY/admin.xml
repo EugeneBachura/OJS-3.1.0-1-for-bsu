@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/admin.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2000-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="admin.systemInfo.settingName">Задаём назву</message>
+	<message key="admin.systemInfo.settingValue">Задаём значэнне</message>
+	<message key="admin.adminFunctions">Адміністратыўныя функцыі</message>
+	<message key="admin.auth.confirmDelete">Вы ўпэўнены, што хочаце назаўсёды выдаліць гэту крыніцу аўтэнтыфікацыі?</message>
+	<message key="admin.auth.create">Стварыць крыніцу аўтэнтыфікацыі</message>
+	<message key="admin.auth.noneCreated">Крыніцы аўтэнтыфікацыі не вызначаны.</message>
+	<message key="admin.authSources">Крыніцы аўтэнтыфікацыі</message>
+	<message key="admin.clearDataCache">Ачысціць кэш даных</message>
+	<message key="admin.clearTemplateCache">Ачысціць кэш шаблонаў</message>
+	<message key="admin.configFileUpdatedInstructions"><![CDATA[Ваш конфигурационный файл был успешно обновлен. Пожалуйста, обратите внимание на то, что если ваш сайт перестал правильно работать, вам может быть необходимо вручную исправить вашу конфигурацию, отредактировав <tt>config.inc.php</tt> напрямую.]]></message>
+	<message key="admin.confirmClearTemplateCache">Вы ўпэўнены, што хочаце ачысціць кэш скампіляваных шаблонаў?</message>
+	<message key="admin.confirmExpireSessions">Вы ўпэўнены, што хочаце спыніць усе сесіі карыстальнікаў? Усе карыстальнікі, якія цяпер працуюць у сістэме, будуць вымушаны нанова ўвайсці ў яе пад сваім уліковым запісам (у тым ліку і вы).</message>
+	<message key="admin.contentsOfConfigFile">Змесціва канфігурацыйнага файла</message>
+	<message key="admin.currentVersion">Актуальная версія</message>
+	<message key="admin.dateInstalled">Дата ўстаноўкі</message>
+	<message key="admin.displayConfigFileInstructions"><![CDATA[Содержимое обновленной конфигурации показано ниже. Чтобы применить изменения к конфигурации, вы должны открыть <tt>config.inc.php</tt> в подходящем текстовом редакторе и заменить его содержимое содержимым текстового поля, расположенного ниже.]]></message>
+	<message key="admin.displayNewSystemConfig">Паказаць новую канфігурацыю</message>
+	<message key="admin.expireSessions">Спыніць сесіі карыстальнікаў</message>
+	<message key="admin.languages.download">Загрузіць мову</message>
+	<message key="admin.languages.downloadLocales">Загрузіць мовы</message>
+	<message key="admin.languages.download.cannotOpen">Не атрымліваецца адкрыць дэскрыптар мовы з вэб-сайта PKP.</message>
+	<message key="admin.languages.download.cannotModifyRegistry">Не атрымліваецца дадаць новую мову ў файл спіса моў, звычайна гэта «registry/locales.xml».</message>
+	<message key="admin.languages.cantDisable">Гэта мова з'яўляецца асноўнай мовай сайта. Вы не можаце адключыць яе, пакуль не выберыце іншую асноўную мову.</message>
+
+	<message key="admin.languages.confirmReload">Вы ўпэўнены, што хочаце нанова загрузіць гэту мову? Гэта прывядзе да выдалення ўсіх даных карыстальніка, звязаных з гэтай мовай, напрыклад, змен у шаблонах пісем электроннай пошты.</message>
+	<message key="admin.languages.installedLocales">Устаноўленыя мовы</message>
+	<message key="admin.languages.installLanguages">Кіраванне мовамі</message>
+	<message key="admin.languages.availableLocales">Даступныя мовы</message>
+	<message key="admin.languages.installLocale">Устанавіць мову</message>
+	<message key="admin.languages.installLocales">Устанавіць</message>
+	<message key="admin.languages.installNewLocales">Устанавіць новыя мовы</message>
+	<message key="admin.languages.languageSettings">Наладкі мовы</message>
+	<message key="admin.languages.noLocalesAvailable">Няма даступных дадатковых моў для ўстаноўкі.</message>
+	<message key="admin.languages.reload">Нанова загрузіць мову</message>
+	<message key="admin.languages.uninstall">Выдаліць мову</message>
+	<message key="admin.phpInfo">Пашыраная інфармацыя PHP</message>
+	<message key="admin.scheduledTask">Запланаваная задача</message>
+	<message key="admin.scheduledTask.startTime">Пачата выкананне задачы.</message>
+	<message key="admin.scheduledTask.stopTime">Скончана выкананне задачы.</message>
+	<message key="admin.scheduledTask.noLog">Задача не стварала запісаў для журнала падзей.</message>
+	<message key="admin.scheduledTask.downloadLog">Ваша інсталяцыя {$softwareName} аўтаматычна выканала і завяршыла гэту задачу, Вы можаце скачаць файл з журналам падзей па гэтай спасылцы: {$url}</message>
+	<message key="admin.scheduledTask.confirmClearLogs">Вы ўпэўнены, што хочаце выдаліць усе журналы падзей, якія змяшчаюць інфармацыю пра выкананне запланаваных задач?</message>
+	<message key="admin.scheduledTask.clearLogs">Выдаліць журналы падзей з інфармацыяй пра выкананне запланаваных задач</message>
+	<message key="admin.scheduledTask.reviewReminder">Напамін рэцэнзенту</message>
+	<message key="admin.scheduledTask.subscriptionExpiryReminder">Напамін пра заканчэнне падпіскі</message>
+	<message key="admin.server.apacheVersion">Версія Apache</message>
+	<message key="admin.server.dbDriver">Драйвер базы даных</message>
+	<message key="admin.server.dbVersion">Версія СКБД</message>
+	<message key="admin.serverInformation">Інфармацыя пра сервер</message>
+	<message key="admin.server.phpVersion">Версія PHP</message>
+	<message key="admin.server.platform">АС платформы</message>
+	<message key="admin.settings">Наладкі</message>
+	<message key="admin.settings.aboutDescription">Пра сайт</message>
+	<message key="admin.settings.contactEmail">E-mail кантактнай асобы</message>
+	<message key="admin.settings.contactName">Імя кантактнай асобы</message>
+	<message key="admin.settings.form.contactEmailRequired">Адрас электроннай пошты кантактнай асобы ўказваецца абавязкова.</message>
+	<message key="admin.settings.form.contactNameRequired">Імя кантактнай асобы ўказваецца абавязкова.</message>
+	<message key="admin.settings.form.minPasswordLengthRequired">Вы павінны ўвесці пароль, даўжыня якога мінімум 4 сімвалы.</message>
+	<message key="admin.settings.form.titleRequired">Назва ўказваецца абавязкова.</message>
+	<message key="admin.settings.defaultMetricDescription">
+		Ваша інсталяцыя наладжана на запіс некалькіх метрык выкарыстання. Статыстыка выкарыстання будзе паказана ў некалькіх кантэкстах.
+		Ёсць выпадкі, калі павінна быць ужыта толькі адна статыстыка выкарыстання, напрыклад, каб паказаць упарадкаваны спіс найбольш запатрабаваных матэрыялаў або ранжыраваць
+		вынікі пошуку. Калі ласка, выберыце адну з наладак метрык у якасці метрыкі па змоўчанні.
+	</message>
+	<message key="admin.settings.homeHeaderImage.altText">Лагатып сайта</message>
+	<message key="admin.settings.homeHeaderImageInvalid">Непрымальны фармат выявы лагатыпа сайта. Дазволеныя фарматы: .gif, .jpg або .png.</message>
+	<message key="admin.settings.introduction">Прэамбула</message>
+	<message key="admin.settings.minPasswordLength">Мінімальная даўжыня пароля (у сімвалах)</message>
+	<message key="admin.settings.siteLanguage">Мова сайта</message>
+	<message key="admin.settings.siteStyleSheetInvalid">Непрымальны фармат табліцы стыляў сайта. Дазволены фармат — .css.</message>
+	<message key="admin.settings.siteStyleSheet">Табліца стыляў сайта</message>
+	<message key="admin.settings.siteLogo">Лагатып сайта</message>
+	<message key="admin.settings.siteTitle">Назва сайта</message>
+	<message key="admin.settings.siteTheme">Тэма афармлення сайта</message>
+	<message key="admin.siteAdmin">Адміністраванне сайта</message>
+	<message key="admin.siteManagement">Кіраванне сайтам</message>
+	<message key="admin.siteSettings">Наладкі сайта</message>
+	<message key="admin.siteSetup">Устаноўка сайта</message>
+	<message key="admin.systemConfigFileReadError"><![CDATA[Конфигурационный файл <tt>config.inc.php</tt> не существует, не доступен для чтения или является неправильным.]]></message>
+	<message key="admin.systemInformation">Інфармацыя пра сістэму</message>
+	<message key="admin.versionBuild">Зборка</message>
+	<message key="admin.version.checkForUpdates">Праверыць наяўнасць абнаўленняў</message>
+	<message key="admin.version.downloadPackage">Скачаць</message>
+	<message key="admin.version.downloadPatch">Скачаць выпраўленне</message>
+	<message key="admin.versionHistory">Гісторыя версій</message>
+	<message key="admin.version.latest">Апошняя версія</message>
+	<message key="admin.versionMajor">Старэйшая</message>
+	<message key="admin.versionMinor">Маладзейшая</message>
+	<message key="admin.version.moreInfo">Дадатковая інфармацыя</message>
+	<message key="admin.versionRevision">Рэвізія</message>
+	<message key="admin.version.updateAvailable">Даступна абноўленая версія</message>
+	<message key="admin.version.upToDate">Ваша сістэма актуальна</message>
+	<message key="admin.version">Версія</message>
+
+	<message key="admin.fileLoader.wrongBasePathLocation">Асноўны каталог {$path} павінен быць унутры каталога з даступнымі для ўсіх файламі.</message>
+	<message key="admin.fileLoader.pathNotAccessible">Папка {$path} не з'яўляецца каталогам або не даступна для чытання.</message>
+	<message key="admin.fileLoader.moveFileFailed">Файл {$filename} не можа быть перамешчаны з {$currentFilePath} у {$destinationPath}</message>
+	<message key="admin.fileLoader.fileProcessed">Файл {$filename} быў апрацаваны і змешчаны ў архіў.</message>
+	<message key="admin.fileLoader.emailSubject">Загрузчык файлаў</message>
+
+	<message key="admin.copyAccessLogFileTool.usage">Капіруе мінулыя файлы журнала доступу apache, фільтруючы запісы, звязаныя з гэтай інсталяцыяй,
+у каталог актуальных файлаў, які знаходзіцца ўнутры каталога stage модуля «Статыстыка выкарыстання». Павінен запускацца пад карыстальнікам з дастатковымі правамі для чытання файлаў журнала доступу apache.
+
+Гэты інструмент будзе капіраваць толькі тыя файлы, якія яшчэ не скапіраваны ў каталогі загрузкі файлаў модуля «Статыстыка выкарыстання» (stage, processing, archive, reject).
+
+Выклік: {$scriptName} path/to/apache/log/file.log
+Выклік (апрацоўка ўсіх файлаў у каталогу): {$scriptName} path/to/apache/directory 
+	</message>
+	<message key="admin.copyAccessLogFileTool.error.creatingFolder">Памылка: не магу стварыць часовы каталог {$tmpDir}</message>
+	<message key="admin.copyAccessLogFileTool.error.acessingFile">Памылка: Файл {$filePath} не існуе або да яго няма доступу.</message>
+	<message key="admin.copyAccessLogFileTool.error.copyingFile">Памылка: не магу капіраваць файл з {$filePath} у {$tmpFilePath}</message>
+	<message key="admin.copyAccessLogFileTool.error.deletingFile">Памылка: не магу выдаліць файл {$tmpFilePath}</message>
+	<message key="admin.copyAccessLogFileTool.warning.fileAlreadyExists">Папарэджанне: файл {$filePath} ужо існуе ў каталогу статыстыкі выкарыстання.</message>
+	<message key="admin.copyAccessLogFileTool.success">Паспяхова: {$filePath} в {$destinationPath}</message>
+	<message key="admin.error.utilExecutionProblem">Выкананне праграмы «{$utilPath}» закончылася наступнай памылкай: {$output}</message>
+	<message key="admin.error.executingUtil">Памылка: не магу выканаць «{$utilPath}». Праверце вашу наладку {$utilVar} у файле config.inc.php.</message>
+	<message key="admin.languages.noLocalesToDownload">Няма даступных моў для скачвання.</message>
+</locale>

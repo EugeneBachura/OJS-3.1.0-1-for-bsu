@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/editor.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="editor.submissionLibrary">Матэрыялы, якія паступілі: бібліятэка</message>
+	<message key="editor.review.notInitiated">Працэс рэцэнзавання яшчэ не быў пачаты.</message>
+	<message key="editor.submission.copyediting.personalMessageToUser">Паведамленне карыстальніку</message>
+	<message key="editor.submission.externalReviewDescription">Выберыце файлы ніжэй для адпраўкі іх на этап «Рэцэнзаванне».</message>
+	<!-- Добавить файл или аудитора для сеток редактора/аудита -->
+	<message key="editor.submission.fileAuditor.form.fileRequired">Вы павінны выбраць хаця б адзін файл для назначэння карыстальніка.</message>
+	<message key="editor.submission.fileAuditor.form.messageRequired">Вы павінны дабавіць асабістае паведамленне.</message>
+	<message key="editor.submission.fileAuditor.skipEmail">Не адпраўляць аўдытару пісьмо электроннай пошты</message>
+	<message key="editor.submission.fileAuditor.form.userRequired">Вы павінны выбраць карыстальніка для назначэння.</message>
+	<message key="editor.submission.uploadSelectFiles">Загрузіць/Выбраць файлы</message>
+	<message key="editor.submission.selectFiles">Выбраць файлы</message>
+	<message key="editor.submission.revisions">Версіі</message>
+	<message key="editor.submission.review.reviewersDescription"><![CDATA[Используйте <em>+Добавить рецензента</em>, чтобы пригласить читателей дать рецензии на файлы материала. Значок блокнота означает, что рецензия была отправлена, которая затем помечается <em>Принята</em> после того как она была просмотрена. Когда срок отправки рецензии прошел, красный значок конверта появляется для напоминания рецензентам.]]></message>
+	<message key="editor.submission.addReviewer">Дабавіць рэцэнзента</message>
+	<message key="editor.submission.findAndSelectReviewer">Выбраць рэцэнзента</message>
+	<message key="editor.submission.findAndSelectUser">Выбраць карыстальніка</message>
+	<message key="editor.submission.fileList.includeAllStages">Паказаць файлы з усіх даступных этапаў рабочага патоку.</message>
+	<message key="editor.submission.review.currentFiles">Актуальныя файлы рэцэнзіі для раўнда {$round}</message>
+	<message key="editor.submission.backToSearch">Назад да пошуку</message>
+	<message key="editor.review.createReviewer">Стварыць новага рэцэнзента</message>
+	<message key="editor.review.enrollReviewer.short">Запісаць існуючага карыстальніка</message>
+	<message key="editor.review.unassignReviewer">Адмяніць назначэнне рэцэнзента</message>
+	<message key="editor.submissionReview.reviewType">Тып рэцэнзавання</message>
+	<message key="editor.submissionReview.skipEmail">Не адпраўляць аўтару пісьмо электроннай пошты</message>
+	<message key="editor.submissionReview.open">Адкрытае</message>
+	<message key="editor.submissionReview.blind">Сляпое</message>
+	<message key="editor.submissionReview.doubleBlind">Падвоенае сляпое</message>
+	<message key="editor.submissionReview.restrictFiles">Файлы для рэцэнзавання</message>
+	<message key="editor.submissionReview.restrictFiles.hide">Закрыць выбар файла</message>
+	<message key="editor.submissionReview.editReview">Рэдагаваць рэцэнзію</message>
+	<message key="editor.review.personalMessageToReviewer">Пісьмо электроннай пошты для адпраўкі рэцэнзенту</message>
+	<message key="editor.review.importantDates">Важныя даты</message>
+	<message key="editor.review.uploadRevision">Загрузіць новую версію</message>
+	<message key="editor.review.NotifyAuthorAccept">Апавясціць аўтара, што яго матэрыял быў прыняты.</message>
+	<message key="editor.review.NotifyAuthorDecline">Апавясціць аўтара, што яго матэрыял быў адхілены.</message>
+	<message key="editor.review.NotifyAuthorRevisions">Зрабіць запыт аўтару пра новую версію.</message>
+	<message key="editor.review.NotifyAuthorResubmit">Зрабіць запыт аўтару пра новую версію, якая будзе адпраўлена на далейшае рэцэнзаванне.</message>
+	<message key="editor.review.NotifyAuthorExternal">Апавясціць аўтара пра рашэнне пачаць знешняе рэцэнзаванне.</message>
+	<message key="editor.review.personalMessageToAuthor">Пісьмо электроннай пошты для адпраўкі аўтару</message>
+	<message key="editor.review.dateAccepted">Дата прыняцця матэрыялу на рэцэнзаванне</message>
+	<message key="editor.review.noReviews">Няма рэцэнзій для імпарту</message>
+	<message key="editor.review.reminder">Напамін пра рэцэнзію</message>
+	<message key="editor.review.thankReviewer">Падзяка рэцэнзенту</message>
+	<message key="editor.review.reminderError">Памылка адпраўкі напаміну пра рэцэнзію</message>
+	<message key="editor.review.thankReviewerError">Памылка адпраўкі ўдзячнасці рэцэнзенту</message>
+	<message key="editor.review.skipEmail">Не адпраўляць рэцэнзенту пісьмо электроннай пошты.</message>
+	<message key="editor.review.sendReminder">Адправіць напамін</message>
+	<message key="editor.review.readReview">Прачытаць рэцэнзію</message>
+	<message key="editor.review.readNewReview">Прачытаць новую рэцэнзію</message>
+	<message key="editor.review.responseDue">Тэрмін адказу: {$date}</message>
+	<message key="editor.review.requestSent">Запыт адпраўлены</message>
+	<message key="editor.review.requestAccepted">Запыт прыняты</message>
+	<message key="editor.review.revertDecision">Адмена рашэння</message>
+	<message key="editor.review.reviewDue">Тэрмін здачы рэцэнзіі: {$date}</message>
+	<message key="editor.review.reviewDueDate">Дата давання рэцэнзіі</message>
+	<message key="editor.review.reviewCompleted">Рэцэнзія завершана</message>
+	<message key="editor.review.reviewConfirmed">Рэцэнзія пацвержана</message>
+	<message key="editor.review.reviewSubmitted">Рэцэнзія адпраўлена</message>
+	<message key="editor.review.reviewerComments">Каментарыі рэцэнзента</message>
+	<message key="editor.review.days">Сярэдняя колькасць дзён</message>
+	<message key="editor.review.mustSelect">Вы павінны выбраць рэцэнзента</message>
+	<message key="editor.review.errorAddingReviewer">Адбылася памылка пры дабаўленні рэцэнзента. Калі ласка, паспрабуйце ізноў.</message>
+	<message key="editor.review.errorDeletingReviewer">Адбылася памылка пры выдаленні рэцэнзента. Калі ласка, паспрабуйце ізноў.</message>
+	<message key="editor.review.userGroupSelect">Запісаць карыстальніка ў гэту групу рэцэнзентаў</message>
+	<message key="editor.review.unconsiderReviewText">Вы хочаце адзначыць гэту рэцэнзію як неразгледжаную? Гісторыя рэцэнзавання будзе захавана.</message>
+	<message key="editor.review.unconsiderReview">Адзначыць рэцэнзію як неразгледжаную</message>
+	<message key="editor.review.readConfirmation">Пасля прачытання рэцэнзіі націсніце «Пацвердзіць», каб паказаць, што працэс рэцэнзавання можа працягвацца далей. Калі рэцэнзент адправіў рэцэнзію якім-небудзь іншым спосабам, вы можаце загрузіць файл ніжэй і націснуць «Пацвердзіць», каб працягнуць.</message>
+	<message key="editor.submission.selectCopyedingFiles">Файлы для літаратурнага рэдагавання</message>
+	<message key="editor.submission.selectReviewer">Выбраць рэцэнзента</message>
+	<message key="editor.submission.taskDueDate">Тэрмін выканання задачы</message>
+	<message key="editor.submission.taskSchedule">Расклад задачы</message>
+	<message key="editor.review.enrollReviewer">Запісаць існуючага карыстальніка рэцэнзентам</message>
+	<message key="editor.submission.noAuditRequested">Аўдыт для гэтага файла не быў запытаны</message>
+	<message key="editor.submission.personalMessageToUser">Пісьмо электроннай пошты для адпраўкі карыстальніку</message>
+	<message key="editor.submission.proof.reminder">Напамін пра карэктуру</message>
+	<message key="editor.submission.editorial.approveCopyeditDescription">Файл, які прайшоў літаратурнае рэдагаванне, павінен быць адобраны перад тым, як яго можна будзе адправіць на этап «Публікацыя». Вы хочаце адобрыць гэты файл?</message>
+	<message key="editor.submission.editorial.disapproveCopyeditDescription">Адмена адабрэння гэтага файла, які прайшоў літаратурнае рэдагаванне, прывядзе да таго, што яго нельга будзе адправіць на этап «Публікацыя». Вы хочаце адмяніць адабрэнне гэтага файла?</message>
+	<message key="editor.submission.addAuditor">Назначыць аўдытара</message>
+	<message key="editor.submission.copyedit.manageCopyeditFilesDescription">Любыя файлы, якія ўжо былі загружаны на любым этапе адпраўкі матэрыялу, могуць быць дабаўлены ў спіс «Файлы для літаратурнага рэдагавання». Для гэтага трэба паставіць ніжэй галачку «Уключыць» і клікнуць па кнопцы «Шукаць»: будуць паказаны ўсе даступныя файлы, і іх можна будзе выбраць для ўключэння ў спіс. Дадатковыя файлы, яшчэ не загружаныя на гэты этап, можна дабавіць у спіс, калі клікнуць па спасылы «Загрузіць файл».</message>
+	<message key="editor.review">Рэцэнзаванне</message>
+	<message key="editor.review.reviewDetails">Дэталі рэцэнзавання</message>
+	<message key="editor.review.noReviewFilesUploaded">Файлы не загружаны</message>
+	<message key="editor.review.noReviewFilesUploaded.details">Вы не загрузілі ніводнага файла для рэцэнзіі.</message>
+	<message key="editor.review.emailReviewer">Адправіць рэцэнзенту пісьмо электроннай пошты</message>
+	<message key="editor.submission.production.productionReadyFiles">Файлы для публікацыі</message>
+	<message key="editor.submission.newRound">Новы раўнд рэцэнзавання</message>
+	<message key="editor.submissionReview.recordDecision">Запісаць рашэнне рэдакцыі</message>
+	<message key="editor.submission.newRoundDescription">Вы збіраецеся стварыць новы раўнд рэцэнзавання для гэтага матэрыялу. Ніжэй пададзены файлы, якія не выкарыстоўваліся ў іншых раўндах рэцэнзавання.</message>
+	<message key="editor.submission.createNewRound">Стварыць новы раўнд рэцэнзавання </message>
+	<message key="editor.article.reviewForms">Формы рэцэнзі</message>
+	<message key="editor.article.selectReviewForm">Выбраць форму рэцэнзіі</message>
+	<message key="editor.article.clearReviewForm">Ачысціць форму рэцэнзіі</message>
+	<message key="editor.article.confirmChangeReviewForm">Папярэджанне: Змяненне формы рэцэнзіі паўплывае на ўсе рэцэнзіі, ужо зробленыя рэцэнзентамі з дапамогай гэтай формы. Вы ўпэўнены, што хочаце працягнуць?</message>
+	<message key="editor.submission.noReviewerFilesSelected">Файлы не выбраны</message>
+	<message key="editor.submission.noReviewerFilesSelected.details">Вы не выбралі ніводнага файла для рэцэнзавання рэцэнзентам.</message>
+	<message key="submission.queries.subjectRequired">Тэма абмеркавання ўказваецца абавязкова.</message>
+	<message key="submission.queries.messageRequired">Тэкст паведамлення ў абмеркаванні абавязковы.</message>
+	<message key="submission.queries.attachedFiles">Прымацаваныя файлы</message>
+	<message key="grid.action.editQuery">Рэдагаваць абмеркаванне</message>
+	<message key="editor.submission.query.manageQueryNoteFilesDescription">Можна прымацаваць файлы да гэтага абмеркавання, скарыстаўшыся спісам ніжэй.</message>
+	<message key="editor.submission.selectedReviewer">Абраны рецензент</message>
+	<message key="editor.submission.proofreading.approveProof">Адобрыць карэктуру</message>
+	<message key="editor.submission.proofreading.revokeProofApproval">Адмяніць адабрэнне карэктуры</message>
+	<message key="editor.submission.proofreading.confirmCompletion">Адобрыць гэту карэктуру, каб адзначыць, што карэктура завершана і файл гатовы да публікацыі.</message>
+	<message key="editor.submission.proofreading.confirmRemoveCompletion">Адмяніць адабрэнне гэтай карэктуры, каб адзначыць, што карэктура яшчэ не завершана і файл не гатовы да публікацыі.</message>
+	<message key="editor.publicIdentificationExistsForTheSameType">Адкрыты ідэнтыфікатар «{$publicIdentifier}» ужо існуе для іншага аб'екта гэтага ж тыпу. Калі ласка, выбірайце ўнікальныя ідэнтыфікатары для аб'ектаў аднаго тыпу ў вашым часопісе.</message>
+	<message key="editor.publicIdentificationNumericNotAllowed">Адкрыты ідэнтыфікатар «{$publicIdentifier}» не можа быць лікам.</message>
+	<message key="editor.publicIdentificationPatternNotAllowed">Шаблон «{$pattern}» не дазволены для адкрытага ідэнтыфікатара.</message>
+</locale>

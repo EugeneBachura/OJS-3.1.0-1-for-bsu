@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/manager.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2000-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<!-- Настройки сайта -->
+	<message key="manager.website.information">Інфармацыя</message>
+	<message key="manager.website.appearance">Знешні выгляд</message>
+	<message key="manager.website.imageFileRequired">Файл з выявай абавязковы. Калі ласка, пераканайцеся, што вы выбралі і загрузілі файл.</message>
+
+	<message key="manager.announcements">Аб'явы</message>
+	<message key="manager.announcements.confirmDelete">Вы ўпэўнены, што хочаце назаўсёды выдаліць гэту аб'яву?</message>
+	<message key="manager.announcements.create">Стварыць новую аб'яву</message>
+	<message key="manager.announcements.createTitle">Стварыць</message>
+	<message key="manager.announcements.dateExpire">Актуальна да</message>
+	<message key="manager.announcements.datePublish">Апублікавана</message>
+	<message key="manager.announcements.edit">Рэдагаваць аб'яву</message>
+	<message key="manager.announcements.editTitle">Рэдагаваць</message>
+	<message key="manager.announcements.form.dateExpireDayIncompleteDate">Калі ласка, выберыце год і/або месяц, а не толькі дзень даты страты актуальнасці.</message>
+	<message key="manager.announcements.form.dateExpire">Актуальна да</message>
+	<message key="manager.announcements.form.dateExpireInstructions">Аб'ява будзе паказвацца чытачам да гэтай даты. Пакіньце поле пустым, калі аб'ява павінна паказвацца на працягу нявызначанага тэрміну.</message>
+	<message key="manager.announcements.form.dateExpireMonthIncompleteDate">Калі ласка, выберыце год і/або дзень, а не толькі месяц даты страты актуальнасці.</message>
+	<message key="manager.announcements.form.dateExpireValid">Калі ласка, выберыце карэктную дату страты актуальнасці аб'явы.</message>
+	<message key="manager.announcements.form.dateExpireYearIncompleteDate">Калі ласка, выберыце месяц год і/або дзень, а не толькі год даты страты актуальнасці.</message>
+	<message key="manager.announcements.form.description">Апісанне</message>
+	<message key="manager.announcements.form.descriptionInstructions">Увесь тэкст аб'явы.</message>
+	<message key="manager.announcements.form.descriptionRequired">Апісанне аб'явы абавязкова.</message>
+	<message key="manager.announcements.form.descriptionShortInstructions">Сціслае апісанне, якое з'явіцца разам з загалоўкам аб'явы.</message>
+	<message key="manager.announcements.form.descriptionShortRequired">Сціслае апісанне аб'явы абавязкова.</message>
+	<message key="manager.announcements.form.descriptionShort">Сціслае апісанне</message>
+	<message key="manager.announcements.form.saveAndCreateAnother">Захаваць і стварыць іншую</message>
+	<message key="manager.announcements.form.titleRequired">Загаловак аб'явы абавязковы.</message>
+	<message key="manager.announcements.form.title">Загаловак</message>
+	<message key="manager.announcements.form.typeId">Тып</message>
+	<message key="manager.announcements.form.typeIdValid">Калі ласка, выберыце правільны тып аб'явы.</message>
+	<message key="manager.announcements.noneCreated">Аб'явы не былі створаны.</message>
+	<message key="manager.announcements.title">Загаловак</message>
+	<message key="manager.announcements.type">Тып</message>
+	<message key="manager.announcementTypes">Тыпы аб'яў</message>
+	<message key="manager.announcementTypes.confirmDelete">Увага! Усе аб'явы гэтага тыпу таксама будуць выдалены. Вы ўпэўнены, што хочаце працягнуць і выдаліць гэты тып аб'явы?</message>
+	<message key="manager.announcementTypes.create">Стварыць тып аб'явы</message>
+	<message key="manager.announcementTypes.createTitle">Стварыць</message>
+	<message key="manager.announcementTypes.edit">Рэдагаваць тып аб'явы</message>
+	<message key="manager.announcementTypes.editTitle">Рэдагаваць</message>
+	<message key="manager.announcementTypes.form.saveAndCreateAnother">Захаваць і стварыць іншы</message>
+	<message key="manager.announcementTypes.form.typeNameExists">Тып аб'явы з такой назвай ужо існуе.</message>
+	<message key="manager.announcementTypes.form.typeName">Назва</message>
+	<message key="manager.announcementTypes.form.typeNameRequired">Назва тыпу аб'явы абавязкова.</message>
+	<message key="manager.announcementTypes.noneCreated">Тыпы аб'яў не былі створаны.</message>
+	<message key="manager.announcementTypes.typeName">Тып аб'явы</message>
+
+	<!-- Настройки процесса издания -->
+	<message key="manager.publication.submissionStage">Адпраўка</message>
+	<message key="manager.publication.reviewStage">Рэцэнзаванне</message>
+	<message key="manager.publication.editorialStage">Рэдагаванне</message>
+	<message key="manager.publication.productionStage">Публікацыя</message>
+	<message key="manager.publication.emails">Пісьмы электроннай пошты</message>
+	<message key="manager.emails.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэты шаблон пісьма электроннай пошты?</message>
+	<message key="manager.emails.confirmReset">Вы ўпэўнены, што хочаце вярнуць гэты шаблон пісьма электроннай пошты да яго выгляду па змоўчанні?</message>
+	<message key="manager.emails.addEmail">Дабавіць шаблон пісьма</message>
+	<message key="manager.emails.createEmail">Стварыць пісьмо</message>
+	<message key="manager.emails.data">Даныя шаблона пісьма</message>
+	<message key="manager.emails.details">Дэталі шаблона</message>
+	<message key="manager.emails.disable">Выключыць</message>
+	<message key="manager.emails.disable.message">Вы збіраецеся адключыць гэты шаблон пісьма электроннай пошты. Калі ў сістеме ёсць працэсы, якія выкарыстоўваюць гэты шаблон, то яны больш не змогуць яго задзейнічаць. Вы хочаце пацвердзіць гэту аперацыю?</message>
+	<message key="manager.emails.editEmail">Рэдагаваць пісьмо</message>
+	<message key="manager.emails.editTestExample">Рэдагаваць тэставы прыклад пісьма</message>
+	<message key="manager.emails.emailKey">Ключ пісьма</message>
+	<message key="manager.emails.emailKeyExists">Пісьмо з такім ключом ужо існуе. Ключы пісем электроннай пошты павінны быць унікальнымі.</message>
+	<message key="manager.emails.emailTemplate">Шаблон пісьма</message>
+	<message key="manager.emails.emailTemplates">Шаблоны пісем</message>
+	<message key="manager.emails.enabled">Уключыць гэты шаблон пісьма</message>
+	<message key="manager.emails.enable">Уключыць</message>
+	<message key="manager.emails.enable.message">Вы збіраецеся ўключыць гэты шаблон пісьма электроннай пошты. Вы хочаце пацвердзіць гэту аперацыю?</message>
+	<message key="manager.emails.form.emailKeyRequired">Унікальны ключ пісьма электроннай пошты, які не змяшчае прабелы або спецыяльныя сімвалы, абавязковы для пісьма электроннай пошты.</message>
+	<message key="manager.emails.form.bodyRequired">Тэкст пісьма электроннай пошты абавязковы.</message>
+	<message key="manager.emails.form.subjectRequired">Тэма пісьма электроннай пошты ўказваецца абавязкова.</message>
+	<message key="manager.emails">Падрыхтаваныя пісьмы электроннай пошты</message>
+	<message key="manager.emails.resetAll">Скінуць усе шаблоны</message>
+	<message key="manager.emails.resetAll.message">Калі вы скінеце ўсе шаблоны, усе змены, зробленыя ў шаблонах пісем электроннай пошты, будуць страчаны. Вы хочаце пацвердзіць гэту аперацыю?</message>
+	<message key="manager.emails.reset">Скінуць</message>
+	<message key="manager.emails.reset.message">Калі вы скінеце гэты шаблон, усе даныя паведамлення будуць заменены на іх значэнні па змоўчанні, усе змены будуць страчаны. Вы хочаце пацвердзіць гэту аперацыю?</message>
+	<message key="manager.emails.resetToDefault">Скінуць да значэння па змоўчанні</message>
+	<message key="manager.filesBrowser">Браўзер файлаў</message>
+	<message key="manager.files.confirmDelete">Выдаліць гэты файл або каталог? Звярніце ўвагу, што выдаляемы каталог павінен быць пустым да таго, як вы паспрабуеце яго выдаліць.</message>
+	<message key="manager.files.createDir">Стварыць каталог</message>
+	<message key="manager.files.emptyDir">Няма файлаў у гэтым каталогу.</message>
+	<message key="manager.files.indexOfDir">Змесціва каталога {$dir}</message>
+	<message key="manager.files.parentDir">Бацькоўскі каталог</message>
+	<message key="manager.files.uploadedFiles">Загружаныя файлы</message>
+	<message key="manager.files.uploadFile">Загрузіць файл</message>
+	<message key="manager.groups.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэту групу?</message>
+	<message key="manager.groups.createTitle">Стварыць назву</message>
+	<message key="manager.groups.editTitle">Рэдагаваць назву</message>
+	<message key="manager.groups.form.groupTitleRequired">Назва групы абавязкова.</message>
+	<message key="manager.groups.membership.addMember">Дабавіць члена групы</message>
+	<message key="manager.groups.membership.confirmDelete">Вы ўпэўнены, што хочаце выдаліць членства ў гэтай групе?</message>
+	<message key="manager.groups.membership">Членства</message>
+	<message key="manager.groups.membership.noneCreated">У гэтай групе няма членаў.</message>
+	<message key="manager.groups.membership.noUsers">Карыстальнікі не знойдзены.</message>
+	<message key="manager.groups.title">Назва</message>
+	<message key="manager.importExport">Імпарт/экспарт даных</message>
+	<message key="manager.language.ui">Інтэрфейс карыстальніка</message>
+	<message key="manager.language.submissions">Адпраўленыя матэрыялы</message>
+	<message key="manager.language.forms">Формы</message>
+	<message key="manager.language.reloadLocalizedDefaultSettings">Перазагрузіць значэнні па змоўчанні</message>
+	<message key="manager.languages.alternateLocaleInstructions">Гэта сістэма дазваляе ўводзіць пэўную важную інфармацыю адначасова на некалькіх мовах. Для ўключэння гэтай магчымасці выберыце альтэрнатыўныя мовы і выберыце адзін з варыянтаў, пададзеных ніжэй.</message>
+	<message key="manager.languages.supportedLocalesInstructions">Выберыце ўсе мовы, якія будуць падтрымліваццца на сайце праз меню выбару мовы, якое з'яўляецца на кожнай старонцы. Гэта меню будзе паказвацца толькі ў тым выпадку, калі будуць выбраны некалькі моў.</message>
+	<message key="manager.masthead.title">Выходныя даныя</message>
+	<message key="manager.payment.timestamp">Дата/Час</message>
+	<message key="manager.people.authSource">Крыніца аўтэнтыфікацыі</message>
+	<message key="manager.people.confirmUnenroll">Адмяніць назначэнне гэтага карыстальніка?</message>
+	<message key="manager.people.createUser">Стварыць новага карыстальніка</message>
+	<message key="manager.people.createUserGeneratePassword">Стварыць выпадковы пароль.</message>
+	<message key="manager.people.createUserSendNotify">Адправіць карыстальніку прывітальнае пісьмо, якое змяшчае яго імя карыстальніка і пароль.</message>
+	<message key="manager.people.disable">Адключыць</message>
+	<message key="manager.people.doNotEnroll">Без ролі</message>
+	<message key="manager.people.editProfile">Рэдагаваць профіль</message>
+	<message key="manager.people.editUser">Рэдагаваць карыстальніка</message>
+	<message key="manager.people.emailUsers.emailSelectedUsers">Адправіць пісьмы электроннай пошты выбраным карыстальнікам</message>
+	<message key="manager.people.emailUsers.emailUsersEnrolledAs">Адправіць пісьмы электроннай пошты карыстальнікам, назначаным на ролю</message>
+	<message key="manager.people.emailUsers">Адправіць пісьмы электроннай пошты карыстальнікам</message>
+	<message key="manager.people.emailUsers.selectLocale">Выберыце мову</message>
+	<message key="manager.people.emailUsers.selectUsers">Выберыце карыстальнікаў, якім вы хочаце адправіць пісьмо, для чаго пастаўце птушку побач з іх імёнамі</message>
+	<message key="manager.people.enable">Уключыць</message>
+	<message key="manager.people.enroll">Назначыць карыстальніка</message>
+	<message key="manager.people.enrollment">Назначэнне</message>
+	<message key="manager.people.enrollSelected">Назначыць выбраных карыстальнікаў</message>
+	<message key="manager.people.enrollSyncRole">Сінхранізаваць ролю</message>
+	<message key="manager.people.enrollSync">Сінхранізаваць назначэнні</message>
+	<message key="manager.people.enrollUserAsDescription">Карыстальнікам можна назначаць любую ролю або адмяняць назначэнне любой ролі ў любы час.</message>
+	<message key="manager.people.enrollUserAs">Назначыць на ролю</message>
+	<message key="manager.people.invalidUser">Прабачце, дадзены карыстальнік не існуе.</message>
+	<message key="manager.people.mergeUser">Аб'яднаць</message>
+	<message key="manager.people.mergeUsers.confirm">Вы ўпэўнены, што хочаце аб'яднаць выбраныя {$oldAccountCount} уліковых запісаў у адзін уліковы запіс з імем карыстальніка «{$newUsername}»? Выбраныя {$oldAccountCount} уліковыя запісы пасля гэтага перастануць існаваць. Гэта дзеянне незваротнае.</message>
+	<message key="manager.people.mergeUsers">Аб'яднанне карыстальнікаў</message>
+	<message key="manager.people.mustChooseRole">Калі ласка, выберыце ролю ўверсе старонкі, перш чым націснуць «Назначыць карыстальніка».</message>
+	<message key="manager.people.mustProvideName">Калі ласка, укажыце спачатку хаця б прозвішча карыстальніка.</message>
+	<message key="manager.people.noMatchingUsers">Няма карыстальнікаў, якія супадаюць.</message>
+	<message key="manager.people.noneEnrolled">Няма назначаных карыстальнікаў.</message>
+	<message key="manager.people">Людзі</message>
+	<message key="manager.people.remove">Выдаліць</message>
+	<message key="manager.people.saveAndCreateAnotherUser">Захаваць і стварыць іншы</message>
+	<message key="manager.people.signInAs">Увайсці як</message>
+	<message key="manager.people.signInAsUser">Увайсці як карыстальнік</message>
+	<message key="manager.people.syncUsers">Сінхранізаваць назначэнні карыстальніка</message>
+	<message key="manager.people.unenroll">Адмяніць назначэнне</message>
+	<message key="manager.people.userCreatedSuccessfully">Карыстальнік паспяхова створаны.</message>
+	<message key="manager.people.userMustChangePassword">Патрабаваць, каб карыстальнік змяніў свой пароль пры наступным уваходзе ў сістэму.</message>
+	<message key="manager.plugins.action">Дзеянне:</message>
+	<message key="manager.plugins.disable">Выключыць</message>
+	<message key="manager.plugins.enable">Уключыць</message>
+	<message key="manager.plugins.pluginManagement">Кіраванне модулямі</message>
+	<message key="manager.plugins.sitePlugin">Дзеянне гэтага модуля распаўсюджваецца на ўвесь сайт. Толькі адміністратар сайта можа кіраваць гэтым модулем.</message>
+	<message key="manager.plugins">Сістэмныя модулі</message>
+	<message key="manager.readingTools">Інструменты чытача</message>
+	<message key="manager.userSearch.searchByName">Пошук карыстальніка па імені</message>
+	<message key="manager.reviewerSearch.change">Змяніць</message>
+	<message key="manager.reviewerSearch.searchByName">Пошук рэцэнзента па імені</message>
+	<message key="manager.reviewerSearch.searchByName.short">Пошук па імені</message>
+	<message key="manager.reviewerSearch.doneAmount">Выкананых рэцэнзій: {$current}</message>
+	<message key="manager.reviewerSearch.doneAmountToggle">Уключыць/выключыць фільтр па выкананых рэцэнзіях.</message>
+	<message key="manager.reviewerSearch.avgAmount">Сярэдні тэрмін выканання рэцэнзіі: {$current}</message>
+	<message key="manager.reviewerSearch.avgAmountToggle">Уключыць/выключыць фільтр па сярэдняй колькасці дзён на выкананне рэцэнзіі.</message>
+	<message key="manager.reviewerSearch.lastAmount">Дзён пасля апошняй рэцэнзіі: {$current}</message>
+	<message key="manager.reviewerSearch.lastAmountToggle">Уключыць/выключыць фільтр па колькасці дзён пасля апошняй рэцэнзіі.</message>
+	<message key="manager.reviewerSearch.activeAmount">Над якой колькасцю рэцэнзій працуе цяпер: {$current}</message>
+	<message key="manager.reviewerSearch.activeAmountToggle">Уключыць/выключыць фільтр па колькасці актыўных рэцэнзій ў цяперашні момант.</message>
+	<message key="manager.reviewerSearch.interests">Інтарэсы рэцэнзента</message>
+	<message key="manager.reviewerSearch.form.instructions">Выкарыстоўвайце форму ніжэй, каб задаць максімум значэнняў для тэрмінаў, по якіх вы хочаце правесці пошук. Гэта форма папярэдне запаўняецца сярэднімі значэннямі, якія вылічваюцца для гэтых палёў.</message>
+	<message key="manager.reviewerSearch.form.interests.instructions">Інтарэсы рэцэнзента (увядзіце для пошуку інтарэсаў, якія супдаюць)</message>
+	<message key="manager.reviewerSearch.form.previousReviewRounds">Рэцэнзенты з папярэдніх раўндаў рэцэнзавання гэтага матэрыялу</message>
+	<message key="manager.roles">Ролі</message>
+	<message key="manager.statistics"><![CDATA[Статистика и отчеты]]></message>
+	<message key="manager.statistics.defaultMetricDescription">
+		Ваша {$contextObjectName} наладжана на запіс некалькіх метрык выкарыстання. Статыстыка выкарыстання будзе паказвацца ў некалькіх кантэкстах.
+		Ёсць выпадкі, калі павінна прымяняцца толькі адна статыстыка выкарыстання, напрыклад, каб паказаць упарадкаваны спіс артыкулаў, якія выкарыстоўваюцца найбольш, або ранжыраваць
+		вынікі пошуку. Калі ласка, выберыце адну з наладжаных метрык у якасці метрыкі па змоўчанні.
+	</message>
+	<message key="manager.statistics.city">Горад</message>	
+	<message key="manager.statistics.region">Рэгіён</message>	
+	<message key="manager.statistics.reports">Генератар справаздач</message>
+	<message key="manager.statistics.reports.description">Сістэма генеруе справаздачы, якія дапамагаюць сачыць за дэталямі, звязанымі з выкарыстаннем сайта і матэрыялаў у зададзены перыяд часу. Справаздачы генеруюцца ў фармаце CSV, які патрабуе для прагляду наяўнасці таблічнага працэсара.</message>
+	<message key="manager.statistics.reports.aggregationColumns">Агрэгаваць статыстыку па:</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Набраныя курсівам і адзначаныя * элементы ўяўляюць сабой даныя, неабавязковыя для ўстаноўленага цяпер спосабу падліку статыстыкі ў сістэме (тыпу метрыкі). Вы можаце атрымаць гэтыя даныя або не атрымаць у залежнасці ад наладак вашага модуля статыстыкі.</message>
+	<message key="manager.statistics.reports.defaultReportTemplates">Шаблоны справаздач па змоўчанні</message>
+	<message key="manager.statistics.reports.generateReport">Генераваць карыстальніцкую справаздачу</message>
+	<message key="manager.statistics.reports.advancedOptions">Дадатковыя наладкі</message>
+	<message key="manager.statistics.reports.advancedOptions.hide">Схаваць дадатковыя наладкі</message>
+	<message key="manager.statistics.reports.columns">Слупкі</message>
+	<message key="manager.statistics.reports.columns.description">Укажыце слупкі, якія будуць выкарыстоўвацца для складання справаздачы. Слупкі, якія вы выберыце тут, не толькі вызначаюць тое, якія даныя будуць у справаздачах, але таксама вызначаюць узровень агрэгавання статыстыкі. Напрыклад, калі вы выберыце слупкі «ID», «Тып» і «Месяц», справаздача будзе падсумоўваць усе прагляды аб'екта, якія былі ў адзін месяц, і падаваць даныя ў адным радку. Калі ж вы выберыце «Дзень» замест «Месяц», кожны аб'ект будзе мець асобны радок для кожнага дня.</message>
+	<message key="manager.statistics.reports.filters">Фільтры</message>
+	<message key="manager.statistics.reports.objectNotFound">Аб'ект не знойдзены ў базе даных</message>
+	<message key="manager.statistics.reports.objectType">Тып аб'екта</message>
+	<message key="manager.statistics.reports.objectId">ID аб'екта</message>
+	<message key="manager.statistics.reports.objectId.label">Задайце адзін або некалькі ID аб'ектаў, раздзяляючы іх коскамі (напрыклад, 1,2,3,4,5).</message>
+	<message key="manager.statistics.reports.yesterday">Учора</message>
+	<message key="manager.statistics.reports.currentMonth">Гэты месяц</message>
+	<message key="manager.statistics.reports.orderBy">Сартаванне па</message>
+	<message key="manager.statistics.reports.orderDir">Напрамак</message>
+	<message key="manager.statistics.reports.orderDir.asc">Па ўзрастанні</message>
+	<message key="manager.statistics.reports.orderDir.desc">Па змяншэнні</message>
+	<message key="manager.statistics.reports.month.label">Выкарыстоўвайце фармат ГГГГММ.</message>
+	<message key="manager.statistics.reports.day.label">Выкарыстоўвайце фармат ГГГГММДД.</message>
+	<message key="manager.statistics.reports.cities.label">Адна або некалькі назваў гарадоў, раздзеленыя коскамі (напрыклад, Назва горада 1,Назва горада 2)</message>
+	<message key="manager.statistics.reports.form.columnsRequired">Вы павінны выбраць як мінімум адзін слупок для складання справаздачы.</message>
+	<message key="manager.statistics.reports.reportUrl">URL-адрас справаздачы</message>
+	<message key="manager.statistics.reports.reportUrl.label">Наступны URL-адрас можа быць выкарыстаны для генерацыі справаздачы з заданымі на цяперашні момант наладкамі ў форме. Проста скапіруйце гэты адрас і адкрыйце яго ў браўзеры. Вы таксама можаце захаваць гэты адрас у закладках браўзера як URL-адрас генератара вашай карыстальніцкай справаздачы.</message>
+	<message key="manager.statistics.reports.filters.byContext">Па кантэксце</message>
+	<message key="manager.statistics.reports.filters.byObject">Па тыпу аб'екта і/або ID аб'екта</message>
+	<message key="manager.statistics.reports.filters.byTime">Выбраць дыяпазон для справаздачы</message>
+	<message key="manager.statistics.reports.filters.byTime.dimensionSelector">Або выбіраць дыяпазон па:</message>
+	<message key="manager.statistics.reports.filters.byLocation">Па геаграфічным становішчы</message>
+	<message key="manager.statistics.reports.filters.byLocation.description">Фільтраваць вынікі па краінах, рэгіёнах і/або гарадах.</message>
+	<message key="manager.affiliationAndSupport">Спонсарства</message>
+	<message key="manager.setup.additionalContent">Дадатковы кантэнт</message>
+	<message key="manager.setup.additionalContentDescription">Усё, што будзе ўведзена тут, з'явіцца на галоўнай старонцы.</message>
+	<message key="manager.setup.authorCopyrightNotice">Умовы перадачы аўтарскіх правоў</message>
+	<message key="manager.setup.authorCopyrightNoticeAgree">Патрабаваць ад аўтараў прыняць Умовы перадачы аўтарскіх правоў у працэсе адпраўкі матэрыялу.</message>
+	<message key="manager.setup.authorGuidelines">Інструкцыя для аўтараў</message>
+	<message key="manager.setup.authorGuidelines.description">Рэкамендаваныя правілы афармлення, у тым ліку стандарты фарматавання тэксту і бібліяграфічных спасылак разам з прыкладамі афармлення спасылак, якія часта сустракаюцца ў матэрыялах, што адпраўляюцца.</message>
+	<message key="manager.setup.citations">Бібліяграфічныя спасылкі</message>
+	<message key="manager.setup.citationAssistant">Памочнік разметкі бібліяграфічных спасылак</message>
+	<message key="manager.setup.citationFilterParser">Выманне бібліяграфічных спасылак</message>
+	<message key="manager.setup.citationFilterParserDescription"><![CDATA[<p>Чтобы найти и проверить библиографические ссылки в базах данных библиографических ссылок, сначала их необходимо преобразовать в читаемые машиной метаданные: название, издатель, дата публикации и т. д. Все эти данные должны быть извлечены из исходного текста библиографической ссылки на источник, предоставленного автором. Помочь в этом процессе могут подключения к внешним веб-сервисам. Один или несколько модулей подключения можно добавить, щелкнув ниже на кнопке «Добавить элемент». Некоторые из этих модулей подключения могут требовать настройки, в этом случае вы увидите сообщение о необходимости настройки модуля.</p>
+		<p>Вы можете отредактировать или удалить существующий модуль подключения, щелкнув на значке шестренки рядом с ним.</p>]]></message>
+	<message key="manager.setup.citationFilterLookup">Праверка бібліяграфічных спасылак</message>
+	<message key="manager.setup.citationFilterLookupDescription"><![CDATA[<p>Вы должны включить и настроить модули подключения к внешним базам данных библиографических ссылок. Это поможет вам найти ошибки в библиографических ссылках авторов или добавить дополнительную информацию (например, DOI или PubMed ID), требуемые для электронных публикаций или депонирования.</p>
+		<p>Мы предоставляем модули подключения к нескольким внешним базам данных, в которых вы можете искать библиографические ссылки. Некоторые из этих баз данных требуют регистрации или ввода информации для настройки. Пожалуйста, обратитесь к веб-сайтам баз данных для подробной информации о том, как зарегистрироваться. Вы можете добавить одну или несколько баз данных, щелкнув ниже на кнопке «Добавить элемент».</p>
+		<p>Вы можете отредактировать или удалить существующее подключение к внешней базе данных, щелкнув на значке шестренки рядом с ним.</p>
+		<p><strong>Обратите внимание:</strong> Чтобы процесс проверки библиографических ссылок завершался своевременно, параметр <tt>citation_checking_max_processes</tt> в вашем конфигурационном файле должен иметь приемлемое значение. Смотрите раздел General Settings в <tt>config.inc.php</tt> для получения более подробной информации.</p>]]></message>
+	<message key="manager.setup.citationOutput">Афармленне бібліяграфічных спасылак</message>
+	<message key="manager.setup.citationOutputStyleDescription">Выберыце стыль афармлення бібліяграфічных спасылак, які будзе выкарыстоўвацца ў вашых публікуемых матэрыялах. Памочнік разметкі бібліяграфічных спасылак дазволіць вам параўнаць аўтарскую версію афармлення бібліяграфічнай спасылкі на крыніцу з версіяй, створанай на аснове згенераванага вамі XML, такім чынам вы лёгка зможаце выявіць памылкі:</message>
+	<message key="manager.setup.competingInterests">Канфлікт інтарэсаў</message>
+	<message key="manager.setup.competingInterestsDescription">Рэцэнзентаў просяць прытрымлівацца Правілаў дэкларавання канфлікту інтарэсаў, якія вы апісалі ніжэй.</message> <!-- FIXME #6843 (JM): should this just reference reviewers? -->
+	<message key="manager.setup.errorDeletingItem">Падчас выдалення гэтага аб'екта ўзнікла памылка.</message>
+	<message key="manager.setup.favicon">Няправільны фармат favicon. Дапушчальныя фарматы .ico, .png і .gif.</message>
+	<message key="manager.setup.filter.grid.errorDeletingFilter">Падчас спробы выдалення гэтага фільтра адбылася памылка. Калі ласка, паведаміце пра гэту памылку распрацоўшчыкам.</message>
+	<message key="manager.setup.filter.grid.filterDisplayName">Модуль падключэння</message>
+	<message key="manager.setup.filter.grid.filterSettings">Рэгістрацыйная інфармацыя і наладкі модуля падключэння</message>
+	<message key="manager.setup.filter.grid.filterTemplateRequired">Калі ласка, выберыце адзін са спосабаў пераўтварэння ў выпадаючым меню.</message>
+	<message key="manager.setup.filter.grid.confirmDelete">Вы сапраўды хочаце выдаліць фільтр «{$filterName}»?</message>
+	<message key="manager.setup.filter.lookup.grid.descriptionConfirm">Вы вырашылі дабавіць базу даных «{$filterDisplayName}». Калі ласка, клікніце на «ОК», каб пацвердзіць дабаўленне.</message>
+	<message key="manager.setup.filter.lookup.grid.descriptionTemplate">Калі ласка, выберыце базу даных для праверкі.</message>
+	<message key="manager.setup.filter.lookup.grid.description.iSBNdb"><![CDATA[<p>Этот фильтр подключается к базе данных книг и ISBN <a href="http://isbndb.com/" target="_blank">ISBNdb.com</a>.</p>
+	<p>Ключ ISBNdb API является обязательным. Информацию о генерации ключа можно найти в <a href="http://isbndb.com/api/v1/docs/keys" target="_blank">документации на сайте</a>.</p>]]></message>
+	<message key="manager.setup.filter.lookup.grid.description.crossRef"><![CDATA[<p>Этот фильтр подключается к базе данных библиографических ссылок CrossRef, используя <a href="http://www.crossref.org/02publishers/openurl_info.html" target="_blank">OpenURL Query Interface</a>.</p>
+	<p>Для использования этого фильтра вы можете использовать вашу учетную запись в системе CrossRef или зарегистрировать правильный адрес электронной почты в CrossRef <a href="http://www.crossref.org/requestaccount/" target="_blank">по этой ссылке</a>.</p>]]></message>
+	<message key="manager.setup.filter.lookup.grid.description.pubMed"><![CDATA[<p>Этот фильтр подключается к поисковой машине <a href="http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi" target="_blank">Entrez</a> системы PubMed, работающей с несколькими базами данных.</p>
+	<p>Регистрация адреса электронной почты не является обязательной, но может потребоваться, если вы сталкиваетесь с проблемами соединения с поисковой машиной. Смотрите подробную информацию в разделе <a href="http://www.be-md.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=helpeutils&part=chapter2#chapter2.Usage_Guidelines_and_Requiremen" target="_blank">Usage Guidelines and Requirements</a> документации Entrez.</p>]]></message>
+	<message key="manager.setup.filter.lookup.grid.description.worldCat"><![CDATA[<p>Этот фильтр подключается к сервисам OCLC <a href="http://www.worldcat.org/affiliate/webservices/xisbn/app.jsp" target="_blank">xISBN</a> и <a href="http://www.worldcat.org/" target="_blank">Worldcat</a> (не обязательно).</p>
+	<p>Если у вас есть <a href="http://oclc.org/developer/develop/web-services.html" target="_blank">ключ API</a> Worldcat, вы можете подключиться к Worldcat, введя ключ ниже.</p>]]></message>
+	<message key="manager.setup.filter.lookup.grid.loadMessage">Калі ласка, пачакайце, пакуль табліца канфігурацыі баз даных бібліяграфічных спасылак будзе загружана...</message>
+	<message key="manager.setup.filter.lookup.grid.title">Модулі падключэння да баз даных бібліяграфічных спасылак</message>
+	<message key="manager.setup.filter.noMoreTemplates">Усе даступныя пераўтварэнні ўжо былі дабаўлены. Калі ласка, клікніце на «Адмена», каб вярнуцца на старонку наладкі.</message>
+	<message key="manager.setup.filter.parser.grid.descriptionConfirm">Вы вырашылі дабавіць сінтаксічны аналізатар «{$filterDisplayName}». Калі ласка, клікніце на «ОК», каб пацвердзіць дабаўленне.</message>
+	<message key="manager.setup.filter.parser.grid.descriptionTemplate">Калі ласка, выберыце сінтаксічны аналізатар бібліяграфічных спасылак.</message>
+	<message key="manager.setup.filter.parser.grid.description.freeCite"><![CDATA[<p>Этот фильтр извлечения подключается к веб-сервису <a href="http://freecite.library.brown.edu/" target="_blank">FreeCite</a>.</p>]]></message>
+	<message key="manager.setup.filter.parser.grid.description.paraCite"><![CDATA[<p>Этот фильтр извлечения использует модули Perl <a href="http://paracite.eprints.org/developers/" target="_blank">ParaTools</a> для обеспечения функциональности синтаксического анализа библиографических ссылок <a href="http://paracite.eprints.org" target="_blank">ParaCite</a>. Для работы этого фильтра необходимо, чтобы был установлен Perl, а также модули CPAN <a href="http://search.cpan.org/~mjewell/Biblio-Citation-Parser-1.10/" target="_blank">Biblio::Citation::Parser</a> и <a href="http://search.cpan.org/~sburke/Text-Unidecode-0.04/" target="_blank">Text::Unidecode</a>. Вы также должны настроить параметр <tt>perl</tt> в вашем конфигурационном файле. Этот параметр можно найти в разделе External Commands файла <tt>config.inc.php</tt>.</p>
+	<p>Вы также должны выбрать, какой модуль синтаксического анализа ParaTools использовать. Вы можете выбрать между стандартным модулем синтаксического анализа <a href="http://search.cpan.org/~mjewell/Biblio-Citation-Parser-1.10/lib/Biblio/Citation/Parser/Jiao.pm" target="_blank">Jiao</a> и модулем <a href="http://search.cpan.org/~mjewell/Biblio-Citation-Parser-1.10/lib/Biblio/Citation/Parser/Citebase.pm" target="_blank">Citebase</a>.</p>]]></message>
+	<message key="manager.setup.filter.parser.grid.description.parsCit"><![CDATA[<p>Этот фильтр извлечения подключается к веб-сервису <a href="http://aye.comp.nus.edu.sg/parsCit/" target="_blank">ParsCit</a>.</p>]]></message>
+	<message key="manager.setup.filter.parser.grid.description.regEx">Фільтр вымання RegEx выкарыстоўвае набор рэгулярных выразаў для разбору бібліяграфічных спасылак на крыніцы.</message>
+	<message key="manager.setup.filter.parser.grid.loadMessage">Калі ласка, пачакайце, пакуль табліца канфігурацыі сінтаксічных аналізатараў бібліяграфічных спасылак будзе загружана...</message>
+	<message key="manager.setup.filter.parser.grid.title">Службы вымання спасылак</message>
+	<message key="manager.setup.filter.pleaseSelect">Калі ласка, выберыце...</message>
+	<message key="manager.setup.groupType">Групоўка тыпаў файлаў</message>
+	<message key="manager.setup.homeHeaderImageInvalid">Непрымальны фармат выявы лагатыпа для верхняга калантытула хатняй старонкі, або загрузка не атрымалася. Дазволеныя фарматы: .gif, .jpg або .png.</message>
+	<message key="manager.setup.homepageImage">Выява на галоўнай старонцы</message>
+	<message key="manager.setup.homepageImageDescription">Загрузіце выяву для паказу на галоўнай старонцы.</message>
+	<message key="manager.setup.homepageImageInvalid">Непрымальны фармат выявы для хатняй старонкі, або загрузка не адбылася. Дазволеныя фарматы: .gif, .jpg або .png.</message>
+	<message key="manager.setup.homeTitleImageInvalid">Непрымальны фармат выявы загалоўка для верхняга калантытула хатняй старонкі, або загрузка не атрымалася. Дазволеныя фарматы: .gif, .jpg або .png.</message>
+	<message key="manager.setup.information.descriptionTitle">Апісанні</message>
+	<message key="manager.setup.layout.theme">Тэма афармлення</message>
+	<message key="manager.setup.layout.themeDescription">Новыя тэмы могуць быць устаноўлены з укладкі «Модулі» ўверсе на гэтай старонцы.</message>
+	<message key="manager.setup.layout.blockManagement">Кіраванне бакавымі панэлямі</message>
+	<message key="manager.setup.layout.sidebar">Бакавая панэль</message>
+	<message key="manager.setup.layout.unselected">Не выбрана</message>
+	<message key="manager.setup.loggingAndAuditing">Вядзенне журнала і аўдыт</message>
+	<message key="manager.setup.logo">Лагатып</message>
+	<message key="manager.setup.metaCitationsDescription">Пастаўце птушку, каб уключыць рэдагаванне бібліяграфічных спасылак на крыніцы. Гэта дазволіць аўтарам уключаць «сырыя» бібліяграфічныя спасылкі на крыніцы ў матэрыялы, якія адпраўляюцца. Рэдактары таксама будуць мець доступ да Памочніка разметкі бібліяграфічных спасылак, у якім яны змогуць праверыць на дакладнасць «сырыя» бібліяграфічныя спасылкі з дапамогай знешніх баз даных, такіх як WorldCat, ISBNdb, PubMed і іншых. Адобраныя бібліяграфічныя спасылкі могуць быць экспартаваны ў файлы фінальных гранак.</message>
+	<message key="manager.setup.notifications">Апавяшчэнне пра адпраўку матэрыялу аўтарам</message>
+	<message key="manager.setup.notifications.copySpecifiedAddress">Даслаць копію на гэты адрас электроннай пошты:</message>
+	<message key="manager.setup.notifications.description">Аўтарам аўтаматычна высылаецца пісьмо электроннай пошты з пацвяржденнем адпраўкі іх матэрыялу. Вы можаце даслаць копіі гэтага пісьма электроннай пошты наступным:</message>
+	<message key="manager.setup.openAccessPolicy">Правілы адкрытага доступу</message>
+	<message key="manager.setup.openAccessPolicy.description">Калі часопіс дае чытачам неадкладны вольны доступ да ўсяго апублікаванага кантэнту, вы можаце ўвесці апісанне вашых Правіл адкрытага доступу.</message>
+	<message key="manager.setup.pageHeaderLogoImageInvalid">Непрымальны фармат выявы лагатыпа для верхняга калантытула старонкі, або загрузка не атрымалася. Дазволеныя фарматы: .gif, .jpg або .png.</message>
+	<message key="manager.setup.pageFooter">Ніжні калантытул старонкі</message>
+	<message key="manager.setup.pageFooterDescription">Увядзіце ўсе выявы, тэкст або код HTML, які вы хочаце паказаць у ніжняй частцы вашага сайта.</message>
+	<message key="manager.setup.peerReview.description">Апішыце правілы рэцэнзавання часопіса і працэс рэцэнзавання для чытачоў і аўтараў. Гэта апісанне як правіла ўключае ў себе колькасць рэцэнзентаў, якія звычайна даюць рэцэнзіі на матэрыял, крытэрыі, па якіх рэцэнзентаў просяць ацаніць матэрыялы, прыкладны час выканання рэцэнзій і прынцыпы падбору рэцэнзентаў.</message>
+	<message key="manager.setup.principalContact">Кантактная асоба (агульныя пытанні)</message>
+	<message key="manager.setup.principalContactDescription">Увядзіце даныя кантактнай асобы, звычайна гэта галоўны рэдактар, адказны рэдактар або супрацоўнік адміністрацыі. Гэтыя даныя могуць паказвацца ў адкрытым доступе на сайце.</message>
+	<message key="manager.setup.privacyStatement">Заява аб канфідэнцыяльнасці</message>
+	<message key="manager.setup.privacyStatement.description">Гэта Заява будзе паказвацца падчас адпраўкі матэрыялу аўтарам і на старонцы сайта з інфармацыяй у адкрытым доступе.</message>
+	<message key="manager.setup.reviewOptions.numWeeksPerResponse">Тыдняў на згоду або адмову ў адказ на запыт выканання рэцэнзіі</message>
+	<message key="manager.setup.reviewOptions.numWeeksPerReview">Тыдняў на выкананне рэцэнзіі</message>
+	<message key="manager.setup.reviewOptions.neverSendReminder">Ніколі не нагадваць</message>
+	<message key="manager.setup.reviewOptions.noteOnModification">Значэнні па змоўчанні могуць быць зменены для кожнай рэцэнзіі ў ходзе рэдакцыйнага працэсу.</message>
+	<message key="manager.setup.reviewOptions.remindForInvite">Адправіць напамін, калі рэцэнзент не адказаў на запыт рэцэнзіі на працягу наступнай колькасці дзён пасля таго, як тэрмін адказу на запыт скончыўся:</message>
+	<message key="manager.setup.reviewOptions.remindForSubmit">Адправіць напамін, калі рэцэнзент не адправіў рэкамендацыю на працягу наступнай колькасці дзён пасля таго, як тэрмін адпраўкі рэцэнзіі скончыўся:</message>
+	<message key="manager.setup.reviewOptions.reviewTime">Тэрмін рэцэнзавання па змоўчанні</message>
+	<message key="manager.setup.reviewOptions.showBlindReviewLink">Дабавіць спасылку на «Забеспячэнне сляпога рэцэнзавання» падчас загрузкі</message>
+	<message key="manager.setup.sortableByComponent">Можна сартаваць па кампанентах</message>
+	<message key="manager.setup.sponsors.note">Апісанне правілаў і адносін са спонсарамі</message>
+	<message key="manager.setup.sponsors.description">Прыклады: супольнасці навукоўцаў, падраздзяленні ўніверсітэтаў, аб'яднанні і г.д. Спонсары показываюцца ў адкрытым доступе на сайце.</message>
+	<message key="manager.setup.styleSheetDescription">Вопытныя вэб-распрацоўшчыкі могуць загрузіць файл CSS для дадатковай мадыфікацыі знешняга выгляду сайта.</message>
+	<message key="manager.setup.technicalSupportContact">Кантактная асоба (тэхнічная падтрымка)</message>
+	<message key="manager.setup.technicalSupportContactDescription">Кантактная асоба, якая можа дапамагчы рэдактарам, аўтарам і рэцэнзентам з любымі праблемамі, якія ў іх узніклі ў працэсе адпраўкі, рэдагавання, рэцэнзавання або публікацыі матэрыялу.</message>
+	<message key="manager.siteAccessOptions.siteAccessOptions">Параметры доступу да сайта</message>
+	<message key="manager.statistics.statistics.count.value">{$count} ({$percentage}%)</message>
+	<message key="manager.statistics.statistics.totalNewValue">{$numTotal} ({$numNew} новых)</message>
+	<message key="manager.users">Карыстальнікі</message>
+	<message key="plugins.categories.metadata">Модулі метаданых</message>
+	<message key="plugins.categories.metadata.description">Модулі метаданых рэалізуюць дадатковыя стандарты метаданых.</message>
+	<message key="plugins.categories.auth">Модулі аўтарызацыі</message>
+	<message key="plugins.categories.blocks">Модулі блокаў</message>
+	<message key="plugins.categories.blocks.description">Модулі блокаў — кампаненты карыстальніцкага інтэрфейсу, такія як розныя інструменты бакавой панэлі.</message>
+	<message key="plugins.categories.citationFormats">Модулі фарматавання бібліяграфічных спасылак</message>
+	<message key="plugins.categories.citationLookup">Модулі падключэння да баз даных бібліяграфічных спасылак</message>
+	<message key="plugins.categories.citationLookup.description">Модулі падключэння да баз даных бібліяграфічных спасылак падключаюцца да баз даных бібліяграфічных спасылак, каб знайсці спасылку на крыніцу, напрыклад, падчас рэдагавання бібліяграфічных спасылак.</message>
+	<message key="plugins.categories.citationOutput">Модулі афармлення бібліяграфічных спасылак</message>
+	<message key="plugins.categories.citationOutput.description">Модулі афармлення бібліяграфічных спасылак рэалізуюць стандарты афармлення бібліяграфічных спасылак. Яны замяняюць Модулі фарматавання бібліяграфічных спасылак.</message>
+	<message key="plugins.categories.citationParser">Модулі вымання бібліяграфічных спасылак</message>
+	<message key="plugins.categories.citationParser.description">Модулі вымання бібліяграфічных спасылак дазваляюць атрымаць даныя для палёў з «сырых» бібліяграфічных спасылак (напрыклад, імя аўтара, назву і г. д.).</message>
+	<message key="plugins.categories.gateways.description">Модулі шлюзаў даюць знешнім сістэмам даныя ў рэальным часе.</message>
+	<message key="plugins.categories.gateways">Модулі шлюзаў</message>
+	<message key="plugins.categories.generic">Модулі агульнага прызначэння</message>
+	<message key="plugins.categories.importexport.description">Модулі імпарту/экспарту могуць выкарыстоўвацца для абмену кантэнтам з іншымі сістэмамі.</message>
+	<message key="plugins.categories.importexport">Модулі імпарту/экспарту</message>
+	<message key="plugins.categories.paymethod.description">Модулі метадаў плацяжоў рэалізуюць падтрымку розных метадаў апрацоўкі анлайн-плацяжоў.</message>
+	<message key="plugins.categories.paymethod">Модулі плацяжоў</message>
+	<message key="plugins.categories.reports.description">Модулі справаздач выкарыстоўваюцца для рэалізацыі розных відаў справаздач і вымання даных.</message>
+	<message key="plugins.categories.reports">Модулі справаздач</message>
+	<message key="plugins.categories.themes.description">Модулі тэм афармлення могуць выкарыстоўвацца для змянення знешняга выгляду сістэмы.</message>
+	<message key="plugins.categories.themes">Модулі тэм афармлення</message>
+	<message key="plugins.categories.oaiMetadataFormats">Модулі фарматавання метаданых OAI</message>
+	<message key="plugins.categories.oaiMetadataFormats.description">Гэтыя модулі пераўтвараюць метаданыя для камунікацый OAI.</message>
+	<message key="plugins.categories.pubIds">Модулі адкрытых ідэнтыфікатараў</message>
+	<message key="plugins.categories.pubIds.description">Гэтыя модулі рэалізуюць падтрымку адкрытага ідэнтыфікатара.</message>
+
+	<!-- Управление модулями -->
+	<message key="manager.plugins.copyError">Капіраванне модуля не атрымалася. Прычынай гэтага можа з'яўляцца праблема з правамі. Калі ласка, пераканайцеся, што вэб-сервер можа запісываць у каталог «plugins» (разам з падкаталогамі), але не забудзьце пасля гэтага абараніць дырэкторыю, для чаго задайце адпаведныя правы.</message>
+	<message key="manager.plugins.delete">Выдаліць модуль</message>
+	<message key="manager.plugins.installConfirm">Вы ўпэўнены, што хочаце ўстанавіць гэты модуль?</message>
+	<message key="manager.plugins.upgradeConfirm">Вы ўпэўнены, што хочаце абнавіць гэты модуль?</message>
+	<message key="grid.action.installPlugin">Устанавіць або абнавіць гэты модуль</message>
+	<message key="manager.plugins.deleteConfirm">Вы ўпэўнены, што хочаце выдаліць гэты модуль з сістэмы?</message>
+	<message key="manager.plugins.deleteDescription">Калі вы націсніце «Выдаліць», то модуль буде выдалены з файлавай сістэмы сервера.</message>
+	<message key="manager.plugins.deleteError">Модуль «{$pluginName}» не можа быць выдалены з файлавай сістемы. Прычынай гэтага можа з'яўляцца праблема з правамі. Калі ласка, пераканайцеся што вэб-сервер можа запісываць у каталог «plugins» (разам з падкаталогамі), але не забудзьце пасля гэтага абараніць дырэкторыю, для чаго задайце адпаведныя правы.</message>
+	<message key="manager.plugins.deleteSuccess">Модуль «{$pluginName}» паспяхова выдалены</message>
+	<message key="manager.plugins.description">Гэта старонка дазваляе кіраўніку паглядзець і, магчыма, канфігураваць модулі, якія ўстаноўлены на цяперашні момант. Модулі разбіты па катэгорыях у адпаведнасці з іх функцыямі. Спіс катэгорый пададзены ніжэй; выбраўшы канкрэтную катэгорыю, вы ўбачыце актуальны набор модуляў дадзенай катэгорыі.</message>
+	<message key="manager.plugins.doesNotExist">Модуль «{$pluginName}» не існуе</message>
+	<message key="manager.plugins.fileSelectError">Калі ласка, спачатку выберыце файл</message>
+	<message key="manager.plugins.upload">Загрузіць новы модуль</message>
+	<message key="manager.plugins.uploadDescription">Гэта форма дазваляе вам загрузіць на сайт і ўстанавіць новы модуль. Калі ласка, пераканайцеся ў тым, што файл з модулем з'яўляеца архівам у фармаце .tar.gz.</message>
+	<message key="manager.plugins.uploadFailed">Калі ласка, пераканайцеся, што файл для загрузкі быў выбраны.</message>
+	<message key="manager.plugins.installed">Устаноўленыя модулі</message>
+	<message key="manager.plugins.pluginGallery">Галерэя модуляў</message>
+	<message key="manager.plugins.pluginGallery.overview">Агляд</message>
+	<message key="manager.plugins.pluginGallery.installation">Устаноўка</message>
+	<message key="manager.plugins.pluginGallery.latestCompatible">Апошні сумяшчальны рэліз</message>
+	<message key="manager.plugins.pluginGallery.certifications.official">Афіцыйны</message>
+	<message key="manager.plugins.pluginGallery.certifications.reviewed">Рэцэнзаваны</message>
+	<message key="manager.plugins.pluginGallery.certifications.partner">Партнёрскі</message>
+	<message key="manager.plugins.pluginGallery.maintainer">Распрацоўшчык</message>
+	<message key="manager.plugins.pluginGallery.version">Версія: {$version}</message>
+	<message key="manager.plugins.pluginGallery.date">Дата выпуску: {$date}</message>
+	<message key="manager.plugins.pluginGallery.homepage">Галоўная старонка</message>
+	<message key="manager.plugins.pluginGallery.summary">Агульная інфармацыя</message>
+	<message key="manager.plugins.pluginGallery.status">Статус</message>
+	<message key="manager.plugins.noInstalledVersion">Модуль яшчэ не быў устаноўлены.</message>
+	<message key="manager.plugins.noCompatibleVersion">У цяперашні момант няма сумяшчальнай версіі для гэтага модуля.</message>
+	<message key="manager.plugins.installedVersionNewer">Модуль ужо ўстаноўлены, і яго версія больш новая, чым версія, даступная ў галерэі.</message>
+	<message key="manager.plugins.installedVersionOlder">Модуль ужо ўстаноўлены, але можа быць абноўлены да больш новай версіі.</message>
+	<message key="manager.plugins.installedVersionNewest">Модуль ужо ўстаноўлены, і яго версія актуальна.</message>
+	<message key="manager.plugins.installedVersionNewer.short">Больш новы, чым даступная версія</message>
+	<message key="manager.plugins.installedVersionOlder.short">Можа быць абноўлены</message>
+	<message key="manager.plugins.installedVersionNewest.short">Актуальна</message>
+	<message key="manager.plugins.noCompatibleVersion.short">Не даступна</message>
+	<message key="manager.plugins.installFailed">Устаноўка не адбылася. {$errorString}</message>
+	<message key="manager.plugins.installSuccessful">Паспяхова ўстаноўлена версія {$versionNumber}</message>
+	<message key="manager.plugins.invalidPluginArchive">Загружаны на сайт архіў модуля не змяшчае каталог, які адпавядае імені модуля.</message>
+	<message key="manager.plugins.wrongCategory">Загружаны модуль не адпавядае катэгорыі абнаўляемага модуля.</message>
+	<message key="manager.plugins.wrongName">Файл version.xml у загружаным модулі змяшчае імя модуля, якое не адпавядае імені абнаўляемага модуля.</message>
+	<message key="manager.plugins.pleaseInstall">Модуль не існуе. Калі ласка, выкарыстоўвайце «Устанавіць»</message>
+	<message key="manager.plugins.pleaseUpgrade">Модуль ужо існуе, але яго версія — больш новая, чым устаноўленая на сайце. Калі ласка, выкарыстоўвайце «Абнавіць»</message>
+	<message key="manager.plugins.settings">Наладкі</message>
+	<message key="manager.plugins.tarCommandNotFound">Каманда «tar» не даступна. Калі ласка, правільна наладзьце яе ў вашым «config.inc.php».</message>
+	<message key="manager.plugins.upgrade">Абнавіць модуль</message>
+	<message key="manager.plugins.upgradeDescription">Гэта форма дазваляе вам абнавіць модуль. Калі ласка, пераканайцеся ў тым, што файл з модулем з'яўляеца архівам у фармаце .tar.gz.</message>
+	<message key="manager.plugins.upgradeFailed">Абнаўленне не адбылося. {$errorString}</message>
+	<message key="manager.plugins.upgradeSuccessful">Паспяхова абноўлены да версіі {$versionString}</message>
+	<message key="manager.plugins.uploadError">Памылка загрузкі файла</message>
+	<message key="manager.plugins.uploadPluginDir">Выберыце файл модуля</message>
+	<message key="manager.plugins.versionFileInvalid">version.xml у каталогу модуля змяшчае няправільныя даныя.</message>
+	<message key="manager.plugins.versionFileNotFound">version.xml не знойдзены ў каталогу модуля</message>
+
+	<message key="notification.localeEnabled">Мова ўключана.</message>
+	<message key="notification.localeDisabled">Мова адключана.</message>
+	<message key="notification.primaryLocaleDefined">{$locale} ўстаноўлена як асноўная мова.</message>
+	<message key="notification.localeInstalled">Усе выбраныя мовы ўстаноўлены і актывізаваны.</message>
+	<message key="notification.localeUninstalled">Мова «{$locale}» выдалена.</message>
+	<message key="notification.localeReloaded">Мова «{$locale}» загружана нанова.</message>
+	<message key="notification.localeSettingsSaved">Наладкі мовы захаваны.</message>
+	<message key="notification.editedUser">Карыстальнік адрэдагаваны.</message>
+
+	<!-- Настройки процесса распространения -->
+	<message key="manager.distribution.indexing">Індэксаванне</message>
+
+	<!-- Настройки методов платежей -->
+	<message key="manager.paymentMethod">Плацяжы</message>
+	<message key="manager.paymentMethod.title">Метады плацяжоў</message>
+	<message key="manager.paymentMethod.none">Метад плацяжоў не выбраны</message>
+	<message key="manager.paymentMethod.method">Метад плацяжоў</message>
+	<message key="manager.paymentMethod.currency">Валюта</message>
+	<message key="manager.paymentMethod.currency.description">Плацяжы, зробленыя напрамую праз гэты сайт, будуць выстаўлены ў выбранай валюце.</message>
+
+	<!-- Настройки сетки «Роли» -->
+	<message key="settings.roles.roleOptions">Параметры ролі</message>
+	<message key="settings.roles.showTitles">Паказаць назву ролі ў спісе ўдзельнікаў</message>
+	<message key="settings.roles.permitSelfRegistration">Дазволіць самастойную рэгістрацыю карыстальніка</message>
+	<message key="settings.roles.roleName">Назва ролі</message>
+	<message key="settings.roles.roleAbbrev">Абрэвіятура</message>
+	<message key="settings.roles.assignedStages">Назначаныя этапы</message>
+	<message key="settings.roles.stages">Этапы</message>
+	<message key="settings.roles.roleDetails">Падрабязнасці пра ролю</message>
+	<message key="settings.roles.from">Узровень правоў</message>
+	<message key="settings.roles.removeText">Вы збіраецеся выдаліць гэту ролю з гэтага кантексту. Гэта аперацыя таксама выдаліць устаноўкі і назначэнні карыстальнікаў, звязаныя з гэтай роллю. Вы хочаце працягнуць?</message>
+	<message key="settings.roles.nameRequired">Вам неабходна задаць імя ролі.</message>
+	<message key="settings.roles.abbrevRequired">Вам неабходна задаць абрэвіятуру ролі.</message>
+	<message key="settings.roles.uniqueName">Вам неабходна задаць унікальнае імя ролі.</message>
+	<message key="settings.roles.uniqueAbbrev">Вам неабходна задаць унікальную абрэвіятуру ролі.</message>
+	<message key="settings.roles.roleIdRequired">Вам неабходна задаць узровень правоў ролі.</message>
+	<message key="settings.roles.stageIdRequired">Вам неабходна задаць этап для назначэння.</message>
+
+	<!-- Файлы библиотеки -->
+	<message key="settings.libraryFiles.fileRequired">Файл бібліятэкі абавязковы. Калі ласка, пераканайцеся, што вы выбралі і загрузілі файл на сайт.</message>
+	<message key="settings.libraryFiles.nameRequired">Імя для гэтага файла бібліятэкі ўказваецца абавязкова.</message>
+	<message key="settings.libraryFiles.typeRequired">Тып файла для гэтага файла бібліятэкі абавязковы.</message>
+	<message key="settings.libraryFiles.category.contracts">Кантракты</message>
+	<message key="settings.libraryFiles.category.marketing">Маркетынг</message>
+	<message key="settings.libraryFiles.category.permissions">Дазволы</message>
+	<message key="settings.libraryFiles.category.reports">Справаздачы</message>
+	<message key="settings.libraryFiles.category.other">Іншае</message>
+
+	<!--  Настройка сетки «Жанры» -->
+	<message key="grid.action.addGenre">Дабавіць кампанент</message>
+	<message key="grid.action.editGenre">Рэдагаваць гэты кампанент</message>
+	<message key="grid.action.deleteGenre">Выдаліць гэты кампанент</message>
+	<message key="grid.action.restoreGenres">Вярнуць кампаненты да наладак па змоўчанні</message>
+	<message key="manager.setup.genres.sortable">Дазволіць файлы гэтага тыпу сартаваць па главах</message>
+	<message key="manager.setup.genres.dependent">Адзначыць файлы гэтага тыпу як залежныя файлы (напрыклад, якія не паказваюцца з апублікаваным кантэнтам)</message>
+	<message key="manager.setup.genres.supplementary">Адзначыць файлы гэтага тыпу як дадатковыя файлы (напрыклад, якія не адносяцца да асноўнага кантэнту матэрыялу)</message>
+	<message key="manager.settings.wizard">Майстар наладак</message>
+	<message key="manager.users.roleRequired">Вам неабходна выбраць як мінімум адну ролю, якая павінна быць звязана з гэтым карыстальнікам.</message>
+	<message key="manager.website">Вэб-сайт</message>
+	<message key="manager.website.title">Наладкі вэб-сайта</message>
+	<message key="manager.workflow">Рабочы паток</message>
+	<message key="manager.workflow.title">Наладкі рабочага патоку</message>
+	<message key="manager.distribution">Распаўсюджванне</message>
+	<message key="manager.distribution.title">Наладкі распаўсюджвання</message>
+
+	<!-- Формы рецензии -->
+	<message key="manager.reviewForms">Формы рэцэнзіі</message>
+	<message key="manager.reviewForms.confirmActivate">Вы ўпэўнены, што хочаце актывізаваць гэту форму рэцэнзіі? Як толькі яна будзе назначана для рэцэнзавання, вы больш не зможаце дэактывізаваць яе.</message>
+	<message key="manager.reviewForms.confirmDeactivate">Вы ўпэўнены, што хочаце дэактывізаваць гэту форму рэцэнзіі? Яна больш не будзе даступна для назначэння выканання новых рэцэнзій.</message>
+	<message key="manager.reviewForms.confirmCopy">Вы ўпэўнены, што хочаце стварыць копію гэтай формы рэцэнзіі?</message>
+	<message key="manager.reviewForms.completed">Запоўнена</message>
+	<message key="manager.reviewForms.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэту форму рэцэнзіі?</message>
+	<message key="manager.reviewForms.create">Стварыць форму рэцэнзіі</message>
+	<message key="manager.reviewForms.description">Апісанне і інструкцыі</message>
+	<message key="manager.reviewForms.edit">Форма рэцэнзіі</message>
+	<message key="manager.reviewForms.form.titleRequired">Назва для формы рэцэнзіі ўказваецца абавязкова.</message>
+	<message key="manager.reviewForms.inReview">На рэцэнзіі</message>
+	<message key="manager.reviewForms.list.description">Створаныя тут формы рэцэнзіі будуць паказвацца рэцэнзентам для запаўнення змест формы, якая паказваецца па змоўчанні. Форма па змоўчанні складаецца з двух тэкставых палёў: першае —  «Для аўтара і рэдактара» і другое — «Для рэдактара». Формы рэцэнзіі могуць быць нададзены канкрэтнаму раздзелу выдання, і рэдактары маюць магчымасць выбраць канкрэтную форму пры назначэнні рэцэнзіі. Ва ўсіх выпадках рэдактары маюць магчымасць дабавіць атрыманыя рэцэнзіі ў перапіску з аўтарам.</message>
+	<message key="manager.reviewForms.noneChosen">Не / Рэцэнзія з адвольнай форме</message>
+	<message key="manager.reviewForms.noneCreated">Формы рэцэнзіі не былі створаны.</message>
+	<message key="manager.reviewForms.noneUsed">Ні адна з форм рэцэнзій не была выкарыстана.</message>
+	<message key="manager.reviewForms.preview">Папярэдні прагляд формы</message>
+	<message key="manager.reviewForms.reviewFormData">Даныя формы рэцэнзіі</message>
+	<message key="manager.reviewForms.title">Назва</message>
+	<message key="manager.reviewFormElement.changeType">Змяненне тыпу элемента формы...</message>
+	<message key="manager.reviewFormElements">Элементы формы</message>
+	<message key="manager.reviewFormElements.addResponseItem">Дабавіць выбраны</message>
+	<message key="manager.reviewFormElements.checkboxes">Птушкі (можна выбраць адзін або больш варыянтаў)</message>
+	<message key="manager.reviewFormElements.chooseType">Выберыце тып элемента</message>
+	<message key="manager.reviewFormElements.confirmDelete">Пацвердзіць выдаленне элемента апублікаванай формы...</message>
+	<message key="manager.reviewFormElements.copyTo">Скапіраваць у:</message>
+	<message key="manager.reviewFormElements.create">Стварыць новы элемент</message>
+	<message key="manager.reviewFormElements.dropdownbox">Выпадаючы спіс</message>
+	<message key="manager.reviewFormElements.edit">Рэдагаваць элемент формы</message>
+	<message key="manager.reviewFormElements.elementType">Тып элемента</message>
+	<message key="manager.reviewFormElements.form.elementTypeRequired">Неабходна выбраць тып элемента для элемента формы.</message>
+	<message key="manager.reviewFormElements.form.questionRequired">Неабходна ўвесці пытанне, адпаведнае элементу формы.</message>
+	<message key="manager.reviewFormElements.noneCreated">Элементы формы не былі створаны.</message>
+	<message key="manager.reviewFormElements.possibleResponse">Выбар</message>
+	<message key="manager.reviewFormElements.question">Элемент</message>
+	<message key="manager.reviewFormElements.radiobuttons">Радыёкнопкі (можна выбраць толькі адзін варыянт)</message>
+	<message key="manager.reviewFormElements.required">Рэцэнзент абавязкова павінен запоўніць элемент</message>
+	<message key="manager.reviewFormElements.included">Уключаецца ў паведамленне для аўтара</message>
+	<message key="manager.reviewFormElements.smalltextfield">Тэкставае поле для ўвода аднаго слова</message>
+	<message key="manager.reviewFormElements.textarea">Пашыранае тэкставае поле</message>
+	<message key="manager.reviewFormElements.textfield">Поле для ўводу аднаго радка</message>
+	<message key="manager.reviewFormElements.viewable">Бачны (для аўтараў)</message>
+	<message key="grid.action.createReviewForm">Стварыць новую форму рэцэнзіі</message>
+	<message key="manager.setup.reviewerCompetingInterestsRequired.description">Дэкларацыя аб канфлікце інтарэсаў рэцэнзента</message>
+	<message key="manager.setup.competingInterests.required">Зрабіць запыт пра Дэкларацыю аб канфлікце інтарэсаў падчас рэцэнзавання.</message>
+
+	<message key="manager.setup.licenseURLDescription">URL-адрас вэб-старонкі з апісаннем ліцэнзіі (калі яна даступна).</message>
+
+	<message key="manager.setup.metadata.submission">Форма адпраўкі матэрыялу</message>
+	<!--  общие ключи импорта/экспорта -->
+	<message key="plugins.importexport.common.validationErrors">Памылкі праверкі:</message>
+	<message key="plugins.importexport.common.errorsOccured">Памылкі, якія ўзніклі:</message>
+	<message key="plugins.importexport.common.error.unknownElement">Невядомы элемент {$param}</message>
+	<message key="plugins.importexport.common.error.unknownGenre">Невядомы жанр {$param}</message>
+	<message key="plugins.importexport.common.error.unknownEncoding">Невядомая кадзіроўка {$param}</message>
+	<message key="plugins.importexport.common.error.unknownUserGroup">Невядомая група карыстальнікаў {$param}</message>
+	<message key="plugins.importexport.common.error.unknownUploader">Невядомы загрузчык {$param}</message>
+</locale>

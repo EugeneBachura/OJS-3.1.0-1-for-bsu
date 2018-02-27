@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University Library
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.reports.reviews.displayName">Модуль «Справаздача аб рэцэнзіях»</message>
+	<message key="plugins.reports.reviews.description">Рэалізуе справаздачу ў фармаце CSV, якая змяшчае спіс заданняў на рэцэнзаванне для часопіса.</message>
+	<message key="plugins.reports.reviews.round">Раўнд</message>
+	<message key="plugins.reports.reviews.submissionTitle">Назва матэрыялу</message>
+	<message key="plugins.reports.reviews.submissionId">ID матэрыялу</message>
+	<message key="plugins.reports.reviews.reviewer">Рэцэнзент</message>
+	<message key="plugins.reports.reviews.dateAssigned">Дата назначэння</message>
+	<message key="plugins.reports.reviews.dateNotified">Дата апавяшчэння</message>
+	<message key="plugins.reports.reviews.dateConfirmed">Дата пацвярджэння</message>
+	<message key="plugins.reports.reviews.dateCompleted">Дата заканчэння</message>
+	<message key="plugins.reports.reviews.dateReminded">Дата напаміну</message>
+	<message key="plugins.reports.reviews.recommendation">Рэкамендацыя</message>
+	<message key="plugins.reports.reviews.comments">Каментарый да матэрыялу</message>
+</locale>
+

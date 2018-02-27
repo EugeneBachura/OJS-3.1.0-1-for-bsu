@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/pubIds/doi/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.pubIds.doi.displayName">Модуль «DOI»</message>
+	<message key="plugins.pubIds.doi.description">Уключае наданне ідэнтыфікатараў лічбавых аб'ектаў (Digital Object Identifier) выпускам, артыкулам і гранкам у OJS.</message>
+	<message key="plugins.pubIds.doi.readerDisplayName">DOI:</message>
+
+	<!-- форма настройки -->
+	<message key="plugins.pubIds.doi.manager.settings.description">Калі ласка, наладзьце модуль «DOI», каб мець магчымасць выкарыстоўваць DOI ў OJS і кіраваць імі:</message>
+
+	<message key="plugins.pubIds.doi.manager.settings.doiObjects">Кантэнт часопіса</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiObjectsRequired">Калі ласка, выберыце аб'екты, якім павінны быць нададзены DOI.</message>
+	<message key="plugins.pubIds.doi.manager.settings.explainDois">Калі ласка, выберыце публікуемыя аб'екты, якія будуць мець нададзеныя ідэнтыфікатары лічбавых аб'ектаў (Digital Object Identifier, DOI):</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableIssueDoi">Выпускі</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableSubmissionDoi">Артыкулы</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableRepresentationDoi">Гранкі</message>
+
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefix">Прэфікс DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefix.description"><![CDATA[Префикс DOI назначается регистрационными агентствами (например, <a href="http://www.crossref.org" target="_new">CrossRef</a>) и представляется в формате 10.xxxx (например, 10.1234):]]></message>
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefixPattern">Прэфікс DOI абавязковы і павінен быць у форме 10.xxxx.</message>
+
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffix">Суфікс DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffix.description">Суфікс DOI можа прымаць любую форму, але павінен быць унікальным сярод усіх публікуемых аб'ектаў, якім нададзены адзін і той жа прэфікс DOI:</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Выкарыстоўваць шаблон, уведзены ніжэй, для генерацыі суфіксаў DOI. Выкарыстоўвайце %j для абрэвіятуры часопіса, %v для нумара тома, %i для нумара выпуску, %Y для года, %a для ID артыкула ў OJS, %g для ID гранкі ў OJS, %f для ID файла ў OJS, %p для нумара старонкі і %x для «індывідуальнага суфікса».</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.example">Напрыклад, vol%viss%ipp%p можа стварыць DOI ў выглядзе 10.1234/vol3iss2pp230</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.issues">для выпускаў</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.submissions">для артыкулаў</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.representations">для гранак</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDefault">Выкарыстоўваць шаблоны па змоўчанні.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDefault.description"><![CDATA[%j.v%vi%i для выпусков<br />%j.v%vi%i.%a для статей<br />%j.v%vi%i.%a.g%g для гранок.]]></message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixCustomIdentifier">Увесці індывідуальны суфікс DOI для кожнага апублікаванага элемента. Вы ўбачыце дадатковае поле ўводу DOI на старонцы метаданых для кожнага элемента.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiIssueSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса DOI для выпускаў.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSubmissionSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса DOI для артыкулаў.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiRepresentationSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса DOI для гранак.</message>
+
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign">Перанадаць DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign.description">Калі вы зменіце вашу канфігурацыю DOI, то яна не закране DOI, якія ўжо былі нададзены. Пасля захавання канфігурацыі DOI выкарыстайце гэту кнопку, каб выдаліць усе існуючыя DOI для таго, каб новыя наладкі паўплывалі на існуючыя аб'екты.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign.confirm">Вы ўпэўнены, што хочаце выдаліць усе існуючыя DOI?</message>	
+
+
+	<!-- форма метаданных -->
+	<message key="plugins.pubIds.doi.editor.doi">DOI</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeIssue">выпуску</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeSubmission">артыкулу</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeRepresentation">гранцы</message>
+	<message key="plugins.pubIds.doi.editor.customSuffixMissing">DOI не можа быць нададзены, таму што адсутнічае карыстальніцкі суфікс.</message>
+	<message key="plugins.pubIds.doi.editor.patternNotResolved">DOI не можа быць нададзены, таму што ён змяшчае не заменены шаблон.</message>
+	<message key="plugins.pubIds.doi.editor.canBeAssigned">Вы бачыце, як будзе выглядаць DOI. Пастаўце птушку і захавайце форму для надання DOI.</message>
+	<message key="plugins.pubIds.doi.editor.assigned"> DOI нададзены {$pubObjectType}.</message>
+	<message key="plugins.pubIds.doi.editor.doiSuffixCustomIdentifierNotUnique">Зададзены суфікс DOI ужо выкарыстоўваецца для іншага апублікаванага элемента. Калі ласка, увядзіце ўнікальны суфікс DOI для кожнага элемента.</message>
+	<message key="plugins.pubIds.doi.editor.clearObjectsDoi">Выдаліць DOI</message>
+	<message key="plugins.pubIds.doi.editor.clearObjectsDoi.confirm">Вы ўпэўнены, што хочаце выдаліць існуючы DOI?</message>
+	<message key="plugins.pubIds.doi.editor.clearIssueObjectsDoi">Выдаліць DOI у аб'ектаў выпуску</message>
+	<message key="plugins.pubIds.doi.editor.clearIssueObjectsDoi.confirm">Вы ўпэўнены, што хочаце выдаліць існуючыя DOI у аб'ектаў выпуску?</message>
+	<message key="plugins.pubIds.doi.editor.clearIssueObjectsDoi.description">Выкарыстайце гэты параметр, каб выдаліць DOI усіх аб'ектаў (артыкулаў і гранак), запланаваных на цяперашні момант да публікацыі ў гэтым нумары.</message>
+	<!-- форма присваивания -->
+	<message key="plugins.pubIds.doi.editor.assignDoi">Надаць DOI {$pubId} {$pubObjectType}</message>
+	<message key="plugins.pubIds.doi.editor.assignDoi.emptySuffix">DOI не можа быць нададзены, таму што адсутнічае карыстальніцкі суфікс.</message>
+	<message key="plugins.pubIds.doi.editor.assignDoi.pattern">DOI {$pubId} не можа быць нададзены, таму што ён змяшчае не заменены шаблон.</message>
+	<message key="plugins.pubIds.doi.editor.assignDoi.assigned">DOI {$pubId} быў нададзены.</message>
+</locale>

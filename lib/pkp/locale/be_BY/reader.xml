@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/reader.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2000-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="comments.anonymous">Ананімны карыстальнік</message>
+	<message key="comments.anonymousNamed">«{$userName}»</message>
+	<message key="comments.body">Тэкст каментарыя</message>
+	<message key="comments.titleRequired">Загаловак каментарыя абавязковы.</message>
+	<message key="comments.confirmDeleteChildren">Выдаленне гэтага каментарыя прывядзе да выдалення ўсіх адказаў на яго. Вы ўпэўнены, што хочаце гэта зрабіць?</message>
+	<message key="comments.delete">Выдаліць гэты каментарый</message>
+	<message key="comments.email">Адрас электроннай пошты каментатара</message>
+	<message key="comments.emailReply">Адказаць пісьмом электроннай пошты</message>
+	<message key="comments.enterComment">Увесці каментарый</message>
+	<message key="comments.inResponseTo"><![CDATA[ В ответ на <a href="{$url}">{$title}</a>]]></message>
+	<message key="comments.name">Імя каментатара</message>
+	<message key="comments.noComments">Няма апублікаваных каментарыяў чытачоў.</message>
+	<message key="comments.nReplies">(Адказаў - {$num})</message>
+	<message key="comments.oneReply">(1 адказ)</message>
+	<message key="comments.postAnonymously">Апублікаваць гэты каментарый ананімна</message>
+	<message key="comments.postReply">Апублікаваць адказ</message>
+	<message key="comments.readerComments">Каментарыі чытачоў</message>
+	<message key="comments.readMore">Чытаць далей</message>
+	<message key="comments.replies">Адказы</message>
+	<message key="comments.title">Загаловак</message>
+	<message key="comments.viewAllComments">Паглядзець усе каментарыі</message>
+	<message key="reader.fullText">Поўны тэкст:</message>
+	<message key="rt.addComment">Дабавіць каментарый</message>
+	<message key="rt.admin.configuration">Наладка</message>
+	<message key="rt.admin.contexts.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэты кантэкст і ўсе звязаныя з ім пошукавыя запыты?</message>
+	<message key="rt.admin.contexts.createContext">Стварыць кантэкст</message>
+	<message key="rt.admin.contexts.edit.editContext">Рэдагаваць кантэкст</message>
+	<message key="rt.admin.contexts.metadata">Метаданыя</message>
+	<message key="rt.admin.contexts.options.authorTerms">Выкарыстоўваць па змоўчанні імёны аўтараў як ключавыя словы для пошуку, каб дазволіць карыстальнікам знайсці іншыя працы аўтараў гэтага матэрыялу (напрыклад, для кантэксту «Іншыя працы»)</message>
+	<message key="rt.admin.contexts.options.citedBy">Выкарыстоўваць па змоўчанні імёны аўтараў як ключавыя словы для пошуку і апісаць кантэкст як пошук спасылак на гэты артыкул.</message>
+	<message key="rt.admin.contexts.options.defineTerms"><![CDATA[Использовать по умолчанию слово, выделенное читателем, как ключевое слово для поиска или оставить пустым, если ничего не было выделено для этого материала (например для контекста «Определение терминов»). Настройка «Определение терминов» должна быть включена в <a href="{$settingsUrl}">Настройках RST</a> для того, чтобы разрешить открытие данного контекста двойным щелчком на словах.]]></message>
+	<message key="rt.admin.contexts.options.geoTerms">Выкарыстоўваць геаграфічныя індэксуемыя даныя як ключавыя словы для пошуку па змоўчанні.</message>
+	<message key="rt.admin.contexts.options">Параметры</message>
+	<message key="rt.admin.management">Кіраванне</message>
+
+	<message key="rt.admin.sharing">Падзяліцца</message>
+	<message key="rt.admin.sharing.enabled">Уключыць магчымасць падзяліцца з іншымі</message>
+	<message key="rt.admin.sharing.description"><![CDATA[Чтобы дать Вашим читателям возможность поделиться информацией о контенте с другими, зарегистрируйтесь на <a href="http://www.addthis.com">addthis.com</a> и вставьте полученный там код кнопки «Sharing» ниже.]]></message>
+
+	<message key="rt.admin.sharing.basic">Асноўныя наладкі</message>
+	<message key="rt.admin.sharing.userNameLabel">Імя карыстальніка AddThis.com</message>
+	<message key="rt.admin.sharing.buttonStyleLabel">Стыль кнопкі</message>
+	<message key="rt.admin.sharing.dropDownMenuLabel">Выкарыстоўваць выпадаючае меню</message>
+	<message key="rt.admin.sharing.advanced">Дадатковыя наладкі (не абавязкова)</message>
+	<message key="rt.admin.sharing.customizationLink"><![CDATA[Смотрите <a href="http://support.addthis.com/customer/portal/articles/381236-custom-buttons">документацию по настройке AddThis.com</a>.]]></message>
+	<message key="rt.admin.sharing.brandLabel">Брэнд</message>
+	<message key="rt.admin.sharing.dropDownLabel"><![CDATA[Параметры выпадающего меню <br /> (список, разделенный запятыми)]]></message>
+	<message key="rt.admin.sharing.languageLabel">Мова</message>
+	<message key="rt.admin.sharing.logolabel">Лагатып</message>
+	<message key="rt.admin.sharing.logoBackgroundLabel">Фон лагатыпа</message>
+	<message key="rt.admin.sharing.logoColorLabel">Колер лагатыпа</message>
+
+	<message key="rt.admin.readingToolsEnabled">Інструменты чытача</message>
+	<message key="rt.admin.searches.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэты пошукавы запыт?</message>
+	<message key="rt.admin.searches.createSearch">Стварыць пошукавы запыт</message>
+	<message key="rt.admin.searches.edit.editSearch">Рэдагаваць пошукавы запыт</message>
+	<message key="rt.admin.selectedVersion">Звязаныя элементы</message>
+	<message key="rt.admin.settings.abstract">Анатацыя (паказвае анатацыю матэрыялу).</message>
+	<message key="rt.admin.settings.viewReviewPolicy">Паказаць правілы рэцэнзавання</message>
+	<message key="rt.admin.settings.authorBio">Пра аўтара (паказвае біяграфічную інфармацыю, уведзеную аўтарам).</message>
+	<message key="rt.admin.settings.captureCite">Як цытаваць матэрыял (паказвае бібліяграфічную спасылку на матэрыял).</message>
+	<message key="rt.admin.settings.defineTerms">Паглядзець тэрміны (дае чытачам магчымасць падвойным шчаўчком мышы выклікаць слоўнік на любым слове ў матэрыяле).</message>
+	<message key="rt.admin.settings.disableRelatedItems">Выключыць звязаныя элементы</message>
+	<message key="rt.admin.settings.emailAuthor">Адправіць пісьмо аўтару (адкрывае шаблон пісьма электроннай пошты з адрасам электроннай пошты аўтара).</message>
+	<message key="rt.admin.settings.emailOthers">Паведаміць калегу/калезе (адкрывае шаблон пісьма электроннай пошты са спасылкай на матэрыял).</message>
+	<message key="rt.admin.settings.findingReferences">Знайсці спасылкі</message>
+	<message key="rt.admin.settings.printerFriendly">Версія для друку (паказвае версію матэрыялу, зручную для друку).</message>
+	<message key="rt.admin.settings.supplementaryFiles">Дадатковыя файлы (паказвае спіс файлаў, уключаных аўтарам у матэрыял для адпраўкі).</message>
+	<message key="rt.admin.settings.viewMetadata">Метаданыя для індэксацыі (паказвае выкарыстаныя для індэксацыі метаданыя, пададзеныя аўтарам і сістэмай).</message>
+	<message key="rt.admin.status">Статус</message>
+	<message key="rt.admin.configureSharing">Наладзіць AddThis</message>
+	<message key="rt.admin.validateUrls.complete">Праверка завершана.</message>
+	<message key="rt.admin.validateUrls.ok">ОК</message>
+	<message key="rt.admin.validateUrls.urlIsInvalid">{$url} з'яўляецца няправільным.</message>
+	<message key="rt.admin.validateUrls">Праверыць URL-адрас для інструментаў чытача</message>
+	<message key="rt.admin.validateUrls.validate">Праверыць</message>
+	<message key="rt.admin.versions.confirmDelete">Вы ўпэўнены, што хочаце выдаліць гэту версію і ўсе звязаныя з ёй кантэксты і пошукавыя запыты?</message>
+	<message key="rt.admin.versions.confirmRestore">Вы ўпэўнены, што хочаце вярнуць усе версіі да іх стандартных наладак? Калі так, то вам патрэбна выбраць актыўную версію на старонцы «Наладкі».</message>
+	<message key="rt.admin.versions.createVersion">Стварыць версію</message>
+	<message key="rt.admin.versions.edit.editVersion">Рэдагаваць версію</message>
+	<message key="rt.admin.versions.export">Экспартаваць</message>
+	<message key="rt.admin.versions.importVersion">Імпартаваць версію</message>
+	<message key="rt.admin.versions.metadata">Метаданыя</message>
+	<message key="rt.admin.versions.restoreVersions">Аднавіць версіі ў значэннях па змоўчанні</message>
+	<message key="rt.authorBio">Пра аўтара</message>
+	<message key="rt.captureCite.format">Фармат бібліяграфічнай спасылкі</message>
+	<message key="rt.captureCite">Як цытаваць матэрыял</message>
+	<message key="rt.captureCite.online">Анлайн</message>
+	<message key="rt.captureCite.web">Вэб</message>	
+	<message key="rt.colleague">Паведаміць калегу/калезе</message>
+	<message key="rt.context.abbrev">Абрэв.</message>
+	<message key="rt.context.and">AND</message>
+	<message key="rt.context.citesContextDescription">Калі артыкул індэксуецца ў Акадэміі Google, ён можа суправаджацца спасылкай у выглядзе «Цытуецца: X», якая ведзе да спіса прац, што спасылаюцца на дадзеную. Таксама Акадэмія Google будзе паказваць усе матэрыялы, у якіх змяшчаецца назва артыкула і прозвішча аўтара. Каб звярнуцца да анлайн-рэсурсаў, даступных толькі праз вашу бібліятэку, вам можа спатрэбіцца ўвайсці ў Наладкі Акадэміі Google і актывізаваць «Бібліятэчныя спасылкі» для вашай арганізацыі.</message>
+	<message key="rt.context">Кантэкст</message>
+	<message key="rt.context.defineTermsDescription">Калі матэрыял пададзены ў фармаце HTML (а не ў фармаце PDF), падвоены шчаўчок на любым слове ў тэксце прывядзе да таго, што яно з'явіцца ў полі «Тэрмін» (словы таксама могуць быць набраны або скапіраваны ў гэта поле). Каб даведацца больш пра рэсурс, які выкарыстоўваецца для пошуку, клікніце на «Пра рэсурс». Гэтыя рэсурсы былі выбраны за іх рэлевантнасць і даванне імі адкрытага (вольнага) доступу да ўсяго кантэнту гэтага рэсурса або яго часткі.</message>
+	<message key="rt.context.description">Апісанне</message>
+	<message key="rt.context.order">Парадак</message>
+	<message key="rt.contexts">Кантэксты</message>
+	<message key="rt.context.searchDescription">Ключавыя словы былі выбраны аўтарамі. Яны могуць быць зменены або выдалены чытачом, таму што два ці тры кароткія тэрміны або фразы дазваляюць найбольш дакладна здзяйсняць пошук па спалучэнні слоў (AND). Каб даведацца больш пра рэсурсы, якія выкарыстоўваюцца для пошуку, клікніце на «Пра рэсурс». Гэтыя рэсурсы былі выбраны за іх рэлевантнасць і даванне імі адкрытага (вольнага) доступу да ўсяго кантэнту гэтага рэсурса або яго часткі.</message>
+	<message key="rt.context.searchTerms">Ключавыя словы</message>
+	<message key="rt.context.termToDefine">Тэрмін</message>
+	<message key="rt.context.title">Назва</message>
+	<message key="rt.emailAuthor">Адправіць пісьмо электроннай пошты аўтару</message>
+	<message key="rt.email.needLogin"><![CDATA[* Требуется <a target="_parent" href="{$loginUrl}">регистрация</a>]]></message>
+	<message key="rt.email.sent">Ваша паведамленне было адпраўлена.</message>
+	<message key="rt.findingReferences">Знайсці спасылкі</message>
+	<message key="rt.findingReferences.googleScholar">Акадэмія Google</message>
+	<message key="rt.findingReferences.windowsLiveAcademic">Windows Live Academic</message>
+	<message key="rt.lookUp">Паглядзець тэрміны</message>
+	<message key="rt.metadata.dublinCore.contributor">Сувыканаўца</message>
+	<message key="rt.metadata.dublinCore.coverage">Ахоп</message>
+	<message key="rt.metadata.dublinCore.date">Дата</message>
+	<message key="rt.metadata.dublinCore.description">Апісанне</message>
+	<message key="rt.metadata.dublinCore">Дублінскае ядро (Dublin Core)</message>
+	<message key="rt.metadata.dublinCore.format">Фармат</message>
+	<message key="rt.metadata.dublinCore.identifier">Ідэнтыфікатар</message>
+	<message key="rt.metadata.dublinCore.language">Мова</message>
+	<message key="rt.metadata.dublinCore.publisher">Выдавец</message>
+	<message key="rt.metadata.dublinCore.relation">Адносіны</message>
+	<message key="rt.metadata.dublinCore.rights">Правы</message>
+	<message key="rt.metadata.dublinCore.source">Крыніца</message>
+	<message key="rt.metadata.dublinCore.subject">Прадмет</message>
+	<message key="rt.metadata.dublinCore.title">Назва</message>
+	<message key="rt.metadata.dublinCore.type">Тып</message>
+	<message key="rt.metadata.forThisDocument">Метаданыя для гэтага дакумента</message>
+	<message key="rt.metadata.pkp.abstract">Анатацыя</message>
+	<message key="rt.metadata.pkp.copyright">Правы і дазволы</message>
+	<message key="rt.metadata.pkp.coverage">Геапрасторавае размяшчэнне, храналагічны перыяд, даследуемы ўзор (пол, узрост і г. д.)</message>
+	<message key="rt.metadata.pkp.date">(ГГГГ-ММ-ДД)</message>
+	<message key="rt.metadata.pkp.discipline">Дысцыпліны</message>
+	<message key="rt.metadata.pkp.format">Фармат файла</message>
+	<message key="rt.metadata.pkp.genre"><![CDATA[Статус и жанр]]></message>
+	<message key="rt.metadata.pkpItem">Элементы метаданых PKP</message>
+	<message key="rt.metadata.pkp.language">Russian=ru, English=en</message>
+	<message key="rt.metadata.pkp.publisher">Арганізатар, месца</message>
+	<message key="rt.metadata.pkp.source">Назва; том, № (год)</message>
+	<message key="rt.metadata.pkp.sponsors">Спонсары</message>
+	<message key="rt.metadata.pkp.subject">Ключавыя словы</message>
+	<message key="rt.metadata.pkp.suppFiles">Дадатковыя файлы</message>
+	<message key="rt.metadata.pkp.title">Назва дакумента</message>
+	<message key="rt.metadata.pkp.type">Тып</message>
+	<message key="rt.metadata.pkp.uri">Універсальны ідэнтыфікатар рэсурса (URI)</message>
+	<message key="rt.printVersion">Версія для друку</message>
+	<message key="rt.readingTools">Інструменты чытача</message>
+	<message key="rt.relatedItems">Звязаныя элементы</message>
+	<message key="rt.reviewPolicy">Правілы рэцэнзавання</message>
+	<message key="rt.search.description">Апісанне</message>
+	<message key="rt.searches">Пошукавыя запыты</message>
+	<message key="rt.search.order">Парадак</message>
+	<message key="rt.search">Пошук</message>
+	<message key="rt.search.searchPost">Даныя для публікацыі</message>
+	<message key="rt.search.searchUrl">URL для пошуку</message>
+	<message key="rt.search.suggest">Прапанаваць крыніцу</message>
+	<message key="rt.search.title">Назва</message>
+	<message key="rt.search.url">URL</message>
+	<message key="rt.suppFiles.download">Скачаць</message>
+	<message key="rt.suppFiles">Дадатковыя файлы</message>
+	<message key="rt.suppFiles.viewMetadata">Метаданыя для індэксавання</message>
+	<message key="rt.version.description">Апісанне</message>
+	<message key="rt.version.key">Ключ</message>
+	<message key="rt.version.locale">Мова</message>
+	<message key="rt.versions">Наборы звязаных элементаў</message>
+	<message key="rt.version.title">Назва</message>
+	<message key="rt.version">Версія</message>
+	<message key="rt.viewMetadata">Метаданыя для індэксавання</message>
+</locale>

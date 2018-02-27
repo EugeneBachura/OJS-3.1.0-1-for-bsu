@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/pubIds/urn/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.pubIds.urn.displayName">Модуль «URN»</message>
+	<message key="plugins.pubIds.urn.description">Уключае наданне аднастайных імёнаў рэсурсаў (Uniform Resource Name, URN) для выпускаў, артыкулаў і гранак у OJS.</message>
+
+	<!-- форма настроек -->
+	<message key="plugins.pubIds.urn.manager.settings.description">Калі ласка, наладзьце модуль «URN», каб мець магчымасць выкарыстоўваць URN у OJS і кіраваць імі:</message>
+
+	<message key="plugins.pubIds.urn.manager.settings.urnObjects">Кантэнт часопіса</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnObjectsRequired">Калі ласка, выберыце аб'екты, якім павінны быць нададзены URN.</message>
+	<message key="plugins.pubIds.urn.manager.settings.explainURNs">Калі ласка, выберыце публікуемыя аб'екты, якія будуць мець нададзеныя аднастайныя імёны рэсурсаў (Uniform Resource Names, URN):</message>
+	<message key="plugins.pubIds.urn.manager.settings.enableIssueURN">Выпускі</message>
+	<message key="plugins.pubIds.urn.manager.settings.enableSubmissionURN">Артыкулы</message>
+	<message key="plugins.pubIds.urn.manager.settings.enableRepresentationURN">Гранкі</message>
+
+	<message key="plugins.pubIds.urn.manager.settings.urnPrefix">Прэфікс URN</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnPrefix.description"><![CDATA[Префикс URN является постоянной, никогда не меняющейся частью URN (например, «urn:nbn:de:0000-»).]]></message>
+	<message key="plugins.pubIds.urn.manager.settings.form.urnPrefixPattern"><![CDATA[Шаблон префикса URN должен быть в форме "urn:"&lt;NID&gt;":"&lt;NSS&gt;.]]></message>
+
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffix">Суфікс URN</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.description">Суфікс URN можа прымаць любую форму, але павінен быць унікальным сярод усіх публікуемых аб'ектаў, якім нададзены адзін і той жа прэфікс URN:</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixPattern">Выкарыстоўваць шаблон, уведзены ніжэй, для генерацыі суфіксаў URN. Выкарыстоўвайце %j для абрэвіятуры часопіса, %v для нумара тома, %i для нумара выпуску, %Y для года, %a для ID артыкула ў OJS, %g для ID гранкі ў OJS, %f для ID файла ў OJS, %p для нумара старонкі і %x для «індывідуальнага суфікса».</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixPattern.example">Напрыклад, vol%viss%ipp%p зможа стварыць суфікс URN «vol3iss2pp230».</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixPattern.issues">для выпускаў</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixPattern.submissions">для артыкулаў</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixPattern.representations">для гранак</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnIssueSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса URN для выпускаў.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSubmissionSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса URN для артыкулаў.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnRepresentationSuffixPatternRequired">Калі ласка, увядзіце шаблон суфікса URN для гранак.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixDefault">Выкарыстоўваць шаблоны па змоўчанні.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixDefault.description"><![CDATA[%j.v%vi%i для выпусков<br />%j.v%vi%i.%a для статей<br />%j.v%vi%i.%a.g%g для гранок.]]></message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffixCustomIdentifier">Увесці індывідуальны суфікс URN для кожнага апублікаванага элемента. Вы ўбачыце дадатковае поле ўводу URN на старонцы метаданых для кожнага элемента.</message>
+	<message key="plugins.pubIds.urn.manager.settings.checkNo">Кантрольны лік</message>
+	<message key="plugins.pubIds.urn.manager.settings.checkNo.label">Кантрольны лік будзе аўтаматычна разлічаны і дабаўлены ў канец у якасці апошняй лічбы ў URN.</message>
+	<message key="plugins.pubIds.urn.manager.settings.namespace">Прастора імёнаў</message>
+	<message key="plugins.pubIds.urn.manager.settings.namespace.choose">Выбраць</message>
+	<message key="plugins.pubIds.urn.manager.settings.namespace.description">Пастаянны ідэнтыфікатар прасторы імёнаў звычайна неабходны для рэгістрацыі (напрыклад, у Нацыянальнай бібліятэцы Германіі).</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnResolver">URL-адрас пераўтваральніка</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnResolver.description">(напрыклад, http://nbn-resolving.de/)</message>
+	<message key="plugins.pubIds.urn.manager.settings.form.urnResolverRequired">Калі ласка, увядзіце URL-адрас пераўтваральніка.</message>
+
+	<message key="plugins.pubIds.urn.manager.settings.urnReassign">Перанадаць URN</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnReassign.description">Калі вы зменіце вашу канфігурацыю URN, то яна не закране URN, якія ўжо былі нададзены. Пасля захавання канфігурацыі URN выкарыстайце гэту кнопку, каб выдаліць усе існуючыя URN для таго, каб новыя наладкі паўплывалі на існуючыя аб'екты.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnReassign.confirm">Вы ўпэўнены, што хочаце выдаліць усе існуючыя URN?</message>
+
+	<!--  форма метаданных -->
+	<message key="plugins.pubIds.urn.editor.urn">URN</message>
+	<message key="plugins.pubIds.urn.editor.urnObjectTypeIssue">выпуску</message>
+	<message key="plugins.pubIds.urn.editor.urnObjectTypeSubmission">артыкулу</message>
+	<message key="plugins.pubIds.urn.editor.urnObjectTypeRepresentation">гранцы</message>
+	<message key="plugins.pubIds.urn.editor.customSuffixMissing">URN не можа быць нададзены, таму што адсутнічае карыстальніцкі суфікс.</message>
+	<message key="plugins.pubIds.urn.editor.patternNotResolved">URN не можа быць нададзены, таму што ён змяшчае не заменены шаблон.</message>
+	<message key="plugins.pubIds.urn.editor.canBeAssigned">Вы бачыце, як будзе выглядаць URN. Пастаўце птушку і захавайце форму для надання URN.</message>
+	<message key="plugins.pubIds.urn.editor.assigned">URN нададзены {$pubObjectType}.</message>
+	<message key="plugins.pubIds.urn.editor.urnSuffixCustomIdentifierNotUnique">Зададзены суфікс URN ужо выкарыстоўваецца для іншага апублікаванага элемента. Калі ласка, увядзіце ўнікальны суфікс URN для кожнага элемента.</message>
+	<message key="plugins.pubIds.urn.editor.clearObjectsURN">Выдаліць URN</message>
+	<message key="plugins.pubIds.urn.editor.clearObjectsURN.confirm">Вы ўпэўнены, што хочаце выдаліць існуючы URN?</message>
+	<message key="plugins.pubIds.urn.editor.clearIssueObjectsURN">Выдаліць URN у аб'ектаў выпуску</message>
+	<message key="plugins.pubIds.urn.editor.clearIssueObjectsURN.confirm">Вы ўпэўнены, што хочаце выдаліць існуючыя URN у аб'ектаў выпуску?</message>
+	<message key="plugins.pubIds.urn.editor.clearIssueObjectsURN.description">Выкарыстайце гэты параметр, каб выдаліць URN усіх аб'ектаў (артыкулаў і гранак), запланаваных на цяперашні момант да публікацыі ў гэтым нумары.</message>
+	<message key="plugins.pubIds.urn.editor.addCheckNo">Дабавіць кантрольны лік</message>
+	<!-- форма присваивания -->
+	<message key="plugins.pubIds.urn.editor.assignURN">Надаць URN {$pubId} {$pubObjectType}</message>
+	<message key="plugins.pubIds.urn.editor.assignURN.emptySuffix">URN не можа быць нададзены, таму што адсутнічае карыстальніцкі суфікс.</message>
+	<message key="plugins.pubIds.urn.editor.assignURN.pattern">URN {$pubId} не можа быць нададзены, таму што ён змяшчае не заменены шаблон.</message>
+	<message key="plugins.pubIds.urn.editor.assignURN.assigned">URN {$pubId} быў нададзены.</message>
+	<!-- ошибки -->
+	<message key="plugins.pubIds.urn.form.checkNoRequired">Кантрольны лік адсутнічае.</message>
+
+</locale>

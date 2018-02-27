@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/crossref/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.importexport.crossref.displayName">Модуль «Экспарт CrossRef XML»</message>
+	<message key="plugins.importexport.crossref.description">Экспартуе метаданыя артыкула ў фармаце CrossRef XML.</message>
+	<!-- настройки -->
+	<message key="plugins.importexport.crossref.requirements">Патрабаванні</message>
+	<message key="plugins.importexport.crossref.requirements.satisfied">Усе патрабаванні модуля выкананы.</message>
+	<message key="plugins.importexport.crossref.error.publisherNotConfigured"><![CDATA[Издатель журнала не был настроен! Вы должны добавить организацию издателя на странице <a href="{$journalSettingsUrl}" target="_blank">настройки журнала</a>.]]></message>
+	<message key="plugins.importexport.crossref.error.issnNotConfigured"><![CDATA[ISSN журнала не был настроен! Вы должны добавить ISSN на странице <a href="{$journalSettingsUrl}" target="_blank">настройки журнала</a>.]]></message>
+	<message key="plugins.importexport.crossref.error.noDOIContentObjects">Не выбраны артыкулы для надання DOI ў модулі адкрытых ідэнтыфікатараў DOI, таму немагчыма дэпаніраваць або экспартаваць у гэтым модулі.</message>
+	<message key="plugins.importexport.crossref.settings.depositorIntro">Наступная інфармацыя неабходна для паспяховай перадачы ў дэпазітарый CrossRef.</message>
+	<message key="plugins.importexport.crossref.settings.form.depositorName">Імя адказнага</message>
+	<message key="plugins.importexport.crossref.settings.form.depositorEmail">E-mail адказнага</message>
+	<message key="plugins.importexport.crossref.settings.form.depositorNameRequired">Калі ласка, увядзіце імя адказнага.</message>
+	<message key="plugins.importexport.crossref.settings.form.depositorEmailRequired">>Калі ласка, увядзіце адрас электроннай пошты адказнага.</message>
+	<message key="plugins.importexport.crossref.registrationIntro"><![CDATA[Если вы хотите использовать этот модуль для регистрации идентификаторов цифровых объектов(DOI) напрямую в CrossRef, то для этого вам потребуется имя пользователя и пароль (можно получить на <a href="http://www.crossref.org" target="_blank">CrossRef</a>). Если у вас нет собственного имени пользователя и пароля вы сможете экспортировать в формат CrossRef XML, но не сможете зарегистрировать ваши DOI в CrossRef из OJS.]]></message>
+	<message key="plugins.importexport.crossref.settings.form.username">Імя карыстальніка</message>
+	<message key="plugins.importexport.crossref.settings.form.usernameRequired">Калі ласка, увядзіце імя карыстальніка, якое вы атрымалі ад CrossRef.</message>
+	<message key="plugins.importexport.crossref.settings.form.automaticRegistration.description">OJS будзе дэпаніраваць нададзеныя DOI аўтаматычна ў CrossRef. Звярніце ўвагу, што гэта можа патрабаваць невялікай колькасці часу пасля публікацыі для апрацоўкі. Вы можаце праверыць усе незарэгістраваныя DOI.</message>
+	<message key="plugins.importexport.crossref.settings.form.testMode.description">Выкарыстоўваць тэставы API CrossRef (асяроддзе тэсціравання) для дэпаніравання DOI. Калі ласка, не забудзьце зняць гэты параметр для рэальнай працы.</message>
+	<!-- описания -->
+	<message key="plugins.importexport.crossref.issues.description">Заўвага: Тут для экспарту/рэгістрацыі будуць разглядацца толькі выпускі (а не артыкулы ў гэтых выпусках).</message>
+	<!-- статусы -->
+	<message key="plugins.importexport.crossref.status.submitted">Адпраўлены</message>
+	<message key="plugins.importexport.crossref.status.completed">Дэпаніраваны</message>
+	<message key="plugins.importexport.crossref.status.failed">Памылка</message>
+	<message key="plugins.importexport.crossref.status.registered">Актыўны</message>
+	<message key="plugins.importexport.crossref.status.markedRegistered">Адзначаны як актыўны</message>
+	<message key="plugins.importexport.crossref.statusLegend"><![CDATA[
+		<p>Статус депонирования:</p>
+		<p>
+		- Не депонирован: этот DOI не пытались депонировать.<br />
+		- Отправлен: этот DOI был отправлен на депонирование.<br />
+		- Депонирован: этот DOI был депонирован в Crossref, но может быть пока не активен.<br />
+		- Активный: этот DOI был депонирован и корректно интерпретируется.<br />
+		- Ошибка: депонирование DOI потерпело неудачу.<br />
+		- Отмечен как активный: DOI был вручную отмечен как активный.
+		</p>
+		<p>Отображается только статус последней попытки депонирования.</p>
+		<p>Если депонирование потерпело неудачу, пожалуйста, решите проблему и попробуйте зарегистрировать DOI снова.</p>]]></message>
+	<!-- действия -->
+	<message key="plugins.importexport.crossref.action.export">Скачаць XML</message>
+	<message key="plugins.importexport.crossref.action.markRegistered">Адзначыць як актыўны</message>
+	<message key="plugins.importexport.crossref.action.register">Адправіць</message>
+	<message key="plugins.importexport.crossref.action.checkStatus">Праверыць статус</message>
+	<!-- запланированная задача -->
+	<message key="plugins.importexport.crossref.senderTask.name">Задача аўтаматычнай рэгістрацыі CrossRef</message>
+	<message key="plugins.importexport.crossref.notification.failed">Рэгістарцыя DOI не адбылася. Калі ласка, перайдзіце ў Інструменты > Імпарт/Экспарт > Модуль «Экспарт CrossRef XML», каб убачыць няўдалыя дэпаніраванні.</message>
+
+	<!-- CLI -->
+	<message key="plugins.importexport.crossref.cliUsage"><![CDATA[Вызов:
+{$scriptName} {$pluginName} export [ИмяФайлаXML] [путь_журнала] articles IdОбъекта1 [IdОбъекта2] ...
+{$scriptName} {$pluginName} register [путь_журнала] articles IdОбъекта1 [IdОбъекта2] ...
+]]></message>
+
+	<!--  уведомления -->
+	<message key="plugins.importexport.crossref.register.error.mdsError">Адпраўка не адбылася! Сервер рэгістрацыі DOI вярнуў памылку: «{$param}».</message>
+	<message key="plugins.importexport.crossref.register.success">Адпраўка прайшла паспяхова!</message>
+	<message key="plugins.importexport.crossref.export.error.issueNotFound">Няма выпуску, адпаведнага ўказанаму ID выпуску «{$issueId}».</message>
+	<message key="plugins.importexport.crossref.export.error.articleNotFound">Няма артыкула, адпаведнага ўказанаму ID артыкула «{$articleId}».</message>
+
+</locale>

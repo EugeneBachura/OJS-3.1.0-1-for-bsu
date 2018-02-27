@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/be_BY/installer.xml
+  *
+  * Copyright (c) 2009 Konstantin L. Metlov
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the be_BY (Беларускi) locale.
+  -->
+
+<locale name="be_BY" full_name="Беларускi">
+	<message key="installer.additionalLocales">Дадатковыя мовы</message>
+	<message key="installer.administratorAccount">Уліковы запіс адміністратара</message>
+	<message key="installer.administratorAccountInstructions">Гэты карыстальнік стане адміністратарам сайта і атрымае поўны доступ да сістэмы. Дадатковыя ўліковыя запісы карыстальнікаў можна будзе стварыць пасля завяршэння ўстаноўкі.</message>
+	<message key="installer.checkNo"><![CDATA[<span class="pkp_form_error formError">НЕТ</span>]]></message>
+	<message key="installer.checkYes">Так</message>
+	<message key="installer.clientCharset">Кадзіроўка кліента</message>
+	<message key="installer.clientCharsetInstructions">Кадзіроўка, якая выкарыстоўваецца для абмену данымі з браўзерамі.</message>
+	<message key="installer.configFileError"><![CDATA[Конфигурационный файл <tt>config.inc.php</tt> не существует или не доступен для чтения.]]></message>
+	<message key="installer.connectionCharset">Кадзіроўка для злучэння з БД</message>
+	<message key="installer.contentsOfConfigFile">Змесціва канфігурацыйнага файла</message>
+	<message key="installer.createDatabase">Стварыць новую базу даных</message>
+	<message key="installer.createDatabaseInstructions">Для выкарыстання гэтага параметра неабходна, каб ваша СКБД падтрымлівала магчымасць аддаленага стварэння базы даных, а ваш уліковы запіс карыстальніка БД меў адпаведныя правы на стварэнне новых баз даных. Калі ўстаноўка завяршаецца няўдачай пры выкарыстанні гэтага параметра, стварыце базу даных на серверы ўручную і запусціце ўстаноўку нанова, адключыўшы гэты параметр.</message>
+	<message key="installer.databaseCharset">Кадзіроўка базы даных</message>
+	<message key="installer.databaseDriver">Драйвер базы даных</message>
+	<message key="installer.databaseDriverInstructions"><![CDATA[<strong>Для драйверов, приведенных в квадратных скобках, похоже не загруженны необходимые расширения PHP, и, в случае выбора одного из них, установка скорее всего закончится неудачно.</strong><br />Любые неподдерживаемые драйверы базы данных, указанные в приведенном выше списке, находятся там исключительно с информационными целями и скорее всего не будут работать.]]></message>
+	<message key="installer.databaseHost">Хост</message>
+	<message key="installer.databaseHostInstructions">Пакіньце імя хоста пустым для злучэння пры дапамозе UNIX domain sockets замест TCP/IP. Гэта наладка не абавязкова для MySQL, які будзе аўтаматычна выкарыстоўваць sockets, калі ўведзена «localhost», але можа патрабавацца для іншых СКБД, такіх як PostgreSQL.</message>
+	<message key="installer.databaseName">Імя базы даных</message>
+	<message key="installer.databasePassword">Пароль</message>
+	<message key="installer.databaseSettings">Наладкі базы даных</message>
+	<message key="installer.databaseUsername">Імя карыстальніка</message>
+	<message key="installer.filesDir">Каталог для файлаў, якія загружаюцца на сервер</message>
+	<message key="installer.fileSettings">Наладкі файлаў</message>
+	<message key="installer.form.clientCharsetRequired">Кадзіроўка кліента павінна быць выбрана.</message>
+	<message key="installer.form.databaseDriverRequired">Драйвер СКБД павінен быць выбраны.</message>
+	<message key="installer.form.databaseNameRequired">Імя базы даных указваецца абавязкова.</message>
+	<message key="installer.form.emailRequired">Правільны адрас электроннай пошты для ўліковага запісу адміністратара абавязковы.</message>
+	<message key="installer.form.filesDirRequired">Каталог для захоўвання загружаных на сервер файлаў абавязковы.</message>
+	<message key="installer.form.localeRequired">Мова павінна быць выбрана.</message>
+	<message key="installer.form.passwordRequired">Пароль для ўліковага запісу адміністратара абавязковы.</message>
+	<message key="installer.form.passwordsDoNotMatch">Паролі адміністратара не адпавядаюць адзін аднаму.</message>
+	<message key="installer.form.separateMultiple">Пры ўводзе некалькіх значэнняў раздзяляйце іх коскамі</message>
+	<message key="installer.form.usernameAlphaNumeric">Імя карыстальніка для ўліковага запісу адміністратара можа ўтрымліваць толькі літары, лічбы, падкрэсліванні і дэфісы; яно павінна пачынацца і заканчвацца літарай або лічбай.</message>
+	<message key="installer.form.usernameRequired">Імя карыстальніка для ўліковага запісу адміністратара ўказваецца абавязкова.</message>
+	<message key="installer.installationWrongPhp"><![CDATA[<br/><strong>ПРЕДУПРЕЖДЕНИЕ: Ваша текущая версия PHP не соответствует минимальным требованиям для установки. Рекомендуется обновить PHP до более новой версии.</strong>]]></message>
+	<message key="installer.installErrorsOccurred">Падчас устаноўкі адбыліся памылкі</message>
+	<message key="installer.installerSQLStatements">SQL-запыты для ўстаноўкі</message>
+	<message key="installer.installFileError"><![CDATA[Файл установки <tt>dbscripts/xml/install.xml</tt> не существует или не доступен для чтения.]]></message>
+	<message key="installer.installFilesDirError">Каталог, які ўказаны ў якасці каталога для захоўвання загружаных на сервер файлаў, не існуе або не даступны для запісу.</message>
+	<message key="installer.installParseDBFileError"><![CDATA[Ошибка синтаксического разбора файла установки БД <tt>{$file}</tt>.]]></message>
+	<message key="installer.installParseEmailTemplatesFileError"><![CDATA[Ошибка синтаксического разбора файла шаблонов писем электронной почты <tt>{$file}</tt>.]]></message>
+	<message key="installer.installParseFilterConfigFileError"><![CDATA[Ошибка синтаксического разбора файла конфигурации фильтров <tt>{$file}</tt>.]]></message>
+	<message key="installer.unsupportedUpgradeError">Абнаўленне не падтрымліваецца. Глядзіце падрабязней у docs/UPGRADE-UNSUPPORTED.</message>
+	<message key="installer.locale">Мова</message>
+	<message key="installer.locale.maybeIncomplete">Падтрымка адзначаных моў можа быць няпоўнай.</message>
+	<message key="installer.localeSettings">Наладкі мовы</message>
+	<message key="installer.oaiSettings">Наладкі OAI</message>
+	<message key="installer.oaiRepositoryIdInstructions"><![CDATA[Уникальный идентификатор используется для идентификации записей метаданных, проиндексированных с этого сайта, при использовании протокола сбора метаданных <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a>.]]></message>
+	<message key="installer.oaiRepositoryId">Ідэнтыфікатар сховішча</message>
+	<message key="installer.publicFilesDirError">Каталог public для файлаў не існуе або не даступны для запісу.</message>
+	<message key="installer.releaseNotes">Заўвагі да выпуску</message>
+	<message key="installer.preInstallationInstructionsTitle">Крокі падрыхтоўкі да ўстаноўкі</message>
+	<message key="installer.preInstallationInstructions"><![CDATA[
+		<p>1. Следующие файлы и каталоги (и их содержимое) должно быть сделано доступным для записи:</p>
+		<ul>
+			<li><tt>config.inc.php</tt> доступен для записи (не обязательно): {$writable_config}</li>
+			<li><tt>public/</tt> доступен для записи: {$writable_public}</li>
+			<li><tt>cache/</tt> доступен для записи: {$writable_cache}</li>
+			<li><tt>cache/t_cache/</tt> доступен для записи: {$writable_templates_cache}</li>
+			<li><tt>cache/t_compile/</tt> доступен для записи: {$writable_templates_compile}</li>
+			<li><tt>cache/_db</tt> доступен для записи: {$writable_db_cache}</li>
+		</ul>
+
+		<p>2. Каталог для хранения загруженных на сервер файлов должен быть создан и сделан доступным для записи(смотри «Настройки файлов» ниже).</p>]]>
+	</message>
+	<message key="installer.configureXSLMessage"><![CDATA[<p>В вашей инсталляции PHP не включен модуль XSL. Включите его или настройте параметр xslt_command в вашем файле config.inc.php.</p>]]></message>
+	<message key="installer.beacon">Маяк</message>
+	<message key="installer.beacon.enable">Задаць унікальны ID сайта і базавы URL OAI для PKP, якія будуць выкарыстоўвацца толькі для збору статыстыкі і папярэджанняў пра бяспеку.</message>
+</locale>

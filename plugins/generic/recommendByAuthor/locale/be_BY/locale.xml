@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/recommendByAuthor/locale/be_BY/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings.
+  -->
+ 
+<locale name="be_BY" full_name="Беларускi">
+	<message key="plugins.generic.recommendByAuthor.displayName">Модуль «Рэкамендаваныя артыкулы аўтара»</message>
+	<message key="plugins.generic.recommendByAuthor.description">Устаўляе спіс артыкулаў гэтага ж аўтара на старонку анатацыі артыкула.</message>
+    
+    <message key="plugins.generic.recommendByAuthor.heading">Найбольш чытаныя артыкулы гэтага аўтара (аўтараў)</message>
+    <message key="plugins.generic.recommendByAuthor.noMetric">Асаблівасць: гэты модуль патрабуе, каб быў уключаны хаця б адзін модуль статыстыкі/справаздач. Калі вашы модулі статыстыкі вяртаюць больш за адну метрыку, то, калі ласка, таксама выберыце галоўную метрыку на старонцы наладак сайта адміністратарам і/або на старонках наладкі кіраўніка часопіса.</message>
+</locale>
