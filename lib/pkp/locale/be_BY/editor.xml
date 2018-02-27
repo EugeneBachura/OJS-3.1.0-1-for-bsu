@@ -35,6 +35,8 @@
 	<message key="editor.review.enrollReviewer.short">Запісаць існуючага карыстальніка</message>
 	<message key="editor.review.unassignReviewer">Адмяніць назначэнне рэцэнзента</message>
 	<message key="editor.submissionReview.reviewType">Тып рэцэнзавання</message>
+	<message key="editor.submissionReview.sendEmail">Send an email notification to the author(s): {$authorName}</message>
+	<message key="editor.submissionReview.sendEmail.editors">Send an email notification to the editor(s): {$editorNames}</message>
 	<message key="editor.submissionReview.skipEmail">Не адпраўляць аўтару пісьмо электроннай пошты</message>
 	<message key="editor.submissionReview.open">Адкрытае</message>
 	<message key="editor.submissionReview.blind">Сляпое</message>
@@ -45,6 +47,7 @@
 	<message key="editor.review.personalMessageToReviewer">Пісьмо электроннай пошты для адпраўкі рэцэнзенту</message>
 	<message key="editor.review.importantDates">Важныя даты</message>
 	<message key="editor.review.uploadRevision">Загрузіць новую версію</message>
+	<message key="editor.review.newReviewRound">Require New Review Round</message>
 	<message key="editor.review.NotifyAuthorAccept">Апавясціць аўтара, што яго матэрыял быў прыняты.</message>
 	<message key="editor.review.NotifyAuthorDecline">Апавясціць аўтара, што яго матэрыял быў адхілены.</message>
 	<message key="editor.review.NotifyAuthorRevisions">Зрабіць запыт аўтару пра новую версію.</message>
@@ -52,6 +55,7 @@
 	<message key="editor.review.NotifyAuthorExternal">Апавясціць аўтара пра рашэнне пачаць знешняе рэцэнзаванне.</message>
 	<message key="editor.review.personalMessageToAuthor">Пісьмо электроннай пошты для адпраўкі аўтару</message>
 	<message key="editor.review.dateAccepted">Дата прыняцця матэрыялу на рэцэнзаванне</message>
+	<message key="editor.review.reviewsAdded">Reviews added to message body.</message>
 	<message key="editor.review.noReviews">Няма рэцэнзій для імпарту</message>
 	<message key="editor.review.reminder">Напамін пра рэцэнзію</message>
 	<message key="editor.review.thankReviewer">Падзяка рэцэнзенту</message>
@@ -99,6 +103,11 @@
 	<message key="editor.submission.production.productionReadyFiles">Файлы для публікацыі</message>
 	<message key="editor.submission.newRound">Новы раўнд рэцэнзавання</message>
 	<message key="editor.submissionReview.recordDecision">Запісаць рашэнне рэдакцыі</message>
+	<message key="editor.submissionReview.recordRecommendation">Record Editorial Recommendation</message>
+	<message key="editor.submissionReview.recordRecommendation.notifyEditors">Notify Editors</message>
+	<message key="editor.submissionReview.recordRecommendation.skipEmail">Do not send editors an email.</message>
+	<message key="editor.submissionReview.recordRecommendation.createDiscussion">Create a review discussion about this recommendation.</message>
+	<message key="editor.submissionReview.recordRecommendation.skipDiscussion">Do not create a review discussion.</message>
 	<message key="editor.submission.newRoundDescription">Вы збіраецеся стварыць новы раўнд рэцэнзавання для гэтага матэрыялу. Ніжэй пададзены файлы, якія не выкарыстоўваліся ў іншых раўндах рэцэнзавання.</message>
 	<message key="editor.submission.createNewRound">Стварыць новы раўнд рэцэнзавання </message>
 	<message key="editor.article.reviewForms">Формы рэцэнзі</message>

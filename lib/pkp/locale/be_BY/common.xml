@@ -7,6 +7,8 @@
   * Copyright (c) 2014-2017 Simon Fraser University
   * Copyright (c) 2000-2017 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  
+  
   -->
 
 <locale name="be_BY" full_name="Беларускi">
@@ -120,6 +122,7 @@
 	<message key="common.default">Па змоўчанні</message>
 	<message key="common.declined">Адхілены</message>
 	<message key="common.delete">Выдаліць</message>
+	<message key="common.deleting">Deleting</message>
 	<message key="common.deleteSelection">Выдаліць выбранае</message>
 	<message key="common.designation">Прызначэнне</message>
 	<message key="common.description">Апісанне</message>
@@ -150,6 +153,8 @@
 	<message key="common.fileSize">Памер файла</message>
 	<message key="common.fileType">Тып файла</message>
 	<message key="common.fileUploaderError">Загружаецца загрузчык файлаў у сістэму. Калі ён не з'яўляецца, хутчэй за ўсё яго запуск не падтрымліваецца гэтым браўзерам. Калі ласка, звяжыцеся з адміністратарам сервера для рашэння праблемы.</message>
+	<message key="common.from">From</message>
+	<message key="common.until">Until</message>
 	<message key="common.go">Выканаць</message>
 	<message key="common.height">Вышыня</message>
 	<message key="common.homepageNavigationLabel">Галоўная</message>
@@ -228,6 +233,7 @@
 	<message key="common.saveAndContinue">Захаваць і працягнуць</message>
 	<message key="common.saveAndEmail">Захаваць і адправіць</message>
 	<message key="common.save">Захаваць</message>
+	<message key="common.saving">Saving</message>
 	<message key="common.search">Знайсці</message>
 	<message key="common.searchQuery">Пошукавы запыт</message>
 	<message key="common.second">Секунд</message>
@@ -371,13 +377,16 @@
 	<message key="stageParticipants.notify.chooseMessage">Выберыце стандартнае паведамленне для выкарыстання або запоўніце форму ніжэй.</message>
 	<message key="stageParticipants.notify.message">Паведамленне</message>
 	<message key="stageParticipants.notify.warning">Калі ласка, пераканайцеся, што вы запоўнілі поле паведамлення і выбралі хіця б аднаго атрымальніка.</message>
-
+	<message key="stageParticipants.options">Assignment privileges</message>
+	<message key="stageParticipants.recommendOnly">This participant is only allowed to recommend an editorial decision and will require an authorised editor to record editorial decisions.</message>
+	
 	<message key="locale.primary">Асноўная мова</message>
 	<message key="locale.supported">Мовы, якія падтрымліваюцца</message>
 	<message key="navigation.access"><![CDATA[Пользователи и роли]]></message>
 	<message key="navigation.allJournals">Часопісы БДУ</message>
 	<message key="navigation.about">Пра нас</message>
 	<message key="navigation.admin">Адміністраванне</message>
+	<message key="navigation.archives">Archives</message>
 	<message key="navigation.breadcrumbLabel">Вы тут:</message>
 	<message key="navigation.breadcrumbSeparator">/</message>
 	<message key="navigation.tools">Інструменты</message>
@@ -418,6 +427,7 @@
 	<message key="notification.removedAuditor">Аўдытар выдалены.</message>
 	<message key="notification.addedQuery">Дабаўлена абмеркаванне</message>
 	<message key="notification.reviewAcknowledged">Рэцэнзія адзначана як прынятая. Пісьмо электроннай пошты не адпраўлена.</message>
+	<message key="notification.reviewerThankedEmail">Thank you email sent to reviewer.</message>
 	<message key="notification.updatedReviewFiles">Файлы рэцэнзіі абноўлены.</message>
 	<message key="notification.allow">Уключыць гэтыя тыпы апавяшчэнняў.</message>
 	<message key="notification.addedAnnouncementType">Тып аб'яў дабаўлены.</message>
@@ -460,6 +470,7 @@
 	<message key="notification.unsubscribeError">Пры адмене вашай падпіскі ўзнікла памылка. Калі ласка, пераканайцеся, што вы выкарыстоўваеце правільны URL-адрас, як указана ў апавяшчэнні, якое прыйшло на ваш адрас электроннай пошты.</message>
 	<message key="notification.unsubscribeSuccess">Ваша падпіска паспяхова адменена.</message>
 	<message key="notification.savedSubmissionMetadata">Захаваны метаданыя матэрыялу.</message>
+	<message key="notification.sendNotificationConfirmation">Send notification email to all registered users</message>
 	<message key="search.author">Па аўтару</message>
 	<message key="search.abstract">Анатацыя</message>
 	<message key="search.activeFilters">Пашыраныя фільтры</message>
@@ -543,4 +554,17 @@
 	<message key="notification.type.assignCopyeditors">Прызначце літаратурнаго рэдактара, выкарыстоўваючы спасылку «Дабавіць» у спісе «Удзельнікі».</message>
 	<message key="notification.type.awaitingCopyedits">Чаканне літаратурнага рэдагавання.</message>
 	<message key="notification.type.roundStatusTitle">Статус раўнда {$round}</message>
+	
+	<message key="semicolon">{$label}:</message>
+
+	<!-- Navigation Menus -->
+	<message key="notification.editedNavigationMenuItem">Navigation menu item was succesfully updated</message>
+	<message key="notification.removedNavigationMenuItem">Navigation menu item was succesfully removed</message>
+	<message key="notification.addedNavigationMenuItem">Navigation menu item was succesfully added</message>
+	<message key="notification.addedNavigationMenu">Navigation menu was succesfully added</message>
+	<message key="notification.editedNavigationMenu">Navigation menu was succesfully updated</message>
+	<message key="notification.removedNavigationMenu">Navigation menu was succesfully removed</message>
+	
+	<message key="common.onlineIssn">Online ISSN</message>
+	<message key="common.printIssn">Print ISSN</message>
 </locale>
