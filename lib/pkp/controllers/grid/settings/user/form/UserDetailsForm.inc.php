@@ -237,9 +237,9 @@ class UserDetailsForm extends UserForm {
 		}
 
 		$user->setSalutation($this->getData('salutation'));
-		$user->setFirstName($this->getData('firstName')null),  // Localized
-		$user->setMiddleName($this->getData('middleName')null),  // Localized
-		$user->setLastName($this->getData('lastName')null),  // Localized
+		$user->setFirstName($this->getData('firstName'), null),  // Localized
+		$user->setMiddleName($this->getData('middleName'), null),  // Localized
+		$user->setLastName($this->getData('lastName'), null),  // Localized
 		$user->setSuffix($this->getData('suffix'));
 		$user->setInitials($this->getData('initials'));
 		$user->setGender($this->getData('gender'));
